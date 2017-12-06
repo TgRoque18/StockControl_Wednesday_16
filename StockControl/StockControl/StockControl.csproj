@@ -79,8 +79,21 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Icons\" />
+    <Content Include="Icons\WhatsApp Image 2017-12-06 at 17.51.27.jpeg" />
+    <Content Include="Icons\WhatsApp Image 2017-12-06 at 17.51.45.jpeg" />
+    <Content Include="Icons\WhatsApp Image 2017-12-06 at 17.52.26.jpeg" />
+    <Content Include="Icons\WhatsApp Image 2017-12-06 at 17.53.18.jpeg" />
+    <Content Include="Icons\WhatsApp Image 2017-12-06 at 17.53.48.jpeg" />
+    <Content Include="Icons\WhatsApp Image 2017-12-06 at 17.54.07.jpeg" />
+    <Content Include="Icons\WhatsApp Image 2017-12-06 at 17.54.50.jpeg" />
+    <Content Include="Icons\WhatsApp Image 2017-12-06 at 17.56.40.jpeg" />
+    <Content Include="Icons\WhatsApp Image 2017-12-06 at 17.57.42.jpeg" />
+    <Content Include="Icons\WhatsApp Image 2017-12-06 at 17.58.04.jpeg" />
+    <Content Include="Icons\WhatsApp Image 2017-12-06 at 17.58.49.jpeg" />
+    <Content Include="Icons\WhatsApp Image 2017-12-06 at 17.59.12.jpeg" />
+    <Content Include="Icons\WhatsApp Image 2017-12-06 at 17.59.37.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
