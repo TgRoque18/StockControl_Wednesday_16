@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="Class\Category.cs" />
     <Compile Include="DAO\CategoryDAO.cs" />
+    <Compile Include="FormStockEdition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStockEdition.Designer.cs">
+      <DependentUpon>FormStockEdition.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,9 @@
     <Compile Include="Helper\EmailHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormStockEdition.resx">
+      <DependentUpon>FormStockEdition.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -68,6 +77,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -84,6 +94,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Icons\disquete.jpg" />
+    <None Include="Icons\Next_icon%28old%29 - Copia.jpeg" />
     <Content Include="Icons\Sign_in_icon%28old%29.jpeg" />
     <Content Include="Icons\Next_icon%28old%29.jpeg" />
     <Content Include="Icons\Report_icon%28old%29.jpeg" />
