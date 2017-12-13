@@ -53,7 +53,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(133, 41);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(204, 22);
             this.textBox1.TabIndex = 2;
@@ -62,7 +62,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(65, 96);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(685, 314);
             this.dataGridView1.TabIndex = 10;
@@ -71,9 +71,8 @@
             // 
             this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.Image = global::StockControl.Properties.Resources.Add_icon_old;
             this.btnAdd.Location = new System.Drawing.Point(425, 428);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 63);
             this.btnAdd.TabIndex = 12;
@@ -85,7 +84,7 @@
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBack.Image = global::StockControl.Properties.Resources.BackIcon3;
             this.btnBack.Location = new System.Drawing.Point(37, 428);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(72, 63);
             this.btnBack.TabIndex = 11;
@@ -95,9 +94,8 @@
             // 
             this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.Image = global::StockControl.Properties.Resources.DeleteIcon;
             this.btnDelete.Location = new System.Drawing.Point(665, 428);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(72, 63);
             this.btnDelete.TabIndex = 9;
@@ -107,9 +105,8 @@
             // 
             this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.Image = global::StockControl.Properties.Resources.Edit_icon_old1;
             this.btnEdit.Location = new System.Drawing.Point(545, 428);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 63);
             this.btnEdit.TabIndex = 8;
@@ -121,7 +118,7 @@
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.Image = global::StockControl.Properties.Resources.Search_icon_old1;
             this.btnSearch.Location = new System.Drawing.Point(365, 33);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(40, 37);
             this.btnSearch.TabIndex = 3;
@@ -140,7 +137,7 @@
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblName);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormStockExibition";
             this.Text = "FormStockExibition";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
