@@ -63,6 +63,16 @@ namespace StockControl.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Add_icon_old_ {
+            get {
+                object obj = ResourceManager.GetObject("Add_icon(old)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Delete_icon_old_ {
             get {
                 object obj = ResourceManager.GetObject("Delete_icon(old)", resourceCulture);
@@ -83,9 +93,49 @@ namespace StockControl.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Edit_icon_old_ {
+            get {
+                object obj = ResourceManager.GetObject("Edit_icon(old)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Edit_icon_old_1 {
+            get {
+                object obj = ResourceManager.GetObject("Edit_icon(old)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Next_icon_old____Copia {
             get {
                 object obj = ResourceManager.GetObject("Next_icon(old) - Copia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Search_icon_old_ {
+            get {
+                object obj = ResourceManager.GetObject("Search_icon(old)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Search_icon_old_1 {
+            get {
+                object obj = ResourceManager.GetObject("Search_icon(old)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

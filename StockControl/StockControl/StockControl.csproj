@@ -54,6 +54,12 @@
     <Compile Include="FormStockEdition.Designer.cs">
       <DependentUpon>FormStockEdition.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormStockExibition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStockExibition.Designer.cs">
+      <DependentUpon>FormStockExibition.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormStockEdition.resx">
       <DependentUpon>FormStockEdition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStockExibition.resx">
+      <DependentUpon>FormStockExibition.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
