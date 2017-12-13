@@ -41,15 +41,10 @@
             this.lblUserProfile = new System.Windows.Forms.Label();
             this.cmbUserProfile = new System.Windows.Forms.ComboBox();
             this.ckbUserActive = new System.Windows.Forms.CheckBox();
-            this.btnUserProfilePhoto2 = new System.Windows.Forms.Button();
             this.btnUserDeleteProfile = new System.Windows.Forms.Button();
             this.btnUserSaveProfile = new System.Windows.Forms.Button();
             this.btnUserBackPages = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnUserSave = new System.Windows.Forms.Button();
-            this.btnUserBackProfile = new System.Windows.Forms.Button();
-            this.btnUserBackPage = new System.Windows.Forms.Button();
-            this.btnUserProfilePhoto = new System.Windows.Forms.Button();
+            this.btnUserPhotoProfile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblUserName
@@ -163,15 +158,6 @@
             this.ckbUserActive.TabIndex = 11;
             this.ckbUserActive.UseVisualStyleBackColor = true;
             // 
-            // btnUserProfilePhoto2
-            // 
-            this.btnUserProfilePhoto2.BackColor = System.Drawing.SystemColors.Control;
-            this.btnUserProfilePhoto2.Location = new System.Drawing.Point(29, 27);
-            this.btnUserProfilePhoto2.Name = "btnUserProfilePhoto2";
-            this.btnUserProfilePhoto2.Size = new System.Drawing.Size(303, 312);
-            this.btnUserProfilePhoto2.TabIndex = 12;
-            this.btnUserProfilePhoto2.UseVisualStyleBackColor = false;
-            // 
             // btnUserDeleteProfile
             // 
             this.btnUserDeleteProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnUserDeleteProfile.Image")));
@@ -184,7 +170,7 @@
             // btnUserSaveProfile
             // 
             this.btnUserSaveProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnUserSaveProfile.Image")));
-            this.btnUserSaveProfile.Location = new System.Drawing.Point(276, 354);
+            this.btnUserSaveProfile.Location = new System.Drawing.Point(287, 354);
             this.btnUserSaveProfile.Name = "btnUserSaveProfile";
             this.btnUserSaveProfile.Size = new System.Drawing.Size(56, 54);
             this.btnUserSaveProfile.TabIndex = 14;
@@ -199,59 +185,24 @@
             this.btnUserBackPages.TabIndex = 15;
             this.btnUserBackPages.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnUserPhotoProfile
             // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(29, 354);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 54);
-            this.button1.TabIndex = 13;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // btnUserSave
-            // 
-            this.btnUserSave.Image = ((System.Drawing.Image)(resources.GetObject("btnUserSave.Image")));
-            this.btnUserSave.Location = new System.Drawing.Point(276, 354);
-            this.btnUserSave.Name = "btnUserSave";
-            this.btnUserSave.Size = new System.Drawing.Size(56, 54);
-            this.btnUserSave.TabIndex = 14;
-            this.btnUserSave.UseVisualStyleBackColor = true;
-            // 
-            // btnUserBackProfile
-            // 
-            this.btnUserBackProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnUserBackProfile.Image")));
-            this.btnUserBackProfile.Location = new System.Drawing.Point(12, 516);
-            this.btnUserBackProfile.Name = "btnUserBackProfile";
-            this.btnUserBackProfile.Size = new System.Drawing.Size(83, 74);
-            this.btnUserBackProfile.TabIndex = 15;
-            this.btnUserBackProfile.UseVisualStyleBackColor = true;
-            // 
-            // btnUserBackPage
-            // 
-            this.btnUserBackPage.Location = new System.Drawing.Point(12, 516);
-            this.btnUserBackPage.Name = "btnUserBackPage";
-            this.btnUserBackPage.Size = new System.Drawing.Size(83, 74);
-            this.btnUserBackPage.TabIndex = 15;
-            this.btnUserBackPage.UseVisualStyleBackColor = true;
-            // 
-            // btnUserProfilePhoto
-            // 
-            this.btnUserProfilePhoto.BackColor = System.Drawing.SystemColors.Control;
-            this.btnUserProfilePhoto.Location = new System.Drawing.Point(29, 27);
-            this.btnUserProfilePhoto.Name = "btnUserProfilePhoto";
-            this.btnUserProfilePhoto.Size = new System.Drawing.Size(303, 312);
-            this.btnUserProfilePhoto.TabIndex = 12;
-            this.btnUserProfilePhoto.UseVisualStyleBackColor = false;
+            this.btnUserPhotoProfile.Image = global::StockControl.Properties.Resources.UserIcon2;
+            this.btnUserPhotoProfile.Location = new System.Drawing.Point(29, 32);
+            this.btnUserPhotoProfile.Name = "btnUserPhotoProfile";
+            this.btnUserPhotoProfile.Size = new System.Drawing.Size(314, 298);
+            this.btnUserPhotoProfile.TabIndex = 16;
+            this.btnUserPhotoProfile.UseVisualStyleBackColor = true;
             // 
             // FormUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(772, 602);
+            this.Controls.Add(this.btnUserPhotoProfile);
             this.Controls.Add(this.btnUserBackPages);
             this.Controls.Add(this.btnUserSaveProfile);
             this.Controls.Add(this.btnUserDeleteProfile);
-            this.Controls.Add(this.btnUserProfilePhoto2);
             this.Controls.Add(this.ckbUserActive);
             this.Controls.Add(this.cmbUserProfile);
             this.Controls.Add(this.lblUserActive);
@@ -285,14 +236,9 @@
         private System.Windows.Forms.Label lblUserProfile;
         private System.Windows.Forms.ComboBox cmbUserProfile;
         private System.Windows.Forms.CheckBox ckbUserActive;
-        private System.Windows.Forms.Button btnUserProfilePhoto2;
         private System.Windows.Forms.Button btnUserDeleteProfile;
         private System.Windows.Forms.Button btnUserSaveProfile;
         private System.Windows.Forms.Button btnUserBackPages;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnUserSave;
-        private System.Windows.Forms.Button btnUserBackProfile;
-        private System.Windows.Forms.Button btnUserBackPage;
-        private System.Windows.Forms.Button btnUserProfilePhoto;
+        private System.Windows.Forms.Button btnUserPhotoProfile;
     }
 }

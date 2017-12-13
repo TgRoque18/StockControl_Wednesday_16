@@ -90,11 +90,17 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -106,12 +112,13 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\DeleteIcon.png" />
     <None Include="Resources\BackIcon3.png" />
     <None Include="Resources\SaveIcon1.png" />
     <None Include="Resources\SaveIcon.png" />
     <None Include="Resources\UserIcon2.png" />
     <None Include="Resources\UserIcon.png" />
-    <None Include="Icons\Save_Icon%28old%29.jpg" />
+    <None Include="Icons\disquete.jpg" />
     <None Include="Icons\Next_icon%28old%29 - Copia.jpeg" />
     <Content Include="Icons\Sign_in_icon%28old%29.jpeg" />
     <Content Include="Icons\Next_icon%28old%29.jpeg" />

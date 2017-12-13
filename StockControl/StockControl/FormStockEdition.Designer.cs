@@ -43,9 +43,10 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(37, 54);
+            this.lblName.Location = new System.Drawing.Point(49, 66);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(50, 19);
+            this.lblName.Size = new System.Drawing.Size(63, 22);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Nome:";
             // 
@@ -53,9 +54,10 @@
             // 
             this.lblAmount.AutoSize = true;
             this.lblAmount.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmount.Location = new System.Drawing.Point(37, 104);
+            this.lblAmount.Location = new System.Drawing.Point(49, 128);
+            this.lblAmount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAmount.Name = "lblAmount";
-            this.lblAmount.Size = new System.Drawing.Size(82, 19);
+            this.lblAmount.Size = new System.Drawing.Size(106, 22);
             this.lblAmount.TabIndex = 1;
             this.lblAmount.Text = "Quantidade:";
             // 
@@ -63,72 +65,79 @@
             // 
             this.lblActive.AutoSize = true;
             this.lblActive.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActive.Location = new System.Drawing.Point(42, 154);
+            this.lblActive.Location = new System.Drawing.Point(56, 190);
+            this.lblActive.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblActive.Name = "lblActive";
-            this.lblActive.Size = new System.Drawing.Size(45, 19);
+            this.lblActive.Size = new System.Drawing.Size(61, 22);
             this.lblActive.TabIndex = 2;
             this.lblActive.Text = "Ativo:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(143, 53);
+            this.textBox1.Location = new System.Drawing.Point(191, 65);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 20);
+            this.textBox1.Size = new System.Drawing.Size(257, 22);
             this.textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(143, 103);
+            this.textBox2.Location = new System.Drawing.Point(191, 127);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 20);
+            this.textBox2.Size = new System.Drawing.Size(257, 22);
             this.textBox2.TabIndex = 4;
             // 
             // ckbActive
             // 
             this.ckbActive.AutoSize = true;
-            this.ckbActive.Location = new System.Drawing.Point(143, 158);
+            this.ckbActive.Location = new System.Drawing.Point(191, 194);
+            this.ckbActive.Margin = new System.Windows.Forms.Padding(4);
             this.ckbActive.Name = "ckbActive";
-            this.ckbActive.Size = new System.Drawing.Size(15, 14);
+            this.ckbActive.Size = new System.Drawing.Size(18, 17);
             this.ckbActive.TabIndex = 5;
             this.ckbActive.UseVisualStyleBackColor = true;
             // 
             // btnDelete
             // 
-            this.btnDelete.BackgroundImage = global::StockControl.Properties.Resources.Delete_icon_old_;
             this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.Location = new System.Drawing.Point(399, 238);
+            this.btnDelete.Image = global::StockControl.Properties.Resources.DeleteIcon;
+            this.btnDelete.Location = new System.Drawing.Point(532, 293);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(54, 51);
+            this.btnDelete.Size = new System.Drawing.Size(72, 63);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
-            this.btnSave.BackgroundImage = global::StockControl.Properties.Resources.disquete;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Location = new System.Drawing.Point(226, 238);
+            this.btnSave.Image = global::StockControl.Properties.Resources.SaveIcon1;
+            this.btnSave.Location = new System.Drawing.Point(301, 293);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(56, 51);
+            this.btnSave.Size = new System.Drawing.Size(75, 63);
             this.btnSave.TabIndex = 7;
             this.btnSave.UseVisualStyleBackColor = true;
             // 
             // btnBack
             // 
-            this.btnBack.BackgroundImage = global::StockControl.Properties.Resources.Next_icon_old____Copia;
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.Location = new System.Drawing.Point(65, 238);
+            this.btnBack.Image = global::StockControl.Properties.Resources.BackIcon3;
+            this.btnBack.Location = new System.Drawing.Point(87, 293);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(54, 51);
+            this.btnBack.Size = new System.Drawing.Size(72, 63);
             this.btnBack.TabIndex = 6;
             this.btnBack.UseVisualStyleBackColor = true;
             // 
             // FormStockEdition
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(520, 301);
+            this.ClientSize = new System.Drawing.Size(693, 370);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnBack);
@@ -138,6 +147,7 @@
             this.Controls.Add(this.lblActive);
             this.Controls.Add(this.lblAmount);
             this.Controls.Add(this.lblName);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormStockEdition";
             this.Text = "FormStockEdition";
             this.ResumeLayout(false);
