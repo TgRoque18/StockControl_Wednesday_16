@@ -43,10 +43,9 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(49, 66);
-            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Location = new System.Drawing.Point(37, 54);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(63, 22);
+            this.lblName.Size = new System.Drawing.Size(50, 19);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Nome:";
             // 
@@ -54,10 +53,9 @@
             // 
             this.lblAmount.AutoSize = true;
             this.lblAmount.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmount.Location = new System.Drawing.Point(49, 128);
-            this.lblAmount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAmount.Location = new System.Drawing.Point(37, 131);
             this.lblAmount.Name = "lblAmount";
-            this.lblAmount.Size = new System.Drawing.Size(106, 22);
+            this.lblAmount.Size = new System.Drawing.Size(82, 19);
             this.lblAmount.TabIndex = 1;
             this.lblAmount.Text = "Quantidade:";
             // 
@@ -65,36 +63,32 @@
             // 
             this.lblActive.AutoSize = true;
             this.lblActive.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActive.Location = new System.Drawing.Point(56, 190);
-            this.lblActive.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblActive.Location = new System.Drawing.Point(37, 194);
             this.lblActive.Name = "lblActive";
-            this.lblActive.Size = new System.Drawing.Size(61, 22);
+            this.lblActive.Size = new System.Drawing.Size(45, 19);
             this.lblActive.TabIndex = 2;
             this.lblActive.Text = "Ativo:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(191, 65);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Location = new System.Drawing.Point(41, 76);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(257, 22);
+            this.textBox1.Size = new System.Drawing.Size(194, 20);
             this.textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(191, 127);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2.Location = new System.Drawing.Point(41, 153);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(257, 22);
+            this.textBox2.Size = new System.Drawing.Size(194, 20);
             this.textBox2.TabIndex = 4;
             // 
             // ckbActive
             // 
             this.ckbActive.AutoSize = true;
-            this.ckbActive.Location = new System.Drawing.Point(191, 194);
-            this.ckbActive.Margin = new System.Windows.Forms.Padding(4);
+            this.ckbActive.Location = new System.Drawing.Point(143, 198);
             this.ckbActive.Name = "ckbActive";
-            this.ckbActive.Size = new System.Drawing.Size(18, 17);
+            this.ckbActive.Size = new System.Drawing.Size(15, 14);
             this.ckbActive.TabIndex = 5;
             this.ckbActive.UseVisualStyleBackColor = true;
             // 
@@ -102,22 +96,18 @@
             // 
             this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.Image = global::StockControl.Properties.Resources.DeleteIcon;
-            this.btnDelete.Location = new System.Drawing.Point(532, 293);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDelete.Location = new System.Drawing.Point(452, 302);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(72, 63);
+            this.btnDelete.Size = new System.Drawing.Size(35, 35);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Image = global::StockControl.Properties.Resources.SaveIcon1;
-            this.btnSave.Location = new System.Drawing.Point(301, 293);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Location = new System.Drawing.Point(251, 302);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 63);
+            this.btnSave.Size = new System.Drawing.Size(35, 35);
             this.btnSave.TabIndex = 7;
             this.btnSave.UseVisualStyleBackColor = true;
             // 
@@ -125,19 +115,17 @@
             // 
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.Image = global::StockControl.Properties.Resources.BackIcon3;
-            this.btnBack.Location = new System.Drawing.Point(87, 293);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBack.Location = new System.Drawing.Point(41, 302);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(72, 63);
+            this.btnBack.Size = new System.Drawing.Size(35, 35);
             this.btnBack.TabIndex = 6;
             this.btnBack.UseVisualStyleBackColor = true;
             // 
             // FormStockEdition
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(693, 370);
+            this.ClientSize = new System.Drawing.Size(524, 372);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnBack);
@@ -147,7 +135,6 @@
             this.Controls.Add(this.lblActive);
             this.Controls.Add(this.lblAmount);
             this.Controls.Add(this.lblName);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormStockEdition";
             this.Text = "FormStockEdition";
             this.ResumeLayout(false);
