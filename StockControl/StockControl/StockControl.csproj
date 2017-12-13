@@ -48,17 +48,17 @@
   <ItemGroup>
     <Compile Include="Class\Category.cs" />
     <Compile Include="DAO\CategoryDAO.cs" />
-    <Compile Include="FormStockEdition.cs">
+    <Compile Include="Forms\StockDetailsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormStockEdition.Designer.cs">
-      <DependentUpon>FormStockEdition.cs</DependentUpon>
+    <Compile Include="Forms\StockDetailsForm.Designer.cs">
+      <DependentUpon>StockDetailsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormStockExibition.cs">
+    <Compile Include="Forms\StockAllForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormStockExibition.Designer.cs">
-      <DependentUpon>FormStockExibition.cs</DependentUpon>
+    <Compile Include="Forms\StockAllForm.Designer.cs">
+      <DependentUpon>StockAllForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormLog.cs">
       <SubType>Form</SubType>
@@ -87,11 +87,11 @@
     <Compile Include="Helper\EmailHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormStockEdition.resx">
-      <DependentUpon>FormStockEdition.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\StockDetailsForm.resx">
+      <DependentUpon>StockDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormStockExibition.resx">
-      <DependentUpon>FormStockExibition.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\StockAllForm.resx">
+      <DependentUpon>StockAllForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormUserView.resx">
       <DependentUpon>FormUserView.cs</DependentUpon>
