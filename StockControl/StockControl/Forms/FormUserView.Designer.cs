@@ -55,7 +55,7 @@
             // 
             this.cmbUserProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cmbUserProfile.FormattingEnabled = true;
-            this.cmbUserProfile.Location = new System.Drawing.Point(412, 463);
+            this.cmbUserProfile.Location = new System.Drawing.Point(401, 464);
             this.cmbUserProfile.Name = "cmbUserProfile";
             this.cmbUserProfile.Size = new System.Drawing.Size(245, 33);
             this.cmbUserProfile.TabIndex = 27;
@@ -74,7 +74,7 @@
             // 
             this.lblUserProfile.AutoSize = true;
             this.lblUserProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.lblUserProfile.Location = new System.Drawing.Point(407, 425);
+            this.lblUserProfile.Location = new System.Drawing.Point(396, 421);
             this.lblUserProfile.Name = "lblUserProfile";
             this.lblUserProfile.Size = new System.Drawing.Size(62, 26);
             this.lblUserProfile.TabIndex = 25;
@@ -83,7 +83,7 @@
             // txbUserEmail
             // 
             this.txbUserEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.txbUserEmail.Location = new System.Drawing.Point(412, 374);
+            this.txbUserEmail.Location = new System.Drawing.Point(401, 374);
             this.txbUserEmail.Name = "txbUserEmail";
             this.txbUserEmail.Size = new System.Drawing.Size(359, 32);
             this.txbUserEmail.TabIndex = 20;
@@ -92,7 +92,7 @@
             // 
             this.lblUserEmail.AutoSize = true;
             this.lblUserEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.lblUserEmail.Location = new System.Drawing.Point(407, 324);
+            this.lblUserEmail.Location = new System.Drawing.Point(396, 330);
             this.lblUserEmail.Name = "lblUserEmail";
             this.lblUserEmail.Size = new System.Drawing.Size(68, 26);
             this.lblUserEmail.TabIndex = 19;
