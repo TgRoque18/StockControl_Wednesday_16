@@ -66,6 +66,12 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUser.Designer.cs">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Helper\EmailHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,16 +84,13 @@
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormUser.resx">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -103,7 +106,12 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <None Include="Icons\disquete.jpg" />
+    <None Include="Resources\BackIcon3.png" />
+    <None Include="Resources\SaveIcon1.png" />
+    <None Include="Resources\SaveIcon.png" />
+    <None Include="Resources\UserIcon2.png" />
+    <None Include="Resources\UserIcon.png" />
+    <None Include="Icons\Save_Icon%28old%29.jpg" />
     <None Include="Icons\Next_icon%28old%29 - Copia.jpeg" />
     <Content Include="Icons\Sign_in_icon%28old%29.jpeg" />
     <Content Include="Icons\Next_icon%28old%29.jpeg" />
