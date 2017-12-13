@@ -1,6 +1,6 @@
 ﻿namespace StockControl
 {
-    partial class FormUser
+    partial class UserDetailsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUser));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserDetailsForm));
             this.lblUserName = new System.Windows.Forms.Label();
             this.tbxUserName = new System.Windows.Forms.TextBox();
             this.txbUserEmail = new System.Windows.Forms.TextBox();
@@ -51,7 +51,7 @@
             // 
             this.lblUserName.AutoSize = true;
             this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.lblUserName.Location = new System.Drawing.Point(383, 14);
+            this.lblUserName.Location = new System.Drawing.Point(298, 32);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(71, 26);
             this.lblUserName.TabIndex = 0;
@@ -60,7 +60,7 @@
             // tbxUserName
             // 
             this.tbxUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.tbxUserName.Location = new System.Drawing.Point(388, 63);
+            this.tbxUserName.Location = new System.Drawing.Point(303, 81);
             this.tbxUserName.Name = "tbxUserName";
             this.tbxUserName.Size = new System.Drawing.Size(359, 32);
             this.tbxUserName.TabIndex = 1;
@@ -68,7 +68,7 @@
             // txbUserEmail
             // 
             this.txbUserEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.txbUserEmail.Location = new System.Drawing.Point(388, 164);
+            this.txbUserEmail.Location = new System.Drawing.Point(303, 182);
             this.txbUserEmail.Name = "txbUserEmail";
             this.txbUserEmail.Size = new System.Drawing.Size(359, 32);
             this.txbUserEmail.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             this.lblUserEmail.AutoSize = true;
             this.lblUserEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.lblUserEmail.Location = new System.Drawing.Point(383, 114);
+            this.lblUserEmail.Location = new System.Drawing.Point(298, 132);
             this.lblUserEmail.Name = "lblUserEmail";
             this.lblUserEmail.Size = new System.Drawing.Size(68, 26);
             this.lblUserEmail.TabIndex = 2;
@@ -86,7 +86,7 @@
             // txbUserRepassword
             // 
             this.txbUserRepassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.txbUserRepassword.Location = new System.Drawing.Point(388, 376);
+            this.txbUserRepassword.Location = new System.Drawing.Point(303, 394);
             this.txbUserRepassword.Name = "txbUserRepassword";
             this.txbUserRepassword.Size = new System.Drawing.Size(304, 32);
             this.txbUserRepassword.TabIndex = 7;
@@ -95,7 +95,7 @@
             // 
             this.lblUserRepassword.AutoSize = true;
             this.lblUserRepassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.lblUserRepassword.Location = new System.Drawing.Point(383, 323);
+            this.lblUserRepassword.Location = new System.Drawing.Point(298, 341);
             this.lblUserRepassword.Name = "lblUserRepassword";
             this.lblUserRepassword.Size = new System.Drawing.Size(207, 26);
             this.lblUserRepassword.TabIndex = 6;
@@ -104,7 +104,7 @@
             // txbUserPassword
             // 
             this.txbUserPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.txbUserPassword.Location = new System.Drawing.Point(388, 267);
+            this.txbUserPassword.Location = new System.Drawing.Point(303, 285);
             this.txbUserPassword.Name = "txbUserPassword";
             this.txbUserPassword.Size = new System.Drawing.Size(304, 32);
             this.txbUserPassword.TabIndex = 5;
@@ -113,7 +113,7 @@
             // 
             this.lblUserPassword.AutoSize = true;
             this.lblUserPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.lblUserPassword.Location = new System.Drawing.Point(383, 219);
+            this.lblUserPassword.Location = new System.Drawing.Point(298, 237);
             this.lblUserPassword.Name = "lblUserPassword";
             this.lblUserPassword.Size = new System.Drawing.Size(173, 26);
             this.lblUserPassword.TabIndex = 4;
@@ -123,7 +123,7 @@
             // 
             this.lblUserActive.AutoSize = true;
             this.lblUserActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.lblUserActive.Location = new System.Drawing.Point(383, 530);
+            this.lblUserActive.Location = new System.Drawing.Point(298, 469);
             this.lblUserActive.Name = "lblUserActive";
             this.lblUserActive.Size = new System.Drawing.Size(91, 26);
             this.lblUserActive.TabIndex = 9;
@@ -133,7 +133,7 @@
             // 
             this.lblUserProfile.AutoSize = true;
             this.lblUserProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.lblUserProfile.Location = new System.Drawing.Point(383, 431);
+            this.lblUserProfile.Location = new System.Drawing.Point(623, 354);
             this.lblUserProfile.Name = "lblUserProfile";
             this.lblUserProfile.Size = new System.Drawing.Size(184, 26);
             this.lblUserProfile.TabIndex = 8;
@@ -143,7 +143,7 @@
             // 
             this.cmbUserProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cmbUserProfile.FormattingEnabled = true;
-            this.cmbUserProfile.Location = new System.Drawing.Point(388, 469);
+            this.cmbUserProfile.Location = new System.Drawing.Point(628, 392);
             this.cmbUserProfile.Name = "cmbUserProfile";
             this.cmbUserProfile.Size = new System.Drawing.Size(245, 33);
             this.cmbUserProfile.TabIndex = 10;
@@ -152,7 +152,7 @@
             // 
             this.ckbUserActive.AutoSize = true;
             this.ckbUserActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ckbUserActive.Location = new System.Drawing.Point(516, 538);
+            this.ckbUserActive.Location = new System.Drawing.Point(422, 478);
             this.ckbUserActive.Name = "ckbUserActive";
             this.ckbUserActive.Size = new System.Drawing.Size(18, 17);
             this.ckbUserActive.TabIndex = 11;
@@ -161,7 +161,7 @@
             // btnUserDeleteProfile
             // 
             this.btnUserDeleteProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnUserDeleteProfile.Image")));
-            this.btnUserDeleteProfile.Location = new System.Drawing.Point(29, 354);
+            this.btnUserDeleteProfile.Location = new System.Drawing.Point(740, 536);
             this.btnUserDeleteProfile.Name = "btnUserDeleteProfile";
             this.btnUserDeleteProfile.Size = new System.Drawing.Size(56, 54);
             this.btnUserDeleteProfile.TabIndex = 13;
@@ -170,7 +170,7 @@
             // btnUserSaveProfile
             // 
             this.btnUserSaveProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnUserSaveProfile.Image")));
-            this.btnUserSaveProfile.Location = new System.Drawing.Point(287, 354);
+            this.btnUserSaveProfile.Location = new System.Drawing.Point(824, 536);
             this.btnUserSaveProfile.Name = "btnUserSaveProfile";
             this.btnUserSaveProfile.Size = new System.Drawing.Size(56, 54);
             this.btnUserSaveProfile.TabIndex = 14;
@@ -188,17 +188,17 @@
             // btnUserPhotoProfile
             // 
             this.btnUserPhotoProfile.Image = global::StockControl.Properties.Resources.UserIcon2;
-            this.btnUserPhotoProfile.Location = new System.Drawing.Point(29, 32);
+            this.btnUserPhotoProfile.Location = new System.Drawing.Point(22, 32);
             this.btnUserPhotoProfile.Name = "btnUserPhotoProfile";
-            this.btnUserPhotoProfile.Size = new System.Drawing.Size(314, 298);
+            this.btnUserPhotoProfile.Size = new System.Drawing.Size(234, 242);
             this.btnUserPhotoProfile.TabIndex = 16;
             this.btnUserPhotoProfile.UseVisualStyleBackColor = true;
             // 
-            // FormUser
+            // UserDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(772, 602);
+            this.ClientSize = new System.Drawing.Size(892, 602);
             this.Controls.Add(this.btnUserPhotoProfile);
             this.Controls.Add(this.btnUserBackPages);
             this.Controls.Add(this.btnUserSaveProfile);
@@ -215,8 +215,8 @@
             this.Controls.Add(this.lblUserEmail);
             this.Controls.Add(this.tbxUserName);
             this.Controls.Add(this.lblUserName);
-            this.Name = "FormUser";
-            this.Text = "FormUser";
+            this.Name = "UserDetailsForm";
+            this.Text = "Usuário";
             this.ResumeLayout(false);
             this.PerformLayout();
 

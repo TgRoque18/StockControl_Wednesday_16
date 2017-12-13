@@ -66,11 +66,11 @@
     <Compile Include="Forms\FormLog.Designer.cs">
       <DependentUpon>FormLog.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormUserView.cs">
+    <Compile Include="Forms\UserAllForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormUserView.Designer.cs">
-      <DependentUpon>FormUserView.cs</DependentUpon>
+    <Compile Include="Forms\UserAllForm.Designer.cs">
+      <DependentUpon>UserAllForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
@@ -78,29 +78,32 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormUserEdit.cs">
+    <Compile Include="Forms\UserDetailsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormUserEdit.Designer.cs">
-      <DependentUpon>FormUserEdit.cs</DependentUpon>
+    <Compile Include="Forms\UserDetailsForm.Designer.cs">
+      <DependentUpon>UserDetailsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\EmailHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormLog.resx">
+      <DependentUpon>FormLog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\StockDetailsForm.resx">
       <DependentUpon>StockDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\StockAllForm.resx">
       <DependentUpon>StockAllForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormUserView.resx">
-      <DependentUpon>FormUserView.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\UserAllForm.resx">
+      <DependentUpon>UserAllForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormUserEdit.resx">
-      <DependentUpon>FormUserEdit.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\UserDetailsForm.resx">
+      <DependentUpon>UserDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

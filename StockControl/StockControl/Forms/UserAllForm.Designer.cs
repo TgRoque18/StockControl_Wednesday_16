@@ -1,6 +1,6 @@
 ﻿namespace StockControl.Forms
 {
-    partial class FormLog
+    partial class UserAllForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // FormLog
+            // UserAllForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(532, 453);
-            this.Name = "FormLog";
-            this.Text = "FormLog";
+            this.ClientSize = new System.Drawing.Size(627, 512);
+            this.Name = "UserAllForm";
+            this.Text = "FormUserView";
             this.ResumeLayout(false);
 
         }
