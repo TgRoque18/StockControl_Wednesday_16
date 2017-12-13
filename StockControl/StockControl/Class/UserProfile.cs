@@ -6,37 +6,22 @@ using System.Threading.Tasks;
 
 namespace StockControl.Class
 {
-    class Product
+   public class UserProfile
     {
         private int id;
         private string name;
-        private float price;
-        private Category category;
         private bool active;
 
-        internal Category Category
+        public bool Active
         {
             get
             {
-                return category;
+                return active;
             }
 
             set
             {
-                category = value;
-            }
-        }
-
-        public float Price
-        {
-            get
-            {
-                return price;
-            }
-
-            set
-            {
-                price = value;
+                active = value;
             }
         }
 
@@ -65,26 +50,11 @@ namespace StockControl.Class
                 id = value;
             }
         }
-
-        public bool Active
-        {
-            get
-            {
-                return active;
-            }
-
-            set
-            {
-                active = value;
-            }
-        }
-
-        public Product(string name,float price, Category category,bool active)
+       public UserProfile(string name,bool active)
         {
             this.Name = name;
-            this.Price = price;
-            this.Category = category;
             this.Active = active;
         }
+
     }
 }
