@@ -66,10 +66,10 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormUser.cs">
+    <Compile Include="Forms\FormUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormUser.Designer.cs">
+    <Compile Include="Forms\FormUser.Designer.cs">
       <DependentUpon>FormUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\EmailHelper.cs" />
@@ -84,7 +84,7 @@
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormUser.resx">
+    <EmbeddedResource Include="Forms\FormUser.resx">
       <DependentUpon>FormUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
