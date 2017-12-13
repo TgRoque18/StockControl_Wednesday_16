@@ -60,17 +60,23 @@
     <Compile Include="FormStockExibition.Designer.cs">
       <DependentUpon>FormStockExibition.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormUserView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUserView.Designer.cs">
+      <DependentUpon>FormUserView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormUser.cs">
+    <Compile Include="Forms\FormUserEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormUser.Designer.cs">
-      <DependentUpon>FormUser.cs</DependentUpon>
+    <Compile Include="Forms\FormUserEdit.Designer.cs">
+      <DependentUpon>FormUserEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\EmailHelper.cs" />
     <Compile Include="Program.cs" />
@@ -81,11 +87,14 @@
     <EmbeddedResource Include="FormStockExibition.resx">
       <DependentUpon>FormStockExibition.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUserView.resx">
+      <DependentUpon>FormUserView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormUser.resx">
-      <DependentUpon>FormUser.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormUserEdit.resx">
+      <DependentUpon>FormUserEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
