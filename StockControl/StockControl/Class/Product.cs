@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace StockControl.Class
 {
-    class Product
-    {
+     public class Product {
         private int id;
         private string name;
         private float price;
         private Category category;
         private bool active;
 
-        internal Category Category
+        public Category Category
         {
             get
             {
