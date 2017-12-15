@@ -1,6 +1,6 @@
 ﻿namespace StockControl
 {
-    partial class FormStockEdition
+    partial class CategoryDetailsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,99 +29,81 @@
         private void InitializeComponent()
         {
             this.lblName = new System.Windows.Forms.Label();
-            this.lblAmount = new System.Windows.Forms.Label();
+            this.tbxName = new System.Windows.Forms.TextBox();
             this.lblActive = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.ckbActive = new System.Windows.Forms.CheckBox();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(37, 54);
+            this.lblName.Location = new System.Drawing.Point(8, 49);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(50, 19);
-            this.lblName.TabIndex = 0;
+            this.lblName.TabIndex = 3;
             this.lblName.Text = "Nome:";
             // 
-            // lblAmount
+            // tbxName
             // 
-            this.lblAmount.AutoSize = true;
-            this.lblAmount.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmount.Location = new System.Drawing.Point(37, 131);
-            this.lblAmount.Name = "lblAmount";
-            this.lblAmount.Size = new System.Drawing.Size(82, 19);
-            this.lblAmount.TabIndex = 1;
-            this.lblAmount.Text = "Quantidade:";
+            this.tbxName.Location = new System.Drawing.Point(12, 82);
+            this.tbxName.Name = "tbxName";
+            this.tbxName.Size = new System.Drawing.Size(216, 20);
+            this.tbxName.TabIndex = 4;
             // 
             // lblActive
             // 
             this.lblActive.AutoSize = true;
             this.lblActive.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActive.Location = new System.Drawing.Point(37, 194);
+            this.lblActive.Location = new System.Drawing.Point(13, 123);
             this.lblActive.Name = "lblActive";
             this.lblActive.Size = new System.Drawing.Size(45, 19);
-            this.lblActive.TabIndex = 2;
+            this.lblActive.TabIndex = 5;
             this.lblActive.Text = "Ativo:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(41, 76);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 20);
-            this.textBox1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(41, 153);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 20);
-            this.textBox2.TabIndex = 4;
             // 
             // ckbActive
             // 
             this.ckbActive.AutoSize = true;
-            this.ckbActive.Location = new System.Drawing.Point(88, 198);
+            this.ckbActive.Location = new System.Drawing.Point(73, 127);
             this.ckbActive.Name = "ckbActive";
             this.ckbActive.Size = new System.Drawing.Size(15, 14);
-            this.ckbActive.TabIndex = 5;
+            this.ckbActive.TabIndex = 6;
             this.ckbActive.UseVisualStyleBackColor = true;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.Location = new System.Drawing.Point(452, 325);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(35, 35);
-            this.btnDelete.TabIndex = 8;
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Location = new System.Drawing.Point(239, 325);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(35, 35);
-            this.btnSave.TabIndex = 7;
-            this.btnSave.UseVisualStyleBackColor = true;
             // 
             // btnBack
             // 
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.Location = new System.Drawing.Point(41, 325);
+            this.btnBack.Location = new System.Drawing.Point(23, 313);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(35, 35);
-            this.btnBack.TabIndex = 6;
+            this.btnBack.TabIndex = 16;
             this.btnBack.UseVisualStyleBackColor = true;
             // 
-            // FormStockEdition
+            // btnSave
+            // 
+            this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.Location = new System.Drawing.Point(240, 313);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(35, 35);
+            this.btnSave.TabIndex = 17;
+            this.btnSave.UseVisualStyleBackColor = true;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.Location = new System.Drawing.Point(445, 313);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(35, 35);
+            this.btnDelete.TabIndex = 18;
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // CategoryDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -130,13 +112,11 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.ckbActive);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblActive);
-            this.Controls.Add(this.lblAmount);
+            this.Controls.Add(this.tbxName);
             this.Controls.Add(this.lblName);
-            this.Name = "FormStockEdition";
-            this.Text = "FormStockEdition";
+            this.Name = "CategoryDetailsForm";
+            this.Text = "CategoryDetailsForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,10 +125,8 @@
         #endregion
 
         private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Label lblAmount;
+        private System.Windows.Forms.TextBox tbxName;
         private System.Windows.Forms.Label lblActive;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.CheckBox ckbActive;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnSave;
