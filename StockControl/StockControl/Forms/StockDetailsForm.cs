@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StockControl.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,5 +17,13 @@ namespace StockControl
         {
             InitializeComponent();
         }
+
+        private void pbxBack_Click(object sender, EventArgs e)
+        {
+            FormStockExibition stockAllForm = new FormStockExibition();
+            stockAllForm.Show();
+            this.Hide();
+        }
     }
 }
+

@@ -103,6 +103,16 @@ namespace StockControl.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Edit_icon_old_ {
+            get {
+                object obj = ResourceManager.GetObject("Edit_icon(old)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Report2_icon_old_ {
             get {
                 object obj = ResourceManager.GetObject("Report2_icon(old)", resourceCulture);

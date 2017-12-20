@@ -16,5 +16,19 @@ namespace StockControl
         {
             InitializeComponent();
         }
+
+        private void pbxSave_Click(object sender, EventArgs e)
+        {
+            FormStockEdition formStockEdition = new FormStockEdition();
+            formStockEdition.Show();
+            this.Hide();
+        }
+
+        private void pbxEdit_Click(object sender, EventArgs e)
+        {
+            FormStockEdition formStockEdition = new FormStockEdition();
+            formStockEdition.Show();
+            this.Hide();
+        }
     }
 }

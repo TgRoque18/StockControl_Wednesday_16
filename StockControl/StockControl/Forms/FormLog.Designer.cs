@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLog));
             this.dgvLogSearch = new System.Windows.Forms.DataGridView();
-            this.btnLogBackPages = new System.Windows.Forms.Button();
-            this.btnLogSearch = new System.Windows.Forms.Button();
             this.tbxLogSearch = new System.Windows.Forms.TextBox();
             this.lblLogSearch = new System.Windows.Forms.Label();
-            this.btnLgAdd = new System.Windows.Forms.Button();
-            this.btnLogEdit = new System.Windows.Forms.Button();
-            this.btnLogDelete = new System.Windows.Forms.Button();
+            this.pbxSearch = new System.Windows.Forms.PictureBox();
+            this.pbxBack = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLogSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvLogSearch
@@ -48,31 +48,13 @@
             this.dgvLogSearch.Size = new System.Drawing.Size(495, 215);
             this.dgvLogSearch.TabIndex = 17;
             // 
-            // btnLogBackPages
-            // 
-            this.btnLogBackPages.Location = new System.Drawing.Point(12, 317);
-            this.btnLogBackPages.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLogBackPages.Name = "btnLogBackPages";
-            this.btnLogBackPages.Size = new System.Drawing.Size(35, 35);
-            this.btnLogBackPages.TabIndex = 19;
-            this.btnLogBackPages.UseVisualStyleBackColor = true;
-            // 
-            // btnLogSearch
-            // 
-            this.btnLogSearch.Location = new System.Drawing.Point(332, 23);
-            this.btnLogSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLogSearch.Name = "btnLogSearch";
-            this.btnLogSearch.Size = new System.Drawing.Size(20, 20);
-            this.btnLogSearch.TabIndex = 22;
-            this.btnLogSearch.UseVisualStyleBackColor = true;
-            // 
             // tbxLogSearch
             // 
             this.tbxLogSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tbxLogSearch.Location = new System.Drawing.Point(112, 14);
             this.tbxLogSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxLogSearch.Name = "tbxLogSearch";
-            this.tbxLogSearch.Size = new System.Drawing.Size(191, 26);
+            this.tbxLogSearch.Size = new System.Drawing.Size(191, 23);
             this.tbxLogSearch.TabIndex = 21;
             // 
             // lblLogSearch
@@ -81,52 +63,45 @@
             this.lblLogSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblLogSearch.Location = new System.Drawing.Point(12, 20);
             this.lblLogSearch.Name = "lblLogSearch";
-            this.lblLogSearch.Size = new System.Drawing.Size(84, 20);
+            this.lblLogSearch.Size = new System.Drawing.Size(71, 17);
             this.lblLogSearch.TabIndex = 20;
             this.lblLogSearch.Text = "Pesquisar";
             // 
-            // btnLgAdd
+            // pbxSearch
             // 
-            this.btnLgAdd.Location = new System.Drawing.Point(373, 318);
-            this.btnLgAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLgAdd.Name = "btnLgAdd";
-            this.btnLgAdd.Size = new System.Drawing.Size(35, 35);
-            this.btnLgAdd.TabIndex = 25;
-            this.btnLgAdd.UseVisualStyleBackColor = true;
+            this.pbxSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxSearch.BackgroundImage")));
+            this.pbxSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbxSearch.Location = new System.Drawing.Point(320, 17);
+            this.pbxSearch.Name = "pbxSearch";
+            this.pbxSearch.Size = new System.Drawing.Size(20, 20);
+            this.pbxSearch.TabIndex = 31;
+            this.pbxSearch.TabStop = false;
             // 
-            // btnLogEdit
+            // pbxBack
             // 
-            this.btnLogEdit.Location = new System.Drawing.Point(425, 318);
-            this.btnLogEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLogEdit.Name = "btnLogEdit";
-            this.btnLogEdit.Size = new System.Drawing.Size(35, 35);
-            this.btnLogEdit.TabIndex = 24;
-            this.btnLogEdit.UseVisualStyleBackColor = true;
-            // 
-            // btnLogDelete
-            // 
-            this.btnLogDelete.Location = new System.Drawing.Point(476, 318);
-            this.btnLogDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLogDelete.Name = "btnLogDelete";
-            this.btnLogDelete.Size = new System.Drawing.Size(35, 35);
-            this.btnLogDelete.TabIndex = 23;
-            this.btnLogDelete.UseVisualStyleBackColor = true;
+            this.pbxBack.BackgroundImage = global::StockControl.Properties.Resources.BackIcon;
+            this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbxBack.Location = new System.Drawing.Point(35, 317);
+            this.pbxBack.Name = "pbxBack";
+            this.pbxBack.Size = new System.Drawing.Size(35, 35);
+            this.pbxBack.TabIndex = 24;
+            this.pbxBack.TabStop = false;
+            this.pbxBack.Click += new System.EventHandler(this.pbxBack_Click);
             // 
             // FormLog
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(523, 364);
-            this.Controls.Add(this.btnLgAdd);
-            this.Controls.Add(this.btnLogEdit);
-            this.Controls.Add(this.btnLogDelete);
-            this.Controls.Add(this.btnLogSearch);
+            this.Controls.Add(this.pbxSearch);
+            this.Controls.Add(this.pbxBack);
             this.Controls.Add(this.tbxLogSearch);
             this.Controls.Add(this.lblLogSearch);
-            this.Controls.Add(this.btnLogBackPages);
             this.Controls.Add(this.dgvLogSearch);
             this.Name = "FormLog";
             this.Text = "Log";
             ((System.ComponentModel.ISupportInitialize)(this.dgvLogSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,12 +110,9 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvLogSearch;
-        private System.Windows.Forms.Button btnLogBackPages;
-        private System.Windows.Forms.Button btnLogSearch;
         private System.Windows.Forms.TextBox tbxLogSearch;
         private System.Windows.Forms.Label lblLogSearch;
-        private System.Windows.Forms.Button btnLgAdd;
-        private System.Windows.Forms.Button btnLogEdit;
-        private System.Windows.Forms.Button btnLogDelete;
+        private System.Windows.Forms.PictureBox pbxBack;
+        private System.Windows.Forms.PictureBox pbxSearch;
     }
 }
