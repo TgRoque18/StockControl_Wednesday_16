@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserDetailsForm));
             this.lblUserDName = new System.Windows.Forms.Label();
             this.tbxUserDName = new System.Windows.Forms.TextBox();
             this.txbUserDEmail = new System.Windows.Forms.TextBox();
@@ -41,10 +40,14 @@
             this.lblUserDProfile = new System.Windows.Forms.Label();
             this.cmbUserDProfile = new System.Windows.Forms.ComboBox();
             this.ckbUserDActive = new System.Windows.Forms.CheckBox();
-            this.btnUserDBackPages = new System.Windows.Forms.Button();
-            this.btnUserDPhotoProfile = new System.Windows.Forms.Button();
-            this.btnUserDSaveProfile = new System.Windows.Forms.Button();
-            this.btnUserDDeleteProfile = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbxUserSaveProfile = new System.Windows.Forms.PictureBox();
+            this.pbxUserDeleteProfile = new System.Windows.Forms.PictureBox();
+            this.pbxUserBackPages = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxUserSaveProfile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxUserDeleteProfile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxUserBackPages)).BeginInit();
             this.SuspendLayout();
             // 
             // lblUserDName
@@ -164,54 +167,52 @@
             this.ckbUserDActive.TabIndex = 11;
             this.ckbUserDActive.UseVisualStyleBackColor = true;
             // 
-            // btnUserDBackPages
+            // pictureBox1
             // 
-            this.btnUserDBackPages.Image = global::StockControl.Properties.Resources.BackIcon;
-            this.btnUserDBackPages.Location = new System.Drawing.Point(12, 317);
-            this.btnUserDBackPages.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUserDBackPages.Name = "btnUserDBackPages";
-            this.btnUserDBackPages.Size = new System.Drawing.Size(35, 35);
-            this.btnUserDBackPages.TabIndex = 15;
-            this.btnUserDBackPages.UseVisualStyleBackColor = true;
+            this.pictureBox1.Image = global::StockControl.Properties.Resources.UserProfileIcon;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(110, 105);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
-            // btnUserDPhotoProfile
+            // pbxUserSaveProfile
             // 
-            this.btnUserDPhotoProfile.Image = global::StockControl.Properties.Resources.UserProfileIcon;
-            this.btnUserDPhotoProfile.Location = new System.Drawing.Point(12, 15);
-            this.btnUserDPhotoProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUserDPhotoProfile.Name = "btnUserDPhotoProfile";
-            this.btnUserDPhotoProfile.Size = new System.Drawing.Size(110, 105);
-            this.btnUserDPhotoProfile.TabIndex = 16;
-            this.btnUserDPhotoProfile.UseVisualStyleBackColor = true;
+            this.pbxUserSaveProfile.Image = global::StockControl.Properties.Resources.SaveIcon;
+            this.pbxUserSaveProfile.Location = new System.Drawing.Point(476, 317);
+            this.pbxUserSaveProfile.Name = "pbxUserSaveProfile";
+            this.pbxUserSaveProfile.Size = new System.Drawing.Size(35, 35);
+            this.pbxUserSaveProfile.TabIndex = 17;
+            this.pbxUserSaveProfile.TabStop = false;
+            this.pbxUserSaveProfile.Click += new System.EventHandler(this.pbxUserSaveProfile_Click);
             // 
-            // btnUserDSaveProfile
+            // pbxUserDeleteProfile
             // 
-            this.btnUserDSaveProfile.Image = global::StockControl.Properties.Resources.SaveIcon;
-            this.btnUserDSaveProfile.Location = new System.Drawing.Point(475, 317);
-            this.btnUserDSaveProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUserDSaveProfile.Name = "btnUserDSaveProfile";
-            this.btnUserDSaveProfile.Size = new System.Drawing.Size(35, 35);
-            this.btnUserDSaveProfile.TabIndex = 14;
-            this.btnUserDSaveProfile.UseVisualStyleBackColor = true;
+            this.pbxUserDeleteProfile.Image = global::StockControl.Properties.Resources.DeleteIcon;
+            this.pbxUserDeleteProfile.Location = new System.Drawing.Point(424, 317);
+            this.pbxUserDeleteProfile.Name = "pbxUserDeleteProfile";
+            this.pbxUserDeleteProfile.Size = new System.Drawing.Size(35, 35);
+            this.pbxUserDeleteProfile.TabIndex = 18;
+            this.pbxUserDeleteProfile.TabStop = false;
             // 
-            // btnUserDDeleteProfile
+            // pbxUserBackPages
             // 
-            this.btnUserDDeleteProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnUserDDeleteProfile.Image")));
-            this.btnUserDDeleteProfile.Location = new System.Drawing.Point(423, 317);
-            this.btnUserDDeleteProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUserDDeleteProfile.Name = "btnUserDDeleteProfile";
-            this.btnUserDDeleteProfile.Size = new System.Drawing.Size(35, 35);
-            this.btnUserDDeleteProfile.TabIndex = 13;
-            this.btnUserDDeleteProfile.UseVisualStyleBackColor = true;
+            this.pbxUserBackPages.Image = global::StockControl.Properties.Resources.BackIcon;
+            this.pbxUserBackPages.Location = new System.Drawing.Point(11, 317);
+            this.pbxUserBackPages.Name = "pbxUserBackPages";
+            this.pbxUserBackPages.Size = new System.Drawing.Size(35, 35);
+            this.pbxUserBackPages.TabIndex = 19;
+            this.pbxUserBackPages.TabStop = false;
+            this.pbxUserBackPages.Click += new System.EventHandler(this.pbxUserBackPages_Click);
             // 
             // UserDetailsForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(523, 364);
-            this.Controls.Add(this.btnUserDPhotoProfile);
-            this.Controls.Add(this.btnUserDBackPages);
-            this.Controls.Add(this.btnUserDSaveProfile);
-            this.Controls.Add(this.btnUserDDeleteProfile);
+            this.Controls.Add(this.pbxUserBackPages);
+            this.Controls.Add(this.pbxUserDeleteProfile);
+            this.Controls.Add(this.pbxUserSaveProfile);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ckbUserDActive);
             this.Controls.Add(this.cmbUserDProfile);
             this.Controls.Add(this.lblUserDActive);
@@ -227,6 +228,10 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserDetailsForm";
             this.Text = "Usuário";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxUserSaveProfile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxUserDeleteProfile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxUserBackPages)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,9 +251,9 @@
         private System.Windows.Forms.Label lblUserDProfile;
         private System.Windows.Forms.ComboBox cmbUserDProfile;
         private System.Windows.Forms.CheckBox ckbUserDActive;
-        private System.Windows.Forms.Button btnUserDDeleteProfile;
-        private System.Windows.Forms.Button btnUserDSaveProfile;
-        private System.Windows.Forms.Button btnUserDBackPages;
-        private System.Windows.Forms.Button btnUserDPhotoProfile;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbxUserSaveProfile;
+        private System.Windows.Forms.PictureBox pbxUserDeleteProfile;
+        private System.Windows.Forms.PictureBox pbxUserBackPages;
     }
 }

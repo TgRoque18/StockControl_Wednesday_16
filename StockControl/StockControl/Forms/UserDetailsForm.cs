@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StockControl.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace StockControl
         public UserDetailsForm()
         {
             InitializeComponent();
+        }
+
+        private void pbxUserBackPages_Click(object sender, EventArgs e)
+        {
+            MainForm mainform = new MainForm();
+            mainform.Show();
+            this.Hide();
+        }
+
+        private void pbxUserSaveProfile_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Usuário salvo com sucesso!");
         }
     }
 }
