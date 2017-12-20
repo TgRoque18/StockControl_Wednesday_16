@@ -42,7 +42,7 @@
             // tbxUserASearch
             // 
             this.tbxUserASearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tbxUserASearch.Location = new System.Drawing.Point(134, 36);
+            this.tbxUserASearch.Location = new System.Drawing.Point(135, 33);
             this.tbxUserASearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxUserASearch.Name = "tbxUserASearch";
             this.tbxUserASearch.Size = new System.Drawing.Size(191, 26);
@@ -117,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(522, 363);
+            this.ClientSize = new System.Drawing.Size(523, 364);
             this.Controls.Add(this.btnUserAAdd);
             this.Controls.Add(this.btnUserAEdit);
             this.Controls.Add(this.btnUserABackPages);

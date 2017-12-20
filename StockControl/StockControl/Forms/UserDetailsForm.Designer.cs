@@ -63,7 +63,7 @@
             this.tbxUserDName.Location = new System.Drawing.Point(139, 43);
             this.tbxUserDName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxUserDName.Name = "tbxUserDName";
-            this.tbxUserDName.Size = new System.Drawing.Size(350, 26);
+            this.tbxUserDName.Size = new System.Drawing.Size(363, 26);
             this.tbxUserDName.TabIndex = 1;
             // 
             // txbUserDEmail
@@ -72,7 +72,7 @@
             this.txbUserDEmail.Location = new System.Drawing.Point(139, 123);
             this.txbUserDEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbUserDEmail.Name = "txbUserDEmail";
-            this.txbUserDEmail.Size = new System.Drawing.Size(350, 26);
+            this.txbUserDEmail.Size = new System.Drawing.Size(363, 26);
             this.txbUserDEmail.TabIndex = 3;
             // 
             // lblUserDEmail
@@ -197,7 +197,7 @@
             // btnUserDDeleteProfile
             // 
             this.btnUserDDeleteProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnUserDDeleteProfile.Image")));
-            this.btnUserDDeleteProfile.Location = new System.Drawing.Point(415, 317);
+            this.btnUserDDeleteProfile.Location = new System.Drawing.Point(423, 317);
             this.btnUserDDeleteProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUserDDeleteProfile.Name = "btnUserDDeleteProfile";
             this.btnUserDDeleteProfile.Size = new System.Drawing.Size(35, 35);
@@ -208,7 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(522, 363);
+            this.ClientSize = new System.Drawing.Size(523, 364);
             this.Controls.Add(this.btnUserDPhotoProfile);
             this.Controls.Add(this.btnUserDBackPages);
             this.Controls.Add(this.btnUserDSaveProfile);
