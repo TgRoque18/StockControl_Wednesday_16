@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CategoryDetailsForm.cs">
+    <Compile Include="Forms\CategoryDetailsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CategoryDetailsForm.Designer.cs">
+    <Compile Include="Forms\CategoryDetailsForm.Designer.cs">
       <DependentUpon>CategoryDetailsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\CategoryAllForm.cs">
@@ -130,7 +130,7 @@
     <Compile Include="Helper\EmailHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CategoryDetailsForm.resx">
+    <EmbeddedResource Include="Forms\CategoryDetailsForm.resx">
       <DependentUpon>CategoryDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CategoryAllForm.resx">
