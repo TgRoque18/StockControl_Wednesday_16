@@ -115,8 +115,7 @@
             // 
             // UserAllForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(523, 364);
             this.Controls.Add(this.btnUserAAdd);
             this.Controls.Add(this.btnUserAEdit);
