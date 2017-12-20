@@ -56,5 +56,12 @@ namespace StockControl.Class
             this.Name = name;
             this.Active = active;
         }
+
+        public Category (string name, bool active,int id)
+        {
+            this.Id = id;
+            this.Name = name;
+            this.Active = active;
+        }
     }
 }
