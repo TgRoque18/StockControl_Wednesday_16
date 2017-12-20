@@ -62,9 +62,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(58, 94);
+            this.dataGridView1.Location = new System.Drawing.Point(86, 81);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(407, 206);
+            this.dataGridView1.Size = new System.Drawing.Size(371, 224);
             this.dataGridView1.TabIndex = 21;
             // 
             // pbxBack
