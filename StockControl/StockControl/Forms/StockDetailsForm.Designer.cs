@@ -97,6 +97,8 @@
             // 
             // pbxBack
             // 
+            this.pbxBack.BackgroundImage = global::StockControl.Properties.Resources.BackIcon;
+            this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxBack.Location = new System.Drawing.Point(45, 324);
             this.pbxBack.Name = "pbxBack";
             this.pbxBack.Size = new System.Drawing.Size(35, 35);
@@ -105,6 +107,8 @@
             // 
             // pbxSave
             // 
+            this.pbxSave.BackgroundImage = global::StockControl.Properties.Resources.SaveIcon;
+            this.pbxSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxSave.Location = new System.Drawing.Point(392, 324);
             this.pbxSave.Name = "pbxSave";
             this.pbxSave.Size = new System.Drawing.Size(35, 35);
@@ -113,6 +117,8 @@
             // 
             // pbxDelete
             // 
+            this.pbxDelete.BackgroundImage = global::StockControl.Properties.Resources.DeleteIcon;
+            this.pbxDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxDelete.Location = new System.Drawing.Point(447, 324);
             this.pbxDelete.Name = "pbxDelete";
             this.pbxDelete.Size = new System.Drawing.Size(35, 35);

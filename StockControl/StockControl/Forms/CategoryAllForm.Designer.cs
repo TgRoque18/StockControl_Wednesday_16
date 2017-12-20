@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CategoryAllForm));
             this.lblSearch = new System.Windows.Forms.Label();
             this.tbxSearch = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -69,6 +70,8 @@
             // 
             // pbxBack
             // 
+            this.pbxBack.BackgroundImage = global::StockControl.Properties.Resources.BackIcon;
+            this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxBack.Location = new System.Drawing.Point(47, 324);
             this.pbxBack.Name = "pbxBack";
             this.pbxBack.Size = new System.Drawing.Size(35, 35);
@@ -77,6 +80,8 @@
             // 
             // pbxSave
             // 
+            this.pbxSave.BackgroundImage = global::StockControl.Properties.Resources.SaveIcon;
+            this.pbxSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxSave.Location = new System.Drawing.Point(389, 324);
             this.pbxSave.Name = "pbxSave";
             this.pbxSave.Size = new System.Drawing.Size(35, 35);
@@ -85,6 +90,8 @@
             // 
             // pbxDelete
             // 
+            this.pbxDelete.BackgroundImage = global::StockControl.Properties.Resources.DeleteIcon;
+            this.pbxDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxDelete.Location = new System.Drawing.Point(448, 324);
             this.pbxDelete.Name = "pbxDelete";
             this.pbxDelete.Size = new System.Drawing.Size(35, 35);
@@ -93,6 +100,8 @@
             // 
             // pbxSearch
             // 
+            this.pbxSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxSearch.BackgroundImage")));
+            this.pbxSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxSearch.Location = new System.Drawing.Point(324, 45);
             this.pbxSearch.Name = "pbxSearch";
             this.pbxSearch.Size = new System.Drawing.Size(20, 20);
