@@ -16,5 +16,12 @@ namespace StockControl.Forms
         {
             InitializeComponent();
         }
+
+        private void pbxBack_Click(object sender, EventArgs e)
+        {
+            UserProfileAllForm userProfileAllForm = new UserProfileAllForm();
+            userProfileAllForm.Show();
+            this.Hide();
+        }
     }
 }
