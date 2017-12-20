@@ -96,7 +96,7 @@
             // 
             this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.Location = new System.Drawing.Point(452, 325);
+            this.btnDelete.Location = new System.Drawing.Point(427, 325);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(35, 35);
             this.btnDelete.TabIndex = 8;
@@ -105,7 +105,7 @@
             // btnSave
             // 
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Location = new System.Drawing.Point(239, 325);
+            this.btnSave.Location = new System.Drawing.Point(370, 325);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(35, 35);
             this.btnSave.TabIndex = 7;
@@ -136,7 +136,7 @@
             this.Controls.Add(this.lblAmount);
             this.Controls.Add(this.lblName);
             this.Name = "FormStockEdition";
-            this.Text = "FormStockEdition";
+            this.Text = "Estoque";
             this.ResumeLayout(false);
             this.PerformLayout();
 
