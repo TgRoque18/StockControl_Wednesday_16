@@ -31,12 +31,15 @@
             this.lblName = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
+            this.pbxSearch = new System.Windows.Forms.PictureBox();
+            this.pbxBack = new System.Windows.Forms.PictureBox();
+            this.pbxSave = new System.Windows.Forms.PictureBox();
+            this.pbxDelete = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSave)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDelete)).BeginInit();
             this.SuspendLayout();
             // 
             // lblName
@@ -64,73 +67,57 @@
             this.dataGridView1.Size = new System.Drawing.Size(371, 224);
             this.dataGridView1.TabIndex = 10;
             // 
-            // btnAdd
+            // pbxSearch
             // 
-            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.Location = new System.Drawing.Point(366, 325);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(35, 35);
-            this.btnAdd.TabIndex = 12;
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.pbxSearch.Location = new System.Drawing.Point(269, 33);
+            this.pbxSearch.Name = "pbxSearch";
+            this.pbxSearch.Size = new System.Drawing.Size(20, 20);
+            this.pbxSearch.TabIndex = 26;
+            this.pbxSearch.TabStop = false;
             // 
-            // btnBack
+            // pbxBack
             // 
-            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.Image = global::StockControl.Properties.Resources.BackIcon;
-            this.btnBack.Location = new System.Drawing.Point(28, 325);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(35, 35);
-            this.btnBack.TabIndex = 11;
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.pbxBack.Location = new System.Drawing.Point(45, 325);
+            this.pbxBack.Name = "pbxBack";
+            this.pbxBack.Size = new System.Drawing.Size(35, 35);
+            this.pbxBack.TabIndex = 27;
+            this.pbxBack.TabStop = false;
             // 
-            // btnDelete
+            // pbxSave
             // 
-            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.Location = new System.Drawing.Point(477, 325);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(35, 35);
-            this.btnDelete.TabIndex = 9;
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.pbxSave.Location = new System.Drawing.Point(389, 325);
+            this.pbxSave.Name = "pbxSave";
+            this.pbxSave.Size = new System.Drawing.Size(35, 35);
+            this.pbxSave.TabIndex = 28;
+            this.pbxSave.TabStop = false;
             // 
-            // btnEdit
+            // pbxDelete
             // 
-            this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.Location = new System.Drawing.Point(422, 325);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(35, 35);
-            this.btnEdit.TabIndex = 8;
-            this.btnEdit.UseVisualStyleBackColor = true;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Location = new System.Drawing.Point(274, 33);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(20, 20);
-            this.btnSearch.TabIndex = 3;
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.pbxDelete.Location = new System.Drawing.Point(448, 325);
+            this.pbxDelete.Name = "pbxDelete";
+            this.pbxDelete.Size = new System.Drawing.Size(35, 35);
+            this.pbxDelete.TabIndex = 29;
+            this.pbxDelete.TabStop = false;
             // 
             // FormStockExibition
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(524, 372);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.pbxDelete);
+            this.Controls.Add(this.pbxSave);
+            this.Controls.Add(this.pbxBack);
+            this.Controls.Add(this.pbxSearch);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblName);
             this.Name = "FormStockExibition";
             this.Text = "Estoque";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSave)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDelete)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,11 +127,10 @@
 
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.PictureBox pbxSearch;
+        private System.Windows.Forms.PictureBox pbxBack;
+        private System.Windows.Forms.PictureBox pbxSave;
+        private System.Windows.Forms.PictureBox pbxDelete;
     }
 }

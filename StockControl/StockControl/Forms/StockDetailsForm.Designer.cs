@@ -34,9 +34,12 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.ckbActive = new System.Windows.Forms.CheckBox();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.pbxBack = new System.Windows.Forms.PictureBox();
+            this.pbxSave = new System.Windows.Forms.PictureBox();
+            this.pbxDelete = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSave)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDelete)).BeginInit();
             this.SuspendLayout();
             // 
             // lblName
@@ -92,43 +95,38 @@
             this.ckbActive.TabIndex = 5;
             this.ckbActive.UseVisualStyleBackColor = true;
             // 
-            // btnDelete
+            // pbxBack
             // 
-            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.Location = new System.Drawing.Point(427, 325);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(35, 35);
-            this.btnDelete.TabIndex = 8;
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.pbxBack.Location = new System.Drawing.Point(45, 324);
+            this.pbxBack.Name = "pbxBack";
+            this.pbxBack.Size = new System.Drawing.Size(35, 35);
+            this.pbxBack.TabIndex = 23;
+            this.pbxBack.TabStop = false;
             // 
-            // btnSave
+            // pbxSave
             // 
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Location = new System.Drawing.Point(370, 325);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(35, 35);
-            this.btnSave.TabIndex = 7;
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.pbxSave.Location = new System.Drawing.Point(392, 324);
+            this.pbxSave.Name = "pbxSave";
+            this.pbxSave.Size = new System.Drawing.Size(35, 35);
+            this.pbxSave.TabIndex = 24;
+            this.pbxSave.TabStop = false;
             // 
-            // btnBack
+            // pbxDelete
             // 
-            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.Location = new System.Drawing.Point(41, 325);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(35, 35);
-            this.btnBack.TabIndex = 6;
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.pbxDelete.Location = new System.Drawing.Point(447, 324);
+            this.pbxDelete.Name = "pbxDelete";
+            this.pbxDelete.Size = new System.Drawing.Size(35, 35);
+            this.pbxDelete.TabIndex = 25;
+            this.pbxDelete.TabStop = false;
             // 
             // FormStockEdition
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(524, 371);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.pbxDelete);
+            this.Controls.Add(this.pbxSave);
+            this.Controls.Add(this.pbxBack);
             this.Controls.Add(this.ckbActive);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -137,6 +135,9 @@
             this.Controls.Add(this.lblName);
             this.Name = "FormStockEdition";
             this.Text = "Estoque";
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSave)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDelete)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,8 +151,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.CheckBox ckbActive;
-        private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.PictureBox pbxBack;
+        private System.Windows.Forms.PictureBox pbxSave;
+        private System.Windows.Forms.PictureBox pbxDelete;
     }
 }
