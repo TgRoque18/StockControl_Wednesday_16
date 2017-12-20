@@ -42,30 +42,30 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.Location = new System.Drawing.Point(37, 54);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(50, 19);
+            this.lblName.Size = new System.Drawing.Size(49, 17);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Nome:";
             // 
             // lblAmount
             // 
             this.lblAmount.AutoSize = true;
-            this.lblAmount.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAmount.Location = new System.Drawing.Point(37, 131);
             this.lblAmount.Name = "lblAmount";
-            this.lblAmount.Size = new System.Drawing.Size(82, 19);
+            this.lblAmount.Size = new System.Drawing.Size(86, 17);
             this.lblAmount.TabIndex = 1;
             this.lblAmount.Text = "Quantidade:";
             // 
             // lblActive
             // 
             this.lblActive.AutoSize = true;
-            this.lblActive.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblActive.Location = new System.Drawing.Point(37, 194);
             this.lblActive.Name = "lblActive";
-            this.lblActive.Size = new System.Drawing.Size(45, 19);
+            this.lblActive.Size = new System.Drawing.Size(43, 17);
             this.lblActive.TabIndex = 2;
             this.lblActive.Text = "Ativo:";
             // 
