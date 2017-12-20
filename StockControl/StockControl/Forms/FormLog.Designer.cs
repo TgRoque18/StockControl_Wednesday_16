@@ -28,19 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.dgvLog = new System.Windows.Forms.DataGridView();
+            this.btnLogBackPages = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLog)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dgvLog
+            // 
+            this.dgvLog.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLog.Location = new System.Drawing.Point(14, 47);
+            this.dgvLog.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvLog.Name = "dgvLog";
+            this.dgvLog.Size = new System.Drawing.Size(495, 215);
+            this.dgvLog.TabIndex = 17;
+            // 
+            // btnLogBackPages
+            // 
+            this.btnLogBackPages.Location = new System.Drawing.Point(12, 317);
+            this.btnLogBackPages.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogBackPages.Name = "btnLogBackPages";
+            this.btnLogBackPages.Size = new System.Drawing.Size(35, 35);
+            this.btnLogBackPages.TabIndex = 19;
+            this.btnLogBackPages.UseVisualStyleBackColor = true;
             // 
             // FormLog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(532, 453);
+            this.ClientSize = new System.Drawing.Size(522, 363);
+            this.Controls.Add(this.btnLogBackPages);
+            this.Controls.Add(this.dgvLog);
             this.Name = "FormLog";
-            this.Text = "FormLog";
+            this.Text = "Log";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLog)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dgvLog;
+        private System.Windows.Forms.Button btnLogBackPages;
     }
 }

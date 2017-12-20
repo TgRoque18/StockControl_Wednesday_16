@@ -191,6 +191,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\BackIcon.png" />
+    <None Include="Resources\SaveIcon2.png" />
+    <None Include="Resources\DeleteIcon1.png" />
+    <None Include="Resources\UserProfileIcon.png" />
     <None Include="Resources\DeleteIcon.png" />
     <None Include="Resources\BackIcon3.png" />
     <None Include="Resources\SaveIcon1.png" />

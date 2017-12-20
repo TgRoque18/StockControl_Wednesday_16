@@ -63,9 +63,9 @@ namespace StockControl.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Add_icon_old {
+        internal static System.Drawing.Bitmap BackIcon {
             get {
-                object obj = ResourceManager.GetObject("Add_icon_old", resourceCulture);
+                object obj = ResourceManager.GetObject("BackIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace StockControl.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BackIcon3 {
+        internal static System.Drawing.Bitmap DeleteIcon {
             get {
-                object obj = ResourceManager.GetObject("BackIcon3", resourceCulture);
+                object obj = ResourceManager.GetObject("DeleteIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace StockControl.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Edit_icon_old1 {
+        internal static System.Drawing.Bitmap SaveIcon {
             get {
-                object obj = ResourceManager.GetObject("Edit_icon_old1", resourceCulture);
+                object obj = ResourceManager.GetObject("SaveIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,29 +93,9 @@ namespace StockControl.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SaveIcon1 {
+        internal static System.Drawing.Bitmap UserProfileIcon {
             get {
-                object obj = ResourceManager.GetObject("SaveIcon1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Search_icon_old1 {
-            get {
-                object obj = ResourceManager.GetObject("Search_icon_old1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap UserIcon2 {
-            get {
-                object obj = ResourceManager.GetObject("UserIcon2", resourceCulture);
+                object obj = ResourceManager.GetObject("UserProfileIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -39,70 +39,72 @@
             // 
             // btnSave
             // 
-            this.btnSave.Image = global::StockControl.Properties.Resources.SaveIcon1;
-            this.btnSave.Location = new System.Drawing.Point(122, 200);
+            this.btnSave.Location = new System.Drawing.Point(108, 160);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(51, 32);
+            this.btnSave.Size = new System.Drawing.Size(45, 26);
             this.btnSave.TabIndex = 1;
             this.btnSave.UseVisualStyleBackColor = true;
             // 
             // btnBack
             // 
-            this.btnBack.Image = global::StockControl.Properties.Resources.BackIcon3;
-            this.btnBack.Location = new System.Drawing.Point(72, 200);
+            this.btnBack.Location = new System.Drawing.Point(64, 160);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(45, 32);
+            this.btnBack.Size = new System.Drawing.Size(40, 26);
             this.btnBack.TabIndex = 2;
             this.btnBack.UseVisualStyleBackColor = true;
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(41, 50);
+            this.lblName.Location = new System.Drawing.Point(36, 40);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(59, 20);
+            this.lblName.Size = new System.Drawing.Size(53, 17);
             this.lblName.TabIndex = 3;
             this.lblName.Text = "Nome :";
             // 
             // tbxName
             // 
-            this.tbxName.Location = new System.Drawing.Point(122, 50);
+            this.tbxName.Location = new System.Drawing.Point(108, 40);
+            this.tbxName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxName.Name = "tbxName";
-            this.tbxName.Size = new System.Drawing.Size(102, 26);
+            this.tbxName.Size = new System.Drawing.Size(91, 22);
             this.tbxName.TabIndex = 4;
             // 
             // lblActive
             // 
             this.lblActive.AutoSize = true;
-            this.lblActive.Location = new System.Drawing.Point(41, 105);
+            this.lblActive.Location = new System.Drawing.Point(36, 84);
             this.lblActive.Name = "lblActive";
-            this.lblActive.Size = new System.Drawing.Size(52, 20);
+            this.lblActive.Size = new System.Drawing.Size(47, 17);
             this.lblActive.TabIndex = 5;
             this.lblActive.Text = "Ativo :";
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(122, 104);
+            this.checkBox1.Location = new System.Drawing.Point(108, 83);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(22, 21);
+            this.checkBox1.Size = new System.Drawing.Size(18, 17);
             this.checkBox1.TabIndex = 6;
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // btnErase
             // 
-            this.btnErase.Image = global::StockControl.Properties.Resources.DeleteIcon;
-            this.btnErase.Location = new System.Drawing.Point(179, 200);
+            this.btnErase.Location = new System.Drawing.Point(159, 160);
+            this.btnErase.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnErase.Name = "btnErase";
-            this.btnErase.Size = new System.Drawing.Size(45, 32);
+            this.btnErase.Size = new System.Drawing.Size(40, 26);
             this.btnErase.TabIndex = 0;
             this.btnErase.UseVisualStyleBackColor = true;
             // 
             // UserProfileDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(278, 244);
+            this.ClientSize = new System.Drawing.Size(247, 195);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.lblActive);
             this.Controls.Add(this.tbxName);
@@ -110,6 +112,7 @@
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnErase);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserProfileDetails";
             this.Text = "UserProfileDetails";
             this.ResumeLayout(false);

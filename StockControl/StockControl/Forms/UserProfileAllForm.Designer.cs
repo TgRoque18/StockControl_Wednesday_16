@@ -36,36 +36,38 @@
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(36, 57);
+            this.lblSearch.Location = new System.Drawing.Point(32, 46);
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(79, 20);
+            this.lblSearch.Size = new System.Drawing.Size(71, 17);
             this.lblSearch.TabIndex = 0;
             this.lblSearch.Text = "Pesquisar";
             // 
             // tbxSearch
             // 
-            this.tbxSearch.Location = new System.Drawing.Point(148, 57);
+            this.tbxSearch.Location = new System.Drawing.Point(132, 46);
+            this.tbxSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxSearch.Name = "tbxSearch";
-            this.tbxSearch.Size = new System.Drawing.Size(159, 26);
+            this.tbxSearch.Size = new System.Drawing.Size(142, 22);
             this.tbxSearch.TabIndex = 1;
             // 
             // btnSearch
             // 
-            this.btnSearch.Image = global::StockControl.Properties.Resources.Search_icon_old1;
-            this.btnSearch.Location = new System.Drawing.Point(349, 49);
+            this.btnSearch.Location = new System.Drawing.Point(310, 39);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(40, 43);
+            this.btnSearch.Size = new System.Drawing.Size(36, 34);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // UserProfileAllForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 123);
+            this.ClientSize = new System.Drawing.Size(412, 98);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.tbxSearch);
             this.Controls.Add(this.lblSearch);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserProfileAllForm";
             this.Text = "UserProfileAllForm";
             this.ResumeLayout(false);
