@@ -86,5 +86,14 @@ namespace StockControl.Class
             this.Product = product;
             this.Name = name;
         }
+
+        public Stock(int id,int quantity, bool active, Product product, string name)
+        {
+            this.Id = id;
+            this.Quantity = quantity;
+            this.Active = active;
+            this.Product = product;
+            this.Name = name;
+        }
     }
 }
