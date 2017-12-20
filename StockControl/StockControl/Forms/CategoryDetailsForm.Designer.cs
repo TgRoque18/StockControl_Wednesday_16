@@ -85,12 +85,13 @@
             this.pbxBack.Size = new System.Drawing.Size(35, 35);
             this.pbxBack.TabIndex = 7;
             this.pbxBack.TabStop = false;
+            this.pbxBack.Click += new System.EventHandler(this.pbxBack_Click);
             // 
             // pbxSave
             // 
             this.pbxSave.BackgroundImage = global::StockControl.Properties.Resources.SaveIcon;
             this.pbxSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxSave.Location = new System.Drawing.Point(395, 324);
+            this.pbxSave.Location = new System.Drawing.Point(411, 324);
             this.pbxSave.Name = "pbxSave";
             this.pbxSave.Size = new System.Drawing.Size(35, 35);
             this.pbxSave.TabIndex = 8;

@@ -24,5 +24,19 @@ namespace StockControl
             mainForm.Show();
             this.Hide();
         }
+
+        private void pbxSave_Click(object sender, EventArgs e)
+        {
+            CategoryDetailsForm categoryDetailForm = new CategoryDetailsForm();
+            categoryDetailForm.Show();
+            this.Hide();
+        }
+
+        private void pbxEdit_Click(object sender, EventArgs e)
+        {
+            CategoryDetailsForm categoryDetailForm = new CategoryDetailsForm();
+            categoryDetailForm.Show();
+            this.Hide();
+        }
     }
 }

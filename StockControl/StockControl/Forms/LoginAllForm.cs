@@ -16,5 +16,18 @@ namespace StockControl.Forms
         {
             InitializeComponent();
         }
+        private void btnRecoverPassword_Click(object sender, EventArgs e)
+        {
+            PasswordRecoverAllForm passwordRecoverAllForm = new PasswordRecoverAllForm();
+            passwordRecoverAllForm.Show();
+            this.Hide();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
+            this.Hide();
+        }
     }
 }

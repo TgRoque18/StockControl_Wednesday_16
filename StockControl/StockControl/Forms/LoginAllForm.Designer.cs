@@ -30,73 +30,82 @@
         {
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblLogin = new System.Windows.Forms.Label();
-            this.btnPasswordRecover = new System.Windows.Forms.Button();
-            this.btnLogin = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnRecoverPassword = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(54, 85);
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(95, 87);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(64, 20);
+            this.lblPassword.Size = new System.Drawing.Size(57, 17);
             this.lblPassword.TabIndex = 0;
             this.lblPassword.Text = "Senha :";
             // 
             // lblLogin
             // 
             this.lblLogin.AutoSize = true;
-            this.lblLogin.Location = new System.Drawing.Point(54, 47);
+            this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogin.Location = new System.Drawing.Point(95, 60);
+            this.lblLogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(56, 20);
+            this.lblLogin.Size = new System.Drawing.Size(51, 17);
             this.lblLogin.TabIndex = 1;
             this.lblLogin.Text = "Login :";
             // 
-            // btnPasswordRecover
-            // 
-            this.btnPasswordRecover.Location = new System.Drawing.Point(143, 149);
-            this.btnPasswordRecover.Name = "btnPasswordRecover";
-            this.btnPasswordRecover.Size = new System.Drawing.Size(108, 52);
-            this.btnPasswordRecover.TabIndex = 2;
-            this.btnPasswordRecover.Text = "Recuperar Senha";
-            this.btnPasswordRecover.UseVisualStyleBackColor = true;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Location = new System.Drawing.Point(21, 149);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(92, 52);
-            this.btnLogin.TabIndex = 3;
-            this.btnLogin.Text = "Logar";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(128, 47);
+            this.textBox1.Location = new System.Drawing.Point(167, 60);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
+            this.textBox1.Size = new System.Drawing.Size(158, 20);
             this.textBox1.TabIndex = 4;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(128, 85);
+            this.textBox2.Location = new System.Drawing.Point(167, 84);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
+            this.textBox2.Size = new System.Drawing.Size(158, 20);
             this.textBox2.TabIndex = 5;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Location = new System.Drawing.Point(111, 175);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(35, 35);
+            this.btnLogin.TabIndex = 8;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // btnRecoverPassword
+            // 
+            this.btnRecoverPassword.Location = new System.Drawing.Point(242, 175);
+            this.btnRecoverPassword.Name = "btnRecoverPassword";
+            this.btnRecoverPassword.Size = new System.Drawing.Size(35, 35);
+            this.btnRecoverPassword.TabIndex = 9;
+            this.btnRecoverPassword.Text = "Login";
+            this.btnRecoverPassword.UseVisualStyleBackColor = true;
+            this.btnRecoverPassword.Click += new System.EventHandler(this.btnRecoverPassword_Click);
             // 
             // LoginAllForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(278, 212);
+            this.ClientSize = new System.Drawing.Size(412, 263);
+            this.Controls.Add(this.btnRecoverPassword);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.btnPasswordRecover);
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.lblPassword);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LoginAllForm";
             this.Text = "LoginAllForm";
             this.ResumeLayout(false);
@@ -108,9 +117,9 @@
 
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblLogin;
-        private System.Windows.Forms.Button btnPasswordRecover;
-        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnRecoverPassword;
     }
 }

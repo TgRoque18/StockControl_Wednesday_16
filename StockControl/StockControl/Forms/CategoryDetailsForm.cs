@@ -16,5 +16,12 @@ namespace StockControl
         {
             InitializeComponent();
         }
+
+        private void pbxBack_Click(object sender, EventArgs e)
+        {
+            CategoryAllForm categoryAllForm = new CategoryAllForm();
+            categoryAllForm.Show();
+            this.Hide();
+        }
     }
 }
