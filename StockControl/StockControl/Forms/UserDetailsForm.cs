@@ -20,8 +20,8 @@ namespace StockControl
 
         private void pbxUserBackPages_Click(object sender, EventArgs e)
         {
-            MainForm mainform = new MainForm();
-            mainform.Show();
+            UserAllForm userAllForm = new UserAllForm();
+            userAllForm.Show();
             this.Hide();
         }
 
