@@ -62,7 +62,7 @@ namespace StockControl.Forms
 
         private void pbxProduct_Click(object sender, EventArgs e)
         {
-            ProductAllForm productAllForm = new ProductAllForm();
+            ProducDetailslForm productAllForm = new ProducDetailslForm();
             productAllForm.Show();
             this.Hide();
         }

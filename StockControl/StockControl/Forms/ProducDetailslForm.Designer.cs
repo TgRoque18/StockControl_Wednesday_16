@@ -1,6 +1,6 @@
 ﻿namespace StockControl.Forms
 {
-    partial class ProductAllForm
+    partial class ProducDetailslForm
     {
         /// <summary>
         /// Required designer variable.
