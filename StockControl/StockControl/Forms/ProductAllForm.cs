@@ -7,39 +7,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StockControl.Forms;
 
-namespace StockControl.Forms
+namespace StockControl
 {
-    public partial class ProducDetailslForm : Form
+    public partial class ProductAllForm : Form
     {
-        string name = "";
-        float price = 0;
-        string category = "";
-        bool active = false;
-
-        public ProducDetailslForm()
+        public ProductAllForm()
         {
             InitializeComponent();
         }
 
         private void pbxBack_Click(object sender, EventArgs e)
         {
-            ProductAllForm productAllForm = new ProductAllForm();
-            productAllForm.Show();
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
             this.Hide();
         }
 
         private void pbxSave_Click(object sender, EventArgs e)
         {
-            GetData();
+            ProducDetailslForm productDetailsForm = new ProducDetailslForm();
+            productDetailsForm.Show();
+            this.Hide();
         }
 
-        void GetData()
+        private void pbxEdit_Click(object sender, EventArgs e)
         {
-            name = tbxName.Text;
-            price = float.Parse(tbxPrice.Text);
-            category = cmbCategory.Text;
-            active = ckbActive.Checked;
+            ProducDetailslForm productDetailsForm = new ProducDetailslForm();
+            productDetailsForm.Show();
+            this.Hide();
         }
 
         private void pbxDelete_Click(object sender, EventArgs e)
