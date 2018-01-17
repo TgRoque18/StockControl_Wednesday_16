@@ -59,5 +59,12 @@ namespace StockControl.Forms
             loginAllForm.Show();
             this.Hide();
         }
+
+        private void pbxProduct_Click(object sender, EventArgs e)
+        {
+            ProductAllForm productAllForm = new ProductAllForm();
+            productAllForm.Show();
+            this.Hide();
+        }
     }
 }

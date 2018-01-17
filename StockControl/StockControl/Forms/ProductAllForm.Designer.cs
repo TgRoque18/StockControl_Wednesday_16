@@ -35,17 +35,17 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.chbActive = new System.Windows.Forms.CheckBox();
-            this.pbxProductPicture = new System.Windows.Forms.PictureBox();
-            this.pbxSaveImage = new System.Windows.Forms.PictureBox();
+            this.ckbActive = new System.Windows.Forms.CheckBox();
             this.pbxBack = new System.Windows.Forms.PictureBox();
             this.pbxSave = new System.Windows.Forms.PictureBox();
             this.pbxDelete = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxProductPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxSaveImage)).BeginInit();
+            this.pbxSaveImage = new System.Windows.Forms.PictureBox();
+            this.pbxProductPicture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDelete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSaveImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxProductPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // lblName
@@ -113,34 +113,20 @@
             this.comboBox1.Size = new System.Drawing.Size(181, 33);
             this.comboBox1.TabIndex = 8;
             // 
-            // chbActive
+            // ckbActive
             // 
-            this.chbActive.AutoSize = true;
-            this.chbActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.chbActive.Location = new System.Drawing.Point(263, 210);
-            this.chbActive.Name = "chbActive";
-            this.chbActive.Size = new System.Drawing.Size(22, 21);
-            this.chbActive.TabIndex = 9;
-            this.chbActive.UseVisualStyleBackColor = true;
-            // 
-            // pbxProductPicture
-            // 
-            this.pbxProductPicture.Location = new System.Drawing.Point(576, 44);
-            this.pbxProductPicture.Name = "pbxProductPicture";
-            this.pbxProductPicture.Size = new System.Drawing.Size(124, 126);
-            this.pbxProductPicture.TabIndex = 10;
-            this.pbxProductPicture.TabStop = false;
-            // 
-            // pbxSaveImage
-            // 
-            this.pbxSaveImage.Location = new System.Drawing.Point(576, 200);
-            this.pbxSaveImage.Name = "pbxSaveImage";
-            this.pbxSaveImage.Size = new System.Drawing.Size(124, 22);
-            this.pbxSaveImage.TabIndex = 11;
-            this.pbxSaveImage.TabStop = false;
+            this.ckbActive.AutoSize = true;
+            this.ckbActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ckbActive.Location = new System.Drawing.Point(263, 210);
+            this.ckbActive.Name = "ckbActive";
+            this.ckbActive.Size = new System.Drawing.Size(22, 21);
+            this.ckbActive.TabIndex = 9;
+            this.ckbActive.UseVisualStyleBackColor = true;
             // 
             // pbxBack
             // 
+            this.pbxBack.BackgroundImage = global::StockControl.Properties.Resources.BackIcon;
+            this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxBack.Location = new System.Drawing.Point(22, 473);
             this.pbxBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbxBack.Name = "pbxBack";
@@ -150,6 +136,8 @@
             // 
             // pbxSave
             // 
+            this.pbxSave.BackgroundImage = global::StockControl.Properties.Resources.SaveIcon;
+            this.pbxSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxSave.Location = new System.Drawing.Point(630, 482);
             this.pbxSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbxSave.Name = "pbxSave";
@@ -159,12 +147,30 @@
             // 
             // pbxDelete
             // 
+            this.pbxDelete.BackgroundImage = global::StockControl.Properties.Resources.DeleteIcon;
+            this.pbxDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxDelete.Location = new System.Drawing.Point(690, 482);
             this.pbxDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbxDelete.Name = "pbxDelete";
             this.pbxDelete.Size = new System.Drawing.Size(52, 54);
             this.pbxDelete.TabIndex = 12;
             this.pbxDelete.TabStop = false;
+            // 
+            // pbxSaveImage
+            // 
+            this.pbxSaveImage.Location = new System.Drawing.Point(576, 200);
+            this.pbxSaveImage.Name = "pbxSaveImage";
+            this.pbxSaveImage.Size = new System.Drawing.Size(124, 22);
+            this.pbxSaveImage.TabIndex = 11;
+            this.pbxSaveImage.TabStop = false;
+            // 
+            // pbxProductPicture
+            // 
+            this.pbxProductPicture.Location = new System.Drawing.Point(576, 44);
+            this.pbxProductPicture.Name = "pbxProductPicture";
+            this.pbxProductPicture.Size = new System.Drawing.Size(124, 126);
+            this.pbxProductPicture.TabIndex = 10;
+            this.pbxProductPicture.TabStop = false;
             // 
             // ProductAllForm
             // 
@@ -176,7 +182,7 @@
             this.Controls.Add(this.pbxDelete);
             this.Controls.Add(this.pbxSaveImage);
             this.Controls.Add(this.pbxProductPicture);
-            this.Controls.Add(this.chbActive);
+            this.Controls.Add(this.ckbActive);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -186,11 +192,11 @@
             this.Controls.Add(this.lblName);
             this.Name = "ProductAllForm";
             this.Text = "ProductAllForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pbxProductPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxSaveImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSave)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDelete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSaveImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxProductPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,7 +211,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.CheckBox chbActive;
+        private System.Windows.Forms.CheckBox ckbActive;
         private System.Windows.Forms.PictureBox pbxProductPicture;
         private System.Windows.Forms.PictureBox pbxSaveImage;
         private System.Windows.Forms.PictureBox pbxBack;

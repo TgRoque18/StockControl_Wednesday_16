@@ -12,6 +12,8 @@ namespace StockControl
 {
     public partial class CategoryDetailsForm : Form
     {
+        string name;
+        bool active;
         public CategoryDetailsForm()
         {
             InitializeComponent();
@@ -22,6 +24,20 @@ namespace StockControl
             CategoryAllForm categoryAllForm = new CategoryAllForm();
             categoryAllForm.Show();
             this.Hide();
+        }
+
+        private void pbxSave_Click(object sender, EventArgs e)
+        {
+            GetData();
+            tbxName.Text = "";
+            ckbActive.Checked = false;
+        }
+
+        private void GetData()
+        {
+            name = tbxName.Text;
+            active = ckbActive.Checked;
+
         }
     }
 }
