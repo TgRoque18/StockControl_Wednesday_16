@@ -50,7 +50,7 @@
             this.tbxUserASearch.Location = new System.Drawing.Point(135, 33);
             this.tbxUserASearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxUserASearch.Name = "tbxUserASearch";
-            this.tbxUserASearch.Size = new System.Drawing.Size(191, 26);
+            this.tbxUserASearch.Size = new System.Drawing.Size(191, 23);
             this.tbxUserASearch.TabIndex = 3;
             // 
             // lblUserASearch
@@ -59,7 +59,7 @@
             this.lblUserASearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblUserASearch.Location = new System.Drawing.Point(35, 39);
             this.lblUserASearch.Name = "lblUserASearch";
-            this.lblUserASearch.Size = new System.Drawing.Size(84, 20);
+            this.lblUserASearch.Size = new System.Drawing.Size(71, 17);
             this.lblUserASearch.TabIndex = 2;
             this.lblUserASearch.Text = "Pesquisar";
             // 
@@ -74,7 +74,8 @@
             // 
             // pbxUserDelete
             // 
-            this.pbxUserDelete.Location = new System.Drawing.Point(372, 317);
+            this.pbxUserDelete.BackgroundImage = global::StockControl.Properties.Resources.DeleteIcon;
+            this.pbxUserDelete.Location = new System.Drawing.Point(476, 317);
             this.pbxUserDelete.Name = "pbxUserDelete";
             this.pbxUserDelete.Size = new System.Drawing.Size(35, 35);
             this.pbxUserDelete.TabIndex = 20;
@@ -82,6 +83,8 @@
             // 
             // pbxUserEdit
             // 
+            this.pbxUserEdit.BackgroundImage = global::StockControl.Properties.Resources.Edit_icon_old_;
+            this.pbxUserEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxUserEdit.Location = new System.Drawing.Point(424, 317);
             this.pbxUserEdit.Name = "pbxUserEdit";
             this.pbxUserEdit.Size = new System.Drawing.Size(35, 35);
@@ -91,7 +94,7 @@
             // 
             // pbxUserAdd
             // 
-            this.pbxUserAdd.Location = new System.Drawing.Point(476, 317);
+            this.pbxUserAdd.Location = new System.Drawing.Point(372, 317);
             this.pbxUserAdd.Name = "pbxUserAdd";
             this.pbxUserAdd.Size = new System.Drawing.Size(35, 35);
             this.pbxUserAdd.TabIndex = 22;
@@ -100,6 +103,7 @@
             // 
             // pbxUserBackPages
             // 
+            this.pbxUserBackPages.BackgroundImage = global::StockControl.Properties.Resources.BackIcon;
             this.pbxUserBackPages.Location = new System.Drawing.Point(12, 317);
             this.pbxUserBackPages.Name = "pbxUserBackPages";
             this.pbxUserBackPages.Size = new System.Drawing.Size(35, 35);

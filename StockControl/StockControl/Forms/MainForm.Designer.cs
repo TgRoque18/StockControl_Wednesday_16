@@ -51,9 +51,10 @@
             // 
             this.lblHomeWelcome.AutoSize = true;
             this.lblHomeWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblHomeWelcome.Location = new System.Drawing.Point(14, 11);
+            this.lblHomeWelcome.Location = new System.Drawing.Point(9, 7);
+            this.lblHomeWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHomeWelcome.Name = "lblHomeWelcome";
-            this.lblHomeWelcome.Size = new System.Drawing.Size(172, 25);
+            this.lblHomeWelcome.Size = new System.Drawing.Size(123, 17);
             this.lblHomeWelcome.TabIndex = 1;
             this.lblHomeWelcome.Text = "Seja bem vindo(a)";
             // 
@@ -62,9 +63,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(204, 11);
+            this.label1.Location = new System.Drawing.Point(136, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 25);
+            this.label1.Size = new System.Drawing.Size(51, 17);
             this.label1.TabIndex = 24;
             this.label1.Text = "Sujeito";
             // 
@@ -72,10 +74,9 @@
             // 
             this.pbxLog.BackgroundImage = global::StockControl.Properties.Resources.Report2_icon_old_;
             this.pbxLog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxLog.Location = new System.Drawing.Point(404, 240);
-            this.pbxLog.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxLog.Location = new System.Drawing.Point(269, 156);
             this.pbxLog.Name = "pbxLog";
-            this.pbxLog.Size = new System.Drawing.Size(107, 119);
+            this.pbxLog.Size = new System.Drawing.Size(71, 77);
             this.pbxLog.TabIndex = 38;
             this.pbxLog.TabStop = false;
             this.pbxLog.Click += new System.EventHandler(this.pbxLog_Click);
@@ -84,10 +85,9 @@
             // 
             this.pbxUserProfile.BackgroundImage = global::StockControl.Properties.Resources.UserProfileIcon;
             this.pbxUserProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxUserProfile.Location = new System.Drawing.Point(237, 240);
-            this.pbxUserProfile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxUserProfile.Location = new System.Drawing.Point(158, 156);
             this.pbxUserProfile.Name = "pbxUserProfile";
-            this.pbxUserProfile.Size = new System.Drawing.Size(107, 119);
+            this.pbxUserProfile.Size = new System.Drawing.Size(71, 77);
             this.pbxUserProfile.TabIndex = 37;
             this.pbxUserProfile.TabStop = false;
             this.pbxUserProfile.Click += new System.EventHandler(this.pbxUserProfile_Click);
@@ -96,20 +96,20 @@
             // 
             this.pbxCategory.BackgroundImage = global::StockControl.Properties.Resources.CategoryStyle_old_1;
             this.pbxCategory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxCategory.Location = new System.Drawing.Point(404, 80);
-            this.pbxCategory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxCategory.Location = new System.Drawing.Point(269, 52);
             this.pbxCategory.Name = "pbxCategory";
-            this.pbxCategory.Size = new System.Drawing.Size(107, 119);
+            this.pbxCategory.Size = new System.Drawing.Size(71, 77);
             this.pbxCategory.TabIndex = 36;
             this.pbxCategory.TabStop = false;
             this.pbxCategory.Click += new System.EventHandler(this.pbxCategory_Click);
             // 
             // pbxStock
             // 
-            this.pbxStock.Location = new System.Drawing.Point(69, 80);
-            this.pbxStock.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxStock.BackgroundImage = global::StockControl.Properties.Resources.StockStyle_old;
+            this.pbxStock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxStock.Location = new System.Drawing.Point(46, 52);
             this.pbxStock.Name = "pbxStock";
-            this.pbxStock.Size = new System.Drawing.Size(107, 119);
+            this.pbxStock.Size = new System.Drawing.Size(71, 77);
             this.pbxStock.TabIndex = 35;
             this.pbxStock.TabStop = false;
             this.pbxStock.Click += new System.EventHandler(this.pbxStock_Click);
@@ -118,10 +118,9 @@
             // 
             this.pbxProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxProduct.BackgroundImage")));
             this.pbxProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxProduct.Location = new System.Drawing.Point(237, 80);
-            this.pbxProduct.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxProduct.Location = new System.Drawing.Point(158, 52);
             this.pbxProduct.Name = "pbxProduct";
-            this.pbxProduct.Size = new System.Drawing.Size(107, 119);
+            this.pbxProduct.Size = new System.Drawing.Size(71, 77);
             this.pbxProduct.TabIndex = 34;
             this.pbxProduct.TabStop = false;
             this.pbxProduct.Click += new System.EventHandler(this.pbxProduct_Click);
@@ -130,29 +129,28 @@
             // 
             this.pbxUser.BackgroundImage = global::StockControl.Properties.Resources.UserProfileIcon;
             this.pbxUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxUser.Location = new System.Drawing.Point(69, 240);
-            this.pbxUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxUser.Location = new System.Drawing.Point(46, 156);
             this.pbxUser.Name = "pbxUser";
-            this.pbxUser.Size = new System.Drawing.Size(107, 119);
+            this.pbxUser.Size = new System.Drawing.Size(71, 77);
             this.pbxUser.TabIndex = 33;
             this.pbxUser.TabStop = false;
             this.pbxUser.Click += new System.EventHandler(this.pbxUser_Click);
             // 
             // pbxHomeLogin
             // 
-            this.pbxHomeLogin.Location = new System.Drawing.Point(18, 381);
-            this.pbxHomeLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxHomeLogin.BackgroundImage = global::StockControl.Properties.Resources.BackIcon;
+            this.pbxHomeLogin.Location = new System.Drawing.Point(12, 248);
             this.pbxHomeLogin.Name = "pbxHomeLogin";
-            this.pbxHomeLogin.Size = new System.Drawing.Size(53, 54);
+            this.pbxHomeLogin.Size = new System.Drawing.Size(35, 35);
             this.pbxHomeLogin.TabIndex = 32;
             this.pbxHomeLogin.TabStop = false;
             this.pbxHomeLogin.Click += new System.EventHandler(this.pbxHomeLogin_Click);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 454);
+            this.ClientSize = new System.Drawing.Size(392, 295);
             this.Controls.Add(this.pbxLog);
             this.Controls.Add(this.pbxUserProfile);
             this.Controls.Add(this.pbxCategory);
@@ -162,7 +160,7 @@
             this.Controls.Add(this.pbxHomeLogin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblHomeWelcome);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "MainForm";
             this.Text = "Controle de estoque";
             ((System.ComponentModel.ISupportInitialize)(this.pbxLog)).EndInit();
