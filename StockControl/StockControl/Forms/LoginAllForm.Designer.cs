@@ -61,7 +61,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(167, 60);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(158, 20);
             this.textBox1.TabIndex = 4;
@@ -69,7 +69,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(167, 84);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(158, 20);
             this.textBox2.TabIndex = 5;
@@ -78,7 +78,7 @@
             // 
             this.btnLogin.Location = new System.Drawing.Point(111, 175);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(35, 35);
+            this.btnLogin.Size = new System.Drawing.Size(60, 52);
             this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -88,9 +88,9 @@
             // 
             this.btnRecoverPassword.Location = new System.Drawing.Point(242, 175);
             this.btnRecoverPassword.Name = "btnRecoverPassword";
-            this.btnRecoverPassword.Size = new System.Drawing.Size(35, 35);
+            this.btnRecoverPassword.Size = new System.Drawing.Size(67, 52);
             this.btnRecoverPassword.TabIndex = 9;
-            this.btnRecoverPassword.Text = "Login";
+            this.btnRecoverPassword.Text = "RecuperarSenha";
             this.btnRecoverPassword.UseVisualStyleBackColor = true;
             this.btnRecoverPassword.Click += new System.EventHandler(this.btnRecoverPassword_Click);
             // 
@@ -105,7 +105,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.lblPassword);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LoginAllForm";
             this.Text = "LoginAllForm";
             this.ResumeLayout(false);
