@@ -63,6 +63,16 @@ namespace StockControl.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Add_icon_old_ {
+            get {
+                object obj = ResourceManager.GetObject("Add_icon_old_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BackIcon {
             get {
                 object obj = ResourceManager.GetObject("BackIcon", resourceCulture);
@@ -126,6 +136,16 @@ namespace StockControl.Properties {
         internal static System.Drawing.Bitmap SaveIcon {
             get {
                 object obj = ResourceManager.GetObject("SaveIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Search_icon_old_ {
+            get {
+                object obj = ResourceManager.GetObject("Search_icon_old_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
