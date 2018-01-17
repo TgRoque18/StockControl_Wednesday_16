@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StockControl.Forms;
 
 namespace StockControl
 {
@@ -30,5 +31,17 @@ namespace StockControl
             formStockEdition.Show();
             this.Hide();
         }
+
+        private void FormStockExibition_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbxBack_Click(object sender, EventArgs e)
+        {
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
+            this.Hide();
+        } 
     }
 }
