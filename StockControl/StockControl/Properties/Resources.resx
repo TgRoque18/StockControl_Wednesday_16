@@ -121,14 +121,17 @@
   <data name="UserProfileIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UserProfileIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CategoryStyle(old)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\CategoryStyle(old).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Edit_icon(old)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\Edit_icon(old).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Report2_icon(old)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\Report2_icon(old).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DeleteIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DeleteIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Report2_icon(old)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\Report2_icon(old).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SaveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SaveIcon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CategoryStyle(old)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\CategoryStyle(old).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,19 +139,19 @@
   <data name="BackIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BackIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SaveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SaveIcon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CategoryStyle(old)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\CategoryStyle(old).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Edit_icon(old)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\Edit_icon(old).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="StockStyle_old" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\CategoryStyle(old)1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Search_icon_old_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\search_icon(old).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Add_icon_old_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\icons\add_icon(old).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Search_icon_old_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\search_icon(old).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="StockStyle_old" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\CategoryStyle(old)1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search_icon_old _" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\Search_icon_old _.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

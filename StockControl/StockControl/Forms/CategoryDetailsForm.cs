@@ -30,7 +30,7 @@ namespace StockControl
 
         private void pbxSave_Click(object sender, EventArgs e)
         {
-            GetData();
+           
             SqlConnection sqlConnect = new SqlConnection(connectionString);
             try
             {

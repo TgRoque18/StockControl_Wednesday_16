@@ -106,8 +106,8 @@
             // 
             // pbxSearch
             // 
-            this.pbxSearch.BackgroundImage = global::StockControl.Properties.Resources.Search_icon_old_;
-            this.pbxSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbxSearch.BackgroundImage = global::StockControl.Properties.Resources.Search_icon_old__;
+            this.pbxSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxSearch.Location = new System.Drawing.Point(224, 37);
             this.pbxSearch.Name = "pbxSearch";
             this.pbxSearch.Size = new System.Drawing.Size(20, 20);

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,33 +15,7 @@ namespace StockControl.Forms
     {
         string name;
         bool active;
-
-        public bool Active
-        {
-            get
-            {
-                return active;
-            }
-
-            set
-            {
-                active = value;
-            }
-        }
-
-        public string Name1
-        {
-            get
-            {
-                return name;
-            }
-
-            set
-            {
-                name = value;
-            }
-        }
-
+        string connectionString ="workstation id=StockControl.mssql.somee.com;packet size = 4096; user id = luacademy_SQLLogin_1; pwd=msctq6gvt3;data source = StockControl.mssql.somee.com; persist security info=False;initial catalog = StockControl";
         public UserProfileDetails()
         {
             InitializeComponent();
@@ -58,11 +33,46 @@ namespace StockControl.Forms
 
         private void pbxSave_Click(object sender, EventArgs e)
         {
-            GetData();
+            SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+            try
+            {
+                GetData();
+
+                //Conectar
+                sqlConnect.Open();
+                string sql = "INSERT INTO USER_PROFILE(NAME, ACTIVE) VALUES (@name, @active)";
+
+                SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+
+                cmd.Parameters.Add(new SqlParameter("@name", name));
+                cmd.Parameters.Add(new SqlParameter("@active", active));
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Adicionado com sucesso!");
+
+
+            }
+            catch (Exception ex)
+            {
+                //Tratar exce��es
+                MessageBox.Show("Erro ao adicionar categoria!" + ex.Message);
+                CleanData();
+            }
+            finally
+            {
+                //Fechar
+                sqlConnect.Close();
+            }
+
+
+        }
+
+        private void CleanData()
+        {
             tbxName.Text = "";
             ckbActive.Checked = false;
-
-
         }
     }
 }
