@@ -65,6 +65,7 @@
             // 
             // pbxBack
             // 
+            this.pbxBack.BackgroundImage = global::StockControl.Properties.Resources.BackIcon;
             this.pbxBack.Location = new System.Drawing.Point(27, 325);
             this.pbxBack.Name = "pbxBack";
             this.pbxBack.Size = new System.Drawing.Size(35, 35);
@@ -74,6 +75,8 @@
             // 
             // pbxEdit
             // 
+            this.pbxEdit.BackgroundImage = global::StockControl.Properties.Resources.Edit_icon_old_;
+            this.pbxEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxEdit.Location = new System.Drawing.Point(413, 325);
             this.pbxEdit.Name = "pbxEdit";
             this.pbxEdit.Size = new System.Drawing.Size(35, 35);
@@ -83,6 +86,8 @@
             // 
             // pbxDelete
             // 
+            this.pbxDelete.BackgroundImage = global::StockControl.Properties.Resources.DeleteIcon;
+            this.pbxDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxDelete.Location = new System.Drawing.Point(454, 325);
             this.pbxDelete.Name = "pbxDelete";
             this.pbxDelete.Size = new System.Drawing.Size(35, 35);
@@ -91,6 +96,7 @@
             // 
             // pbxSave
             // 
+            this.pbxSave.BackgroundImage = global::StockControl.Properties.Resources.SaveIcon;
             this.pbxSave.Location = new System.Drawing.Point(372, 325);
             this.pbxSave.Name = "pbxSave";
             this.pbxSave.Size = new System.Drawing.Size(35, 35);
@@ -100,6 +106,8 @@
             // 
             // pbxSearch
             // 
+            this.pbxSearch.BackgroundImage = global::StockControl.Properties.Resources.Search_icon_old_;
+            this.pbxSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxSearch.Location = new System.Drawing.Point(224, 37);
             this.pbxSearch.Name = "pbxSearch";
             this.pbxSearch.Size = new System.Drawing.Size(20, 20);

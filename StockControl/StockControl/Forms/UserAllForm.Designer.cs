@@ -31,17 +31,17 @@
             this.tbxUserASearch = new System.Windows.Forms.TextBox();
             this.lblUserASearch = new System.Windows.Forms.Label();
             this.dgvUserASearch = new System.Windows.Forms.DataGridView();
-            this.pbxUserDelete = new System.Windows.Forms.PictureBox();
-            this.pbxUserEdit = new System.Windows.Forms.PictureBox();
-            this.pbxUserAdd = new System.Windows.Forms.PictureBox();
-            this.pbxUserBackPages = new System.Windows.Forms.PictureBox();
             this.pbxUserSearch = new System.Windows.Forms.PictureBox();
+            this.pbxUserBackPages = new System.Windows.Forms.PictureBox();
+            this.pbxUserAdd = new System.Windows.Forms.PictureBox();
+            this.pbxUserEdit = new System.Windows.Forms.PictureBox();
+            this.pbxUserDelete = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUserASearch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxUserDelete)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxUserEdit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxUserAdd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxUserBackPages)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxUserSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxUserBackPages)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxUserAdd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxUserEdit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxUserDelete)).BeginInit();
             this.SuspendLayout();
             // 
             // tbxUserASearch
@@ -72,14 +72,36 @@
             this.dgvUserASearch.Size = new System.Drawing.Size(480, 190);
             this.dgvUserASearch.TabIndex = 16;
             // 
-            // pbxUserDelete
+            // pbxUserSearch
             // 
-            this.pbxUserDelete.BackgroundImage = global::StockControl.Properties.Resources.DeleteIcon;
-            this.pbxUserDelete.Location = new System.Drawing.Point(476, 317);
-            this.pbxUserDelete.Name = "pbxUserDelete";
-            this.pbxUserDelete.Size = new System.Drawing.Size(35, 35);
-            this.pbxUserDelete.TabIndex = 20;
-            this.pbxUserDelete.TabStop = false;
+            this.pbxUserSearch.BackgroundImage = global::StockControl.Properties.Resources.Search_icon_old_;
+            this.pbxUserSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxUserSearch.Location = new System.Drawing.Point(372, 39);
+            this.pbxUserSearch.Name = "pbxUserSearch";
+            this.pbxUserSearch.Size = new System.Drawing.Size(20, 20);
+            this.pbxUserSearch.TabIndex = 24;
+            this.pbxUserSearch.TabStop = false;
+            // 
+            // pbxUserBackPages
+            // 
+            this.pbxUserBackPages.BackgroundImage = global::StockControl.Properties.Resources.BackIcon;
+            this.pbxUserBackPages.Location = new System.Drawing.Point(12, 317);
+            this.pbxUserBackPages.Name = "pbxUserBackPages";
+            this.pbxUserBackPages.Size = new System.Drawing.Size(35, 35);
+            this.pbxUserBackPages.TabIndex = 23;
+            this.pbxUserBackPages.TabStop = false;
+            this.pbxUserBackPages.Click += new System.EventHandler(this.pbxUserBackPages_Click);
+            // 
+            // pbxUserAdd
+            // 
+            this.pbxUserAdd.BackgroundImage = global::StockControl.Properties.Resources.Add_icon_old_;
+            this.pbxUserAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxUserAdd.Location = new System.Drawing.Point(372, 317);
+            this.pbxUserAdd.Name = "pbxUserAdd";
+            this.pbxUserAdd.Size = new System.Drawing.Size(35, 35);
+            this.pbxUserAdd.TabIndex = 22;
+            this.pbxUserAdd.TabStop = false;
+            this.pbxUserAdd.Click += new System.EventHandler(this.pbxUserAdd_Click);
             // 
             // pbxUserEdit
             // 
@@ -92,32 +114,14 @@
             this.pbxUserEdit.TabStop = false;
             this.pbxUserEdit.Click += new System.EventHandler(this.pbxUserEdit_Click);
             // 
-            // pbxUserAdd
+            // pbxUserDelete
             // 
-            this.pbxUserAdd.Location = new System.Drawing.Point(372, 317);
-            this.pbxUserAdd.Name = "pbxUserAdd";
-            this.pbxUserAdd.Size = new System.Drawing.Size(35, 35);
-            this.pbxUserAdd.TabIndex = 22;
-            this.pbxUserAdd.TabStop = false;
-            this.pbxUserAdd.Click += new System.EventHandler(this.pbxUserAdd_Click);
-            // 
-            // pbxUserBackPages
-            // 
-            this.pbxUserBackPages.BackgroundImage = global::StockControl.Properties.Resources.BackIcon;
-            this.pbxUserBackPages.Location = new System.Drawing.Point(12, 317);
-            this.pbxUserBackPages.Name = "pbxUserBackPages";
-            this.pbxUserBackPages.Size = new System.Drawing.Size(35, 35);
-            this.pbxUserBackPages.TabIndex = 23;
-            this.pbxUserBackPages.TabStop = false;
-            this.pbxUserBackPages.Click += new System.EventHandler(this.pbxUserBackPages_Click);
-            // 
-            // pbxUserSearch
-            // 
-            this.pbxUserSearch.Location = new System.Drawing.Point(372, 39);
-            this.pbxUserSearch.Name = "pbxUserSearch";
-            this.pbxUserSearch.Size = new System.Drawing.Size(20, 20);
-            this.pbxUserSearch.TabIndex = 24;
-            this.pbxUserSearch.TabStop = false;
+            this.pbxUserDelete.BackgroundImage = global::StockControl.Properties.Resources.DeleteIcon;
+            this.pbxUserDelete.Location = new System.Drawing.Point(476, 317);
+            this.pbxUserDelete.Name = "pbxUserDelete";
+            this.pbxUserDelete.Size = new System.Drawing.Size(35, 35);
+            this.pbxUserDelete.TabIndex = 20;
+            this.pbxUserDelete.TabStop = false;
             // 
             // UserAllForm
             // 
@@ -134,11 +138,11 @@
             this.Name = "UserAllForm";
             this.Text = "Pesquisar usuários";
             ((System.ComponentModel.ISupportInitialize)(this.dgvUserASearch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxUserDelete)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxUserEdit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxUserAdd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxUserBackPages)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxUserSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxUserBackPages)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxUserAdd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxUserEdit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxUserDelete)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
