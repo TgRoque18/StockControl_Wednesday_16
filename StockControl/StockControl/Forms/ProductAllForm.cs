@@ -27,14 +27,14 @@ namespace StockControl
 
         private void pbxSave_Click(object sender, EventArgs e)
         {
-            ProducDetailslForm productDetailsForm = new ProducDetailslForm();
+            ProductDetailsForm productDetailsForm = new ProductDetailsForm();
             productDetailsForm.Show();
             this.Hide();
         }
 
         private void pbxEdit_Click(object sender, EventArgs e)
         {
-            ProducDetailslForm productDetailsForm = new ProducDetailslForm();
+            ProductDetailsForm productDetailsForm = new ProductDetailsForm();
             productDetailsForm.Show();
             this.Hide();
         }
