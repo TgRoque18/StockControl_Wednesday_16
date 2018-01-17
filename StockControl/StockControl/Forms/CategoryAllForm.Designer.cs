@@ -114,6 +114,8 @@
             // 
             // pbxEdit
             // 
+            this.pbxEdit.BackgroundImage = global::StockControl.Properties.Resources.Edit_icon_old_;
+            this.pbxEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxEdit.Location = new System.Drawing.Point(407, 324);
             this.pbxEdit.Name = "pbxEdit";
             this.pbxEdit.Size = new System.Drawing.Size(35, 35);

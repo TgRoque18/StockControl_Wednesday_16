@@ -46,7 +46,7 @@
             // tbxLogin
             // 
             this.tbxLogin.Location = new System.Drawing.Point(83, 47);
-            this.tbxLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxLogin.Margin = new System.Windows.Forms.Padding(2);
             this.tbxLogin.Name = "tbxLogin";
             this.tbxLogin.Size = new System.Drawing.Size(68, 20);
             this.tbxLogin.TabIndex = 2;
@@ -70,9 +70,9 @@
             this.Controls.Add(this.tbxLogin);
             this.Controls.Add(this.btnRecoverPassword);
             this.Controls.Add(this.lblLogin);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PasswordRecoverAllForm";
-            this.Text = "PasswordRecoverAllForm";
+            this.Text = "Recuperação de senha";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -133,6 +133,16 @@ namespace StockControl.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap StockStyle_old {
+            get {
+                object obj = ResourceManager.GetObject("StockStyle_old", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap UserProfileIcon {
             get {
                 object obj = ResourceManager.GetObject("UserProfileIcon", resourceCulture);

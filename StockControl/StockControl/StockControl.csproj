@@ -222,6 +222,7 @@
     <None Include="Resources\UserIcon.png" />
     <None Include="Icons\disquete.jpg" />
     <None Include="Icons\Next_icon%28old%29 - Copia.jpeg" />
+    <None Include="Icons\CategoryStyle%28old%291.jpeg" />
     <Content Include="Icons\Sign_in_icon%28old%29.jpeg" />
     <Content Include="Icons\Next_icon%28old%29.jpeg" />
     <Content Include="Icons\Report_icon%28old%29.jpeg" />
