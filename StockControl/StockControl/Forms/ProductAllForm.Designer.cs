@@ -69,7 +69,7 @@
             // 
             // pbxSave
             // 
-            this.pbxSave.BackgroundImage = global::StockControl.Properties.Resources.SaveIcon;
+            this.pbxSave.BackgroundImage = global::StockControl.Properties.Resources.Add_icon_old_;
             this.pbxSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxSave.Location = new System.Drawing.Point(340, 324);
             this.pbxSave.Name = "pbxSave";
