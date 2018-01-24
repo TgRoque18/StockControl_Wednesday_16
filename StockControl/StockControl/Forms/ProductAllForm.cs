@@ -60,6 +60,7 @@ namespace StockControl
             dgvProduct.Columns["PRICE"].HeaderText = "Preço";
             //dgvProduct.Columns["CATEGORY"].HeaderText = "Categoria";
             dgvProduct.Columns["ACTIVE"].HeaderText = "Ativo";
+            
             dgvProduct.Columns["FK_CATEGORY"].Visible = false;
 
             foreach (DataGridViewColumn col in dgvProduct.Columns)
