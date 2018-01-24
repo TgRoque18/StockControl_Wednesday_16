@@ -34,7 +34,7 @@
             this.pbxSave = new System.Windows.Forms.PictureBox();
             this.pbxBack = new System.Windows.Forms.PictureBox();
             this.pbxSearch = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvProduct = new System.Windows.Forms.DataGridView();
             this.tbxSearch = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEdit)).BeginInit();
@@ -42,7 +42,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxSave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSearch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             this.SuspendLayout();
             // 
             // pbxEdit
@@ -99,13 +99,18 @@
             this.pbxSearch.TabIndex = 34;
             this.pbxSearch.TabStop = false;
             // 
-            // dataGridView1
+            // dgvProduct
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(77, 78);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(371, 224);
-            this.dataGridView1.TabIndex = 33;
+            this.dgvProduct.AllowUserToAddRows = false;
+            this.dgvProduct.AllowUserToDeleteRows = false;
+            this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProduct.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvProduct.Location = new System.Drawing.Point(77, 78);
+            this.dgvProduct.MultiSelect = false;
+            this.dgvProduct.Name = "dgvProduct";
+            this.dgvProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvProduct.Size = new System.Drawing.Size(371, 224);
+            this.dgvProduct.TabIndex = 33;
             // 
             // tbxSearch
             // 
@@ -134,7 +139,7 @@
             this.Controls.Add(this.pbxSave);
             this.Controls.Add(this.pbxBack);
             this.Controls.Add(this.pbxSearch);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvProduct);
             this.Controls.Add(this.tbxSearch);
             this.Controls.Add(this.lblName);
             this.Name = "ProductAllForm";
@@ -144,7 +149,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxSave)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSearch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,7 +162,7 @@
         private System.Windows.Forms.PictureBox pbxSave;
         private System.Windows.Forms.PictureBox pbxBack;
         private System.Windows.Forms.PictureBox pbxSearch;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvProduct;
         private System.Windows.Forms.TextBox tbxSearch;
         private System.Windows.Forms.Label lblName;
     }
