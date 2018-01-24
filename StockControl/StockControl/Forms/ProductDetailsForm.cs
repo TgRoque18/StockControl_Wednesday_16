@@ -51,6 +51,7 @@ namespace StockControl.Forms
                 cmd.ExecuteNonQuery();
 
                 MessageBox.Show("Adicionado com sucesso!");
+                CleanData();
 
 
             }
