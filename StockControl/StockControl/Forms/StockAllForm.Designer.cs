@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStockExibition));
             this.lblName = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbxsearch = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pbxSearch = new System.Windows.Forms.PictureBox();
             this.pbxBack = new System.Windows.Forms.PictureBox();
@@ -56,19 +56,19 @@
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Pesquisar:";
             // 
-            // textBox1
+            // tbxsearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(133, 41);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 22);
-            this.textBox1.TabIndex = 2;
+            this.tbxsearch.Location = new System.Drawing.Point(133, 41);
+            this.tbxsearch.Margin = new System.Windows.Forms.Padding(4);
+            this.tbxsearch.Name = "tbxsearch";
+            this.tbxsearch.Size = new System.Drawing.Size(204, 22);
+            this.tbxsearch.TabIndex = 2;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(115, 100);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(495, 276);
             this.dataGridView1.TabIndex = 10;
@@ -78,7 +78,7 @@
             this.pbxSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxSearch.BackgroundImage")));
             this.pbxSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxSearch.Location = new System.Drawing.Point(359, 41);
-            this.pbxSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxSearch.Margin = new System.Windows.Forms.Padding(4);
             this.pbxSearch.Name = "pbxSearch";
             this.pbxSearch.Size = new System.Drawing.Size(27, 25);
             this.pbxSearch.TabIndex = 26;
@@ -89,7 +89,7 @@
             this.pbxBack.BackgroundImage = global::StockControl.Properties.Resources.BackIcon;
             this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxBack.Location = new System.Drawing.Point(60, 400);
-            this.pbxBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxBack.Margin = new System.Windows.Forms.Padding(4);
             this.pbxBack.Name = "pbxBack";
             this.pbxBack.Size = new System.Drawing.Size(47, 43);
             this.pbxBack.TabIndex = 27;
@@ -101,7 +101,7 @@
             this.pbxSave.BackgroundImage = global::StockControl.Properties.Resources.SaveIcon;
             this.pbxSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxSave.Location = new System.Drawing.Point(477, 400);
-            this.pbxSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxSave.Margin = new System.Windows.Forms.Padding(4);
             this.pbxSave.Name = "pbxSave";
             this.pbxSave.Size = new System.Drawing.Size(47, 43);
             this.pbxSave.TabIndex = 28;
@@ -113,7 +113,7 @@
             this.pbxDelete.BackgroundImage = global::StockControl.Properties.Resources.DeleteIcon;
             this.pbxDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxDelete.Location = new System.Drawing.Point(611, 400);
-            this.pbxDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxDelete.Margin = new System.Windows.Forms.Padding(4);
             this.pbxDelete.Name = "pbxDelete";
             this.pbxDelete.Size = new System.Drawing.Size(47, 43);
             this.pbxDelete.TabIndex = 29;
@@ -124,7 +124,7 @@
             this.pbxEdit.BackgroundImage = global::StockControl.Properties.Resources.Edit_icon_old_;
             this.pbxEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxEdit.Location = new System.Drawing.Point(543, 400);
-            this.pbxEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxEdit.Margin = new System.Windows.Forms.Padding(4);
             this.pbxEdit.Name = "pbxEdit";
             this.pbxEdit.Size = new System.Drawing.Size(47, 43);
             this.pbxEdit.TabIndex = 30;
@@ -142,9 +142,9 @@
             this.Controls.Add(this.pbxBack);
             this.Controls.Add(this.pbxSearch);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbxsearch);
             this.Controls.Add(this.lblName);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormStockExibition";
             this.Text = "Estoque";
             this.Load += new System.EventHandler(this.FormStockExibition_Load);
@@ -162,7 +162,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbxsearch;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pbxSearch;
         private System.Windows.Forms.PictureBox pbxBack;
