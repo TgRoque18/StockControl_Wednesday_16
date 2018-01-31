@@ -21,6 +21,7 @@ namespace StockControl
         public string password;
         public string email;
         public bool active;
+
         public UserDetailsForm()
         {
             InitializeComponent();
@@ -72,9 +73,6 @@ namespace StockControl
             }
         }
 
-
-
-
         private void CleanData()
         {
             tbxUserDName.Text = "";
@@ -93,6 +91,7 @@ namespace StockControl
             active = ckbUserDActive.Checked;
 
         }
+
         private void LoadComboBox()
         {
 

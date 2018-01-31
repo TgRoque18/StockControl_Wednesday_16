@@ -110,6 +110,7 @@ namespace StockControl.Forms
                 cmd.ExecuteNonQuery();
 
                 MessageBox.Show("Usuário removido com sucesso!");
+                ShowData();
             }
             catch (Exception ex)
             {
