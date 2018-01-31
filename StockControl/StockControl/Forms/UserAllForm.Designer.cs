@@ -65,10 +65,15 @@
             // 
             // dgvUserASearch
             // 
+            this.dgvUserASearch.AllowUserToAddRows = false;
+            this.dgvUserASearch.AllowUserToOrderColumns = true;
             this.dgvUserASearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUserASearch.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvUserASearch.Location = new System.Drawing.Point(13, 92);
             this.dgvUserASearch.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvUserASearch.MultiSelect = false;
             this.dgvUserASearch.Name = "dgvUserASearch";
+            this.dgvUserASearch.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvUserASearch.Size = new System.Drawing.Size(480, 190);
             this.dgvUserASearch.TabIndex = 16;
             // 
