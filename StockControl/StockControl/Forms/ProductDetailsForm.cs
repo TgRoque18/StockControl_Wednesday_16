@@ -53,7 +53,6 @@ namespace StockControl.Forms
                 MessageBox.Show("Adicionado com sucesso!");
                 CleanData();
 
-
             }
             catch (Exception ex)
             {

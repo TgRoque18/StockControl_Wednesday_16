@@ -96,7 +96,7 @@
             // 
             this.tbxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tbxName.Location = new System.Drawing.Point(175, 37);
-            this.tbxName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxName.Margin = new System.Windows.Forms.Padding(2);
             this.tbxName.Name = "tbxName";
             this.tbxName.Size = new System.Drawing.Size(122, 23);
             this.tbxName.TabIndex = 4;
@@ -105,7 +105,7 @@
             // 
             this.tbxPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tbxPrice.Location = new System.Drawing.Point(175, 71);
-            this.tbxPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxPrice.Margin = new System.Windows.Forms.Padding(2);
             this.tbxPrice.Name = "tbxPrice";
             this.tbxPrice.Size = new System.Drawing.Size(122, 23);
             this.tbxPrice.TabIndex = 5;
@@ -115,7 +115,7 @@
             this.cmbCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cmbCategory.FormattingEnabled = true;
             this.cmbCategory.Location = new System.Drawing.Point(175, 103);
-            this.cmbCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCategory.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCategory.Name = "cmbCategory";
             this.cmbCategory.Size = new System.Drawing.Size(122, 24);
             this.cmbCategory.TabIndex = 8;
@@ -125,7 +125,7 @@
             this.ckbActive.AutoSize = true;
             this.ckbActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.ckbActive.Location = new System.Drawing.Point(175, 136);
-            this.ckbActive.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ckbActive.Margin = new System.Windows.Forms.Padding(2);
             this.ckbActive.Name = "ckbActive";
             this.ckbActive.Size = new System.Drawing.Size(15, 14);
             this.ckbActive.TabIndex = 9;
@@ -146,7 +146,7 @@
             // 
             this.pbxSave.BackgroundImage = global::StockControl.Properties.Resources.SaveIcon;
             this.pbxSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxSave.Location = new System.Drawing.Point(420, 313);
+            this.pbxSave.Location = new System.Drawing.Point(384, 313);
             this.pbxSave.Name = "pbxSave";
             this.pbxSave.Size = new System.Drawing.Size(35, 35);
             this.pbxSave.TabIndex = 13;
@@ -182,7 +182,7 @@
             this.pbxProductPicture.TabIndex = 10;
             this.pbxProductPicture.TabStop = false;
             // 
-            // ProducDetailslForm
+            // ProductDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -200,8 +200,8 @@
             this.Controls.Add(this.lblCategory);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblName);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "ProducDetailslForm";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "ProductDetailsForm";
             this.Text = "Produto";
             ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSave)).EndInit();

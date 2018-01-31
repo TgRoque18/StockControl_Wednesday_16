@@ -47,7 +47,7 @@
             // 
             // pbxEdit
             // 
-            this.pbxEdit.BackgroundImage = global::StockControl.Properties.Resources.Edit_icon_old_;
+            this.pbxEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxEdit.BackgroundImage")));
             this.pbxEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxEdit.Location = new System.Drawing.Point(390, 324);
             this.pbxEdit.Name = "pbxEdit";
@@ -111,6 +111,7 @@
             this.dgvProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProduct.Size = new System.Drawing.Size(371, 224);
             this.dgvProduct.TabIndex = 33;
+            
             // 
             // tbxSearch
             // 

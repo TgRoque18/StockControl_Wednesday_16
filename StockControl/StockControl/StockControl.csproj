@@ -210,6 +210,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Icons\edit icon.png" />
+    <Content Include="Search_icon_old _.jpeg" />
     <None Include="Resources\BackIcon.png" />
     <None Include="Resources\SaveIcon2.png" />
     <None Include="Resources\DeleteIcon1.png" />
