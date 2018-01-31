@@ -58,7 +58,7 @@ namespace StockControl
             dgvProduct.Columns["ID"].Visible = false;
             dgvProduct.Columns["NAME"].HeaderText = "Nome";
             dgvProduct.Columns["PRICE"].HeaderText = "Preço";
-            //dgvProduct.Columns["CATEGORY"].HeaderText = "Categoria";
+           // dgvProduct.Columns["CATEGORY"].HeaderText = "Categoria";
             dgvProduct.Columns["ACTIVE"].HeaderText = "Ativo";
             
             dgvProduct.Columns["FK_CATEGORY"].Visible = false;
