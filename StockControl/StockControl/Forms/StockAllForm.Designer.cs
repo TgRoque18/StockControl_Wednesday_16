@@ -64,9 +64,14 @@
             // 
             // dgvStock
             // 
+            this.dgvStock.AllowUserToAddRows = false;
+            this.dgvStock.AllowUserToDeleteRows = false;
             this.dgvStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStock.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvStock.Location = new System.Drawing.Point(86, 81);
+            this.dgvStock.MultiSelect = false;
             this.dgvStock.Name = "dgvStock";
+            this.dgvStock.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvStock.Size = new System.Drawing.Size(371, 224);
             this.dgvStock.TabIndex = 10;
             // 
@@ -111,6 +116,7 @@
             this.pbxDelete.Size = new System.Drawing.Size(35, 35);
             this.pbxDelete.TabIndex = 29;
             this.pbxDelete.TabStop = false;
+            this.pbxDelete.Click += new System.EventHandler(this.pbxDelete_Click);
             // 
             // pbxEdit
             // 

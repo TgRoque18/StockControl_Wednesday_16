@@ -58,7 +58,7 @@ namespace StockControl
             dgvStock.Columns["ID"].Visible = false;
             dgvStock.Columns["NAME"].HeaderText = "Nome";
             dgvStock.Columns["ACTIVE"].HeaderText = "Ativo";
-            dgvStock.Columns["AMOUNT"].HeaderText = "Qtd";
+            dgvStock.Columns["QUANTITY"].HeaderText = "Qtd";
             dgvStock.Columns["FK_PRODUCT"].Visible = false;
 
             foreach (DataGridViewColumn col in dgvStock.Columns)
@@ -92,6 +92,42 @@ namespace StockControl
             MainForm mainForm = new MainForm();
             mainForm.Show();
             this.Hide();
-        } 
+        }
+
+        private void pbxDelete_Click(object sender, EventArgs e)
+        {
+            int idStock = Int32.Parse(dgvStock.SelectedRows[0].Cells[0].Value.ToString());
+
+            SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+            try
+            {
+                //Conectar
+                sqlConnect.Open();
+                string sql = "DELETE FROM STOCK WHERE ID = @id";
+
+                SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+
+                cmd.Parameters.Add(new SqlParameter("@id", idStock));
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Removido com sucesso!");
+                ShowData();
+            }
+            catch (Exception ex)
+            {
+                //Tratar exceções
+                MessageBox.Show("Erro ao remover Stock!" + "\n\n" + ex.Message);
+                throw;
+            }
+            finally
+            {
+                //Fechar
+                sqlConnect.Close();
+            }
+        }
+
     }
 }
+
