@@ -86,5 +86,40 @@ namespace StockControl
                 col.HeaderCell.Style.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Pixel);
             }
         }
+
+        private void pbxDelete_Click(object sender, EventArgs e)
+        {
+            int idCategory = Int32.Parse(dtgCategory.SelectedRows[0].Cells[0].Value.ToString());
+
+            SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+            try
+            {
+                //Conectar
+                sqlConnect.Open();
+                string sql = "DELETE FROM CATEGORY WHERE ID = @id";
+
+                SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+
+                cmd.Parameters.Add(new SqlParameter("@id",idCategory));
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Removido com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                //Tratar exceções
+                MessageBox.Show("Erro ao remover categoria!" + "\n\n" + ex.Message);
+                throw;
+            }
+            finally
+            {
+                //Fechar
+                sqlConnect.Close();
+            }
+        }
+
     }
 }
+

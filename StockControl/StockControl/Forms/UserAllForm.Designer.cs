@@ -127,6 +127,7 @@
             this.pbxUserDelete.Size = new System.Drawing.Size(35, 35);
             this.pbxUserDelete.TabIndex = 20;
             this.pbxUserDelete.TabStop = false;
+            this.pbxUserDelete.Click += new System.EventHandler(this.pbxUserDelete_Click);
             // 
             // UserAllForm
             // 

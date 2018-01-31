@@ -91,6 +91,39 @@ namespace StockControl.Forms
             this.Hide();
         }
 
-        
+        private void pbxUserDelete_Click(object sender, EventArgs e)
+        {
+            int idUser = Int32.Parse(dgvUserASearch.SelectedRows[0].Cells[0].Value.ToString());
+
+            SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+            try
+            {
+                //Conectar
+                sqlConnect.Open();
+                string sql = "DELETE FROM CATEGORY WHERE ID = @id";
+
+                SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+
+                cmd.Parameters.Add(new SqlParameter("@id", idUser));
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Usuário removido com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                //Tratar exceções
+                MessageBox.Show("Erro ao remover usuário!" + "\n\n" + ex.Message);
+                throw;
+            }
+            finally
+            {
+                //Fechar
+                sqlConnect.Close();
+            }
+        }
+
     }
 }
+
