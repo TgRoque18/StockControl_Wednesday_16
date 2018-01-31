@@ -66,5 +66,29 @@ namespace StockControl.Forms
             productAllForm.Show();
             this.Hide();
         }
+
+        private void pbxStock_MouseEnter(object sender, EventArgs e)
+        {
+            lblStock.Visible = true;
+            pbxStock.BackColor = Color.Blue;
+        }
+
+        private void pbxStock_MouseLeave(object sender, EventArgs e)
+        {
+            lblStock.Visible = false;
+            pbxStock.BackColor = Color.Transparent;
+        }
+
+        private void pbxUserProfile_MouseEnter(object sender, EventArgs e)
+        {
+            lblProfile.Visible = true;
+            pbxUserProfile.BackColor = Color.Blue;
+        }
+
+        private void pbxUserProfile_MouseLeave(object sender, EventArgs e)
+        {
+            lblProfile.Visible = false;
+            pbxUserProfile.BackColor = Color.Transparent;
+        }
     }
 }
