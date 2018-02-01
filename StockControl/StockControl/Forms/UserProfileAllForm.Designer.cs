@@ -65,10 +65,10 @@
             // pbxBack
             // 
             this.pbxBack.BackgroundImage = global::StockControl.Properties.Resources.BackIcon;
-            this.pbxBack.Location = new System.Drawing.Point(36, 400);
+            this.pbxBack.Location = new System.Drawing.Point(21, 317);
             this.pbxBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbxBack.Name = "pbxBack";
-            this.pbxBack.Size = new System.Drawing.Size(47, 43);
+            this.pbxBack.Size = new System.Drawing.Size(35, 35);
             this.pbxBack.TabIndex = 4;
             this.pbxBack.TabStop = false;
             this.pbxBack.Click += new System.EventHandler(this.pbxBack_Click);
@@ -77,10 +77,10 @@
             // 
             this.pbxEdit.BackgroundImage = global::StockControl.Properties.Resources.Edit_icon_old_;
             this.pbxEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxEdit.Location = new System.Drawing.Point(551, 400);
+            this.pbxEdit.Location = new System.Drawing.Point(403, 317);
             this.pbxEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbxEdit.Name = "pbxEdit";
-            this.pbxEdit.Size = new System.Drawing.Size(47, 43);
+            this.pbxEdit.Size = new System.Drawing.Size(35, 35);
             this.pbxEdit.TabIndex = 5;
             this.pbxEdit.TabStop = false;
             this.pbxEdit.Click += new System.EventHandler(this.pbxEdit_Click);
@@ -89,10 +89,10 @@
             // 
             this.pbxDelete.BackgroundImage = global::StockControl.Properties.Resources.DeleteIcon;
             this.pbxDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxDelete.Location = new System.Drawing.Point(605, 400);
+            this.pbxDelete.Location = new System.Drawing.Point(459, 317);
             this.pbxDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbxDelete.Name = "pbxDelete";
-            this.pbxDelete.Size = new System.Drawing.Size(47, 43);
+            this.pbxDelete.Size = new System.Drawing.Size(35, 35);
             this.pbxDelete.TabIndex = 6;
             this.pbxDelete.TabStop = false;
             this.pbxDelete.Click += new System.EventHandler(this.pbxDelete_Click);
@@ -100,10 +100,10 @@
             // pbxSave
             // 
             this.pbxSave.BackgroundImage = global::StockControl.Properties.Resources.SaveIcon;
-            this.pbxSave.Location = new System.Drawing.Point(496, 400);
+            this.pbxSave.Location = new System.Drawing.Point(350, 317);
             this.pbxSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbxSave.Name = "pbxSave";
-            this.pbxSave.Size = new System.Drawing.Size(47, 43);
+            this.pbxSave.Size = new System.Drawing.Size(35, 35);
             this.pbxSave.TabIndex = 7;
             this.pbxSave.TabStop = false;
             this.pbxSave.Click += new System.EventHandler(this.pbxSave_Click);
@@ -115,7 +115,7 @@
             this.pbxSearch.Location = new System.Drawing.Point(299, 46);
             this.pbxSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbxSearch.Name = "pbxSearch";
-            this.pbxSearch.Size = new System.Drawing.Size(27, 25);
+            this.pbxSearch.Size = new System.Drawing.Size(20, 20);
             this.pbxSearch.TabIndex = 8;
             this.pbxSearch.TabStop = false;
             // 
@@ -125,19 +125,19 @@
             this.dgvUserProfile.AllowUserToDeleteRows = false;
             this.dgvUserProfile.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUserProfile.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvUserProfile.Location = new System.Drawing.Point(36, 106);
+            this.dgvUserProfile.Location = new System.Drawing.Point(49, 94);
             this.dgvUserProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvUserProfile.MultiSelect = false;
             this.dgvUserProfile.Name = "dgvUserProfile";
             this.dgvUserProfile.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUserProfile.Size = new System.Drawing.Size(616, 266);
+            this.dgvUserProfile.Size = new System.Drawing.Size(421, 197);
             this.dgvUserProfile.TabIndex = 11;
             // 
             // UserProfileAllForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(699, 458);
+            this.ClientSize = new System.Drawing.Size(522, 365);
             this.Controls.Add(this.dgvUserProfile);
             this.Controls.Add(this.pbxSearch);
             this.Controls.Add(this.pbxSave);
