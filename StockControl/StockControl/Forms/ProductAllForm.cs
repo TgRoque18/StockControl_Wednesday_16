@@ -93,9 +93,36 @@ namespace StockControl
 
         private void pbxDelete_Click(object sender, EventArgs e)
         {
+            int idProduct = Int32.Parse(dgvProduct.SelectedRows[0].Cells[0].Value.ToString());
 
+            SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+            try
+            {
+                //Conectar
+                sqlConnect.Open();
+                string sql = "DELETE FROM PRODUCT WHERE ID = @id";
+
+                SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+
+                cmd.Parameters.Add(new SqlParameter("@id", idProduct));
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Removido com sucesso!");
+                ShowData();
+            }
+            catch (Exception ex)
+            {
+                //Tratar exceções
+                MessageBox.Show("Erro ao remover Product!" + "\n\n" + ex.Message);
+                throw;
+            }
+            finally
+            {
+                //Fechar
+                sqlConnect.Close();
+            }
         }
-
-       
     }
 }
