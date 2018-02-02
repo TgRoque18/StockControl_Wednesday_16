@@ -50,7 +50,7 @@
             this.tbxUserASearch.Location = new System.Drawing.Point(135, 33);
             this.tbxUserASearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxUserASearch.Name = "tbxUserASearch";
-            this.tbxUserASearch.Size = new System.Drawing.Size(191, 23);
+            this.tbxUserASearch.Size = new System.Drawing.Size(191, 26);
             this.tbxUserASearch.TabIndex = 3;
             // 
             // lblUserASearch
@@ -59,7 +59,7 @@
             this.lblUserASearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblUserASearch.Location = new System.Drawing.Point(35, 39);
             this.lblUserASearch.Name = "lblUserASearch";
-            this.lblUserASearch.Size = new System.Drawing.Size(71, 17);
+            this.lblUserASearch.Size = new System.Drawing.Size(79, 20);
             this.lblUserASearch.TabIndex = 2;
             this.lblUserASearch.Text = "Pesquisar";
             // 
@@ -69,19 +69,19 @@
             this.dgvUserASearch.AllowUserToOrderColumns = true;
             this.dgvUserASearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUserASearch.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvUserASearch.Location = new System.Drawing.Point(13, 92);
+            this.dgvUserASearch.Location = new System.Drawing.Point(31, 92);
             this.dgvUserASearch.Margin = new System.Windows.Forms.Padding(4);
             this.dgvUserASearch.MultiSelect = false;
             this.dgvUserASearch.Name = "dgvUserASearch";
             this.dgvUserASearch.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUserASearch.Size = new System.Drawing.Size(480, 190);
+            this.dgvUserASearch.Size = new System.Drawing.Size(462, 190);
             this.dgvUserASearch.TabIndex = 16;
             // 
             // pbxUserSearch
             // 
             this.pbxUserSearch.BackgroundImage = global::StockControl.Properties.Resources.Search_icon_old_;
             this.pbxUserSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxUserSearch.Location = new System.Drawing.Point(372, 39);
+            this.pbxUserSearch.Location = new System.Drawing.Point(345, 39);
             this.pbxUserSearch.Name = "pbxUserSearch";
             this.pbxUserSearch.Size = new System.Drawing.Size(20, 20);
             this.pbxUserSearch.TabIndex = 24;

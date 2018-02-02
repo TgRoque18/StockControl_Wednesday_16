@@ -78,7 +78,7 @@
             // tbxName
             // 
             this.tbxName.Location = new System.Drawing.Point(55, 94);
-            this.tbxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxName.Margin = new System.Windows.Forms.Padding(4);
             this.tbxName.Name = "tbxName";
             this.tbxName.Size = new System.Drawing.Size(257, 22);
             this.tbxName.TabIndex = 3;
@@ -86,7 +86,7 @@
             // tbxAmount
             // 
             this.tbxAmount.Location = new System.Drawing.Point(55, 188);
-            this.tbxAmount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxAmount.Margin = new System.Windows.Forms.Padding(4);
             this.tbxAmount.Name = "tbxAmount";
             this.tbxAmount.Size = new System.Drawing.Size(257, 22);
             this.tbxAmount.TabIndex = 4;
@@ -95,7 +95,7 @@
             // 
             this.ckbActive.AutoSize = true;
             this.ckbActive.Location = new System.Drawing.Point(117, 244);
-            this.ckbActive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckbActive.Margin = new System.Windows.Forms.Padding(4);
             this.ckbActive.Name = "ckbActive";
             this.ckbActive.Size = new System.Drawing.Size(15, 14);
             this.ckbActive.TabIndex = 5;
@@ -105,10 +105,10 @@
             // 
             this.pbxBack.BackgroundImage = global::StockControl.Properties.Resources.BackIcon;
             this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxBack.Location = new System.Drawing.Point(60, 399);
-            this.pbxBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxBack.Location = new System.Drawing.Point(24, 317);
+            this.pbxBack.Margin = new System.Windows.Forms.Padding(4);
             this.pbxBack.Name = "pbxBack";
-            this.pbxBack.Size = new System.Drawing.Size(47, 43);
+            this.pbxBack.Size = new System.Drawing.Size(35, 35);
             this.pbxBack.TabIndex = 23;
             this.pbxBack.TabStop = false;
             this.pbxBack.Click += new System.EventHandler(this.pbxBack_Click);
@@ -117,10 +117,10 @@
             // 
             this.pbxSave.BackgroundImage = global::StockControl.Properties.Resources.SaveIcon;
             this.pbxSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxSave.Location = new System.Drawing.Point(523, 399);
-            this.pbxSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxSave.Location = new System.Drawing.Point(401, 317);
+            this.pbxSave.Margin = new System.Windows.Forms.Padding(4);
             this.pbxSave.Name = "pbxSave";
-            this.pbxSave.Size = new System.Drawing.Size(47, 43);
+            this.pbxSave.Size = new System.Drawing.Size(35, 35);
             this.pbxSave.TabIndex = 24;
             this.pbxSave.TabStop = false;
             this.pbxSave.Click += new System.EventHandler(this.pbxSave_Click);
@@ -129,10 +129,10 @@
             // 
             this.pbxDelete.BackgroundImage = global::StockControl.Properties.Resources.DeleteIcon;
             this.pbxDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxDelete.Location = new System.Drawing.Point(596, 399);
-            this.pbxDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxDelete.Location = new System.Drawing.Point(456, 317);
+            this.pbxDelete.Margin = new System.Windows.Forms.Padding(4);
             this.pbxDelete.Name = "pbxDelete";
-            this.pbxDelete.Size = new System.Drawing.Size(47, 43);
+            this.pbxDelete.Size = new System.Drawing.Size(35, 35);
             this.pbxDelete.TabIndex = 25;
             this.pbxDelete.TabStop = false;
             // 
@@ -140,7 +140,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(699, 457);
+            this.ClientSize = new System.Drawing.Size(522, 365);
             this.Controls.Add(this.pbxDelete);
             this.Controls.Add(this.pbxSave);
             this.Controls.Add(this.pbxBack);
@@ -150,8 +150,9 @@
             this.Controls.Add(this.lblActive);
             this.Controls.Add(this.lblAmount);
             this.Controls.Add(this.lblName);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormStockEdition";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estoque";
             ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSave)).EndInit();
