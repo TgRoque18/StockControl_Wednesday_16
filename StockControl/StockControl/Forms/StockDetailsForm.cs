@@ -55,12 +55,12 @@ namespace StockControl
 
                 //Conectar
                 sqlConnect.Open();
-                string sql = "INSERT INTO STOCK(NAME,AMOUNT, ACTIVE) VALUES (@name, @amount, @active)";
+                string sql = "INSERT INTO STOCK(NAME,QUANTITY, ACTIVE) VALUES (@name, @quantity, @active)";
 
                 SqlCommand cmd = new SqlCommand(sql, sqlConnect);
 
                 cmd.Parameters.Add(new SqlParameter("@name", name));
-                cmd.Parameters.Add(new SqlParameter("@amount", amount));
+                cmd.Parameters.Add(new SqlParameter("@quantity", amount));
                 cmd.Parameters.Add(new SqlParameter("@active", active));
 
                 cmd.ExecuteNonQuery();
