@@ -30,8 +30,12 @@ namespace StockControl.Forms
             try
             {
                 sqlConnect.Open();
-
-                SqlCommand cmd = new SqlCommand("SELECT * FROM USER", sqlConnect);
+                //COMENTARIOS THIAGO ROQUE
+                /*Quando a tabela do banco usa uma palavra reservada pelo SQL 
+                 * neste caso USER, devemos colocar ela entre []
+                 * EX:. [USER]
+                 */
+                SqlCommand cmd = new SqlCommand("SELECT * FROM [USER]", sqlConnect);
                 // SqlDataReader reader = cmd.ExecuteReader();
 
                 cmd.ExecuteNonQuery();

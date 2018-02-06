@@ -45,7 +45,12 @@ namespace StockControl
 
                 //Conectar
                 sqlConnect.Open();
-                string sql = "INSERT INTO USER(NAME, PASSWORD, EMAIL, ACTIVE, FK_USER_PROFILE) VALUES (@name, @password, @email, @active, @userProfile)";
+                //COMENTARIOS THIAGO ROQUE
+                /*Quando a tabela do banco usa uma palavra reservada pelo SQL 
+                 * neste caso USER, devemos colocar ela entre []
+                 * EX:. [USER]
+                 */
+                string sql = "INSERT INTO [USER](NAME, PASSWORD, EMAIL, ACTIVE, FK_USER_PROFILE) VALUES (@name, @password, @email, @active, @userProfile)";
 
                 SqlCommand cmd = new SqlCommand(sql, sqlConnect);
 
@@ -53,7 +58,15 @@ namespace StockControl
                 cmd.Parameters.Add(new SqlParameter("@password", password));
                 cmd.Parameters.Add(new SqlParameter("@email", email));
                 cmd.Parameters.Add(new SqlParameter("@active", active));
-                cmd.Parameters.Add(new SqlParameter("@userProfile", cmbUserDProfile.SelectedIndex +1));
+                //COMENTARIOS THIAGO ROQUE
+                /*Pegar sempre o item de outra tabela pelo ID,
+                 * O Index representa a posição dele no banco
+                 * EX:. quarto item, setimo item
+                 * Fiz uma conversao implicita, ou seja coloco o tipo do item pra qual 
+                 * eu quero converter antes do item
+                 * EX:. (Int32)idade -> converte a variavel idade no tipo Int32
+                 */
+                cmd.Parameters.Add(new SqlParameter("@userProfile", ((UserProfile)cmbUserDProfile.SelectedItem).Id));
 
                 cmd.ExecuteNonQuery();
 
