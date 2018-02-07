@@ -63,7 +63,7 @@ namespace StockControl.Forms
             dgvUserASearch.Columns["NAME"].HeaderText = "Nome";
             dgvUserASearch.Columns["PASSWORD"].Visible = false;
             dgvUserASearch.Columns["EMAIL"].HeaderText = "Email";
-            dgvUserASearch.Columns["ACTIVE"].HeaderText = "Ativo";           
+            dgvUserASearch.Columns["ACTIVE"].HeaderText = "Ativo";
             dgvUserASearch.Columns["FK_USER_PROFILE"].Visible = false;
 
             foreach (DataGridViewColumn col in dgvUserASearch.Columns)
@@ -90,9 +90,16 @@ namespace StockControl.Forms
 
         private void pbxUserEdit_Click(object sender, EventArgs e)
         {
-            UserDetailsForm userdetailsform = new UserDetailsForm();
-            userdetailsform.Show();
-            this.Hide();
+            //UserDetailsForm userdetailsform = new UserDetailsForm();
+            //userdetailsform.Show();
+            //this.Hide();
+
+            int idUser = Int32.Parse(dgvUserASearch.SelectedRows[0].Cells[0].Value.ToString());
+
+            UserDetailsForm userform = new UserDetailsForm (idUser);
+            userform.Show();
+
+            this.Close();
         }
 
         private void pbxUserDelete_Click(object sender, EventArgs e)
