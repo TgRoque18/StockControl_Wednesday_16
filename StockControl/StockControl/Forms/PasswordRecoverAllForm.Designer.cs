@@ -36,27 +36,24 @@
             // lblLogin
             // 
             this.lblLogin.AutoSize = true;
-            this.lblLogin.Location = new System.Drawing.Point(23, 47);
-            this.lblLogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLogin.Location = new System.Drawing.Point(34, 72);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(39, 13);
+            this.lblLogin.Size = new System.Drawing.Size(56, 20);
             this.lblLogin.TabIndex = 0;
             this.lblLogin.Text = "Login :";
             // 
             // tbxLogin
             // 
-            this.tbxLogin.Location = new System.Drawing.Point(83, 47);
-            this.tbxLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxLogin.Location = new System.Drawing.Point(124, 72);
             this.tbxLogin.Name = "tbxLogin";
-            this.tbxLogin.Size = new System.Drawing.Size(68, 20);
+            this.tbxLogin.Size = new System.Drawing.Size(100, 26);
             this.tbxLogin.TabIndex = 2;
             // 
             // btnRecoverPassword
             // 
-            this.btnRecoverPassword.Location = new System.Drawing.Point(71, 99);
-            this.btnRecoverPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRecoverPassword.Location = new System.Drawing.Point(106, 152);
             this.btnRecoverPassword.Name = "btnRecoverPassword";
-            this.btnRecoverPassword.Size = new System.Drawing.Size(67, 31);
+            this.btnRecoverPassword.Size = new System.Drawing.Size(100, 48);
             this.btnRecoverPassword.TabIndex = 1;
             this.btnRecoverPassword.Text = "Recuperar Senha";
             this.btnRecoverPassword.UseVisualStyleBackColor = true;
@@ -64,14 +61,14 @@
             // 
             // PasswordRecoverAllForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(185, 159);
+            this.ClientSize = new System.Drawing.Size(278, 245);
             this.Controls.Add(this.tbxLogin);
             this.Controls.Add(this.btnRecoverPassword);
             this.Controls.Add(this.lblLogin);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PasswordRecoverAllForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Recuperação de senha";
             this.ResumeLayout(false);
             this.PerformLayout();
