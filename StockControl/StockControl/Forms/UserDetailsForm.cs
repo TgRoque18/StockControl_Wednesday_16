@@ -71,8 +71,9 @@ namespace StockControl
                 cmd.ExecuteNonQuery();
 
                 MessageBox.Show("Usuário adicionado com sucesso!");
-                
+                CleanData();                
             }
+
             catch (Exception ex)
             {
                 //Tratar exceções

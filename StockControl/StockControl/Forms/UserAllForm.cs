@@ -105,7 +105,7 @@ namespace StockControl.Forms
             {
                 //Conectar
                 sqlConnect.Open();
-                string sql = "DELETE FROM CATEGORY WHERE ID = @id";
+                string sql = "DELETE FROM [USER] WHERE ID = @id";
 
                 SqlCommand cmd = new SqlCommand(sql, sqlConnect);
 
