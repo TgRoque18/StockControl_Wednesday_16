@@ -24,8 +24,112 @@ namespace StockControl.Forms
         public ProductDetailsForm()
         {
             InitializeComponent();
-            LoadComboBox();
             cmbCategory.DisplayMember = "NAME";
+            LoadComboBox();
+        }
+
+        public ProductDetailsForm(int idProduct)
+        {
+            InitializeComponent();
+            cmbCategory.DisplayMember = "NAME";
+
+            lblid.Text = idProduct.ToString(); //-------
+
+            SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+            if (!string.IsNullOrEmpty(lblid.Text))
+            {
+                try
+                {
+                    //Conectar
+                    sqlConnect.Open();
+
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM [Product] WHERE ID = @id", sqlConnect);
+                    //SqlCommand cmd = new SqlCommand("SELECT * FROM CATEGORY WHERE ID = " + idCategory.ToString(), sqlConnect);
+
+                    cmd.Parameters.Add(new SqlParameter("@id", idProduct));
+
+                    Product product = new Product(); //------
+
+                    using (SqlDataReader reader = cmd.ExecuteReader()) //-----
+                    {
+                        while (reader.Read())
+                        {
+                            product.Id = Int32.Parse(reader["ID"].ToString());
+                            product.Name = reader["NAME"].ToString();
+                            product.Active = bool.Parse(reader["ACTIVE"].ToString());
+                            product.Price = float.Parse(reader["PRICE"].ToString());
+                          //  product.Category = new Category(Int32.Parse(reader["FK_CATEGORY"].ToString()));
+                          
+                        }
+                    }
+
+                    tbxName.Text = product.Name;
+                    ckbActive.Checked = product.Active;
+                    tbxPrice.Text = product.Price.ToString();
+
+                    //Busca o index baseado no Select
+                    int indexCombo = 0;
+                    if (product.Category != null)
+                    {
+                        indexCombo = product.Category.Id;
+                    }
+
+                    //Inicializa o dropDown com as informa��es do banco
+                    InitializeComboBox(cmbCategory, indexCombo);
+
+                }
+                catch (Exception EX)
+                {
+                    //Tratar exce��es
+                    throw;
+                }
+                finally
+                {
+                    //Fechar
+                    sqlConnect.Close();
+                }
+            }
+
+        }
+
+        private void InitializeComboBox(ComboBox cbxProduct, int indexCombo)
+        {
+            cbxProduct.Items.Add("Selecione.. ");
+            SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+            try
+            {
+                //Conectar
+                sqlConnect.Open();
+
+                SqlCommand cmd = new SqlCommand("SELECT * FROM CATEGORY", sqlConnect);
+
+                using (SqlDataReader reader = cmd.ExecuteReader()) //-----
+                {
+                    while (reader.Read())
+                    {
+                        cbxProduct.Items.Add(reader["NAME"].ToString());
+                    }
+                }
+
+                cbxProduct.SelectedItem = cbxProduct.Items[indexCombo];
+            }
+            catch (Exception EX)
+            {
+                //Tratar exceções
+                //throw;
+
+                MessageBox.Show("erro de acesso ao banco de dados");
+
+                //LogHelper logBD = new LogHelper();
+                //logBD.PrintLog(Convert.ToString(EX));
+            }
+            finally
+            {
+                //Fechar
+                sqlConnect.Close();
+            }
         }
 
         void LoadComboBox()
@@ -41,7 +145,7 @@ namespace StockControl.Forms
                 while (reader.Read())
                 {
                     Category c = new Category(reader["NAME"].ToString(), bool.Parse(reader["ACTIVE"].ToString()), Int32.Parse(reader["ID"].ToString()));
-                    categories.Add(c); 
+                    categories.Add(c);
                 }
             }
             catch (Exception ex)
@@ -67,37 +171,71 @@ namespace StockControl.Forms
 
         private void pbxSave_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlConnect = new SqlConnection(connectionString);
-            try
+
+            if (string.IsNullOrEmpty(lblid.Text)) //-----
             {
-                GetData();
+                SqlConnection sqlConnect = new SqlConnection(connectionString);
+                try
+                {
+                    GetData();
 
-                //Conectar
-                sqlConnect.Open();
-                string sql = "INSERT INTO PRODUCT(NAME, PRICE, ACTIVE, FK_CATEGORY) VALUES (@name, @price, @active, @category)";
+                    //Conectar
+                    sqlConnect.Open();
+                    string sql = "INSERT INTO PRODUCT(NAME, PRICE, ACTIVE, FK_CATEGORY) VALUES (@name, @price, @active, @category)";
 
-                SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+                    SqlCommand cmd = new SqlCommand(sql, sqlConnect);
 
-                cmd.Parameters.Add(new SqlParameter("@name", name));
-                cmd.Parameters.Add(new SqlParameter("@price", price));
-                cmd.Parameters.Add(new SqlParameter("@active", active));
-                cmd.Parameters.Add(new SqlParameter("@category", cmbCategory.SelectedIndex+1));
-                cmd.ExecuteNonQuery();
+                    cmd.Parameters.Add(new SqlParameter("@name", name));
+                    cmd.Parameters.Add(new SqlParameter("@price", price));
+                    cmd.Parameters.Add(new SqlParameter("@active", active));
+                    cmd.Parameters.Add(new SqlParameter("@category",((Category)cmbCategory.SelectedItem).Id));
+                    cmd.ExecuteNonQuery();
 
-                MessageBox.Show("Adicionado com sucesso!");
-                CleanData();
+                    MessageBox.Show("Adicionado com sucesso!");
+                    CleanData();
 
+                }
+                catch (Exception ex)
+                {
+                    //Tratar exceções
+                    MessageBox.Show("Erro ao adicionar categoria!" + ex.Message);
+                    CleanData();
+                }
+                finally
+                {
+                    //Fechar
+                    sqlConnect.Close();
+                }
             }
-            catch (Exception ex)
+            else
             {
-                //Tratar exceções
-                MessageBox.Show("Erro ao adicionar categoria!" + ex.Message);
-                CleanData();
-            }
-            finally
-            {
-                //Fechar
-                sqlConnect.Close();
+                SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+                try
+                {
+                    sqlConnect.Open();
+                    string sql = "UPDATE PRODUCT SET NAME= @name, PRICE = @price, ACTIVE = @active WHERE ID = @id";
+
+                    SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+
+                    cmd.Parameters.Add(new SqlParameter("@name", this.tbxName.Text));
+                    cmd.Parameters.Add(new SqlParameter("@price", this.tbxPrice.Text));
+                    cmd.Parameters.Add(new SqlParameter("@active", this.ckbActive.Checked));
+                    cmd.Parameters.Add(new SqlParameter("@id", this.lblid.Text));
+                    //cmd.Parameters.Add(new SqlParameter("@fk_category", this.cmbCategory.SelectedIndex));
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Alterações salvas com sucesso!");
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show("Erro ao editar este Produto!" + "\n\n" + Ex.Message);
+                    throw;
+                }
+                finally
+                {
+                    sqlConnect.Close();
+                }
             }
         }
 

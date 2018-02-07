@@ -121,7 +121,6 @@ namespace StockControl
                 sqlConnect.Close();
             }
         }
-
     }
 }
 
