@@ -39,9 +39,14 @@ namespace StockControl
 
         private void pbxEdit_Click(object sender, EventArgs e)
         {
-            CategoryDetailsForm categoryDetailForm = new CategoryDetailsForm();
-            categoryDetailForm.Show();
-            this.Hide();
+            int idCategory = Int32.Parse(dtgCategory.SelectedRows[0].Cells[0].Value.ToString());
+
+            CategoryDetailsForm category = new CategoryDetailsForm(idCategory);
+            category.Show();
+
+            this.Close();
+
+
         }
         private void ShowData()
         {

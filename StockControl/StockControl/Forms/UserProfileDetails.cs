@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StockControl.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,40 +31,125 @@ namespace StockControl.Forms
             userProfileAllForm.Show();
             this.Hide();
         }
+        public UserProfileDetails(int IdUserProfile) {
+            InitializeComponent();
 
+            lblId.Text = IdUserProfile.ToString(); //-------
+
+            SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+            if (!string.IsNullOrEmpty(lblId.Text))
+            {
+                try
+                {
+                    //Conectar
+                    sqlConnect.Open();
+
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM USER_PROFILE WHERE ID = @id", sqlConnect);
+                    //SqlCommand cmd = new SqlCommand("SELECT * FROM CATEGORY WHERE ID = " + idCategory.ToString(), sqlConnect);
+
+                    cmd.Parameters.Add(new SqlParameter("@id", IdUserProfile));
+
+                    UserProfile userProfile = new UserProfile(); //------
+
+                    using (SqlDataReader reader = cmd.ExecuteReader()) //-----
+                    {
+                        while (reader.Read())
+                        {
+                            userProfile.Id = Int32.Parse(reader["ID"].ToString());
+                            userProfile.Name = reader["NAME"].ToString();
+                            userProfile.Active = bool.Parse(reader["ACTIVE"].ToString());
+
+
+                        }
+                    }
+
+                    tbxName.Text = userProfile.Name;
+                    ckbActive.Checked = userProfile.Active;
+
+                }
+                //Busca o index baseado no Select
+
+                catch (Exception EX)
+                {
+                    //Tratar exce��es
+                    throw;
+                }
+                finally
+                {
+                    //Fechar
+                    sqlConnect.Close();
+                }
+            }
+        }
         private void pbxSave_Click(object sender, EventArgs e)
         {
             SqlConnection sqlConnect = new SqlConnection(connectionString);
 
-            try
+            
+            if (string.IsNullOrEmpty(lblId.Text)) //-----
             {
-                GetData();
+                try
+                {
+                    GetData();
 
-                //Conectar
-                sqlConnect.Open();
-                string sql = "INSERT INTO USER_PROFILE(NAME, ACTIVE) VALUES (@name, @active)";
+                    //Conectar
+                    sqlConnect.Open();
+                    string sql = "INSERT INTO USER_PROFILE(NAME, ACTIVE) VALUES (@name, @active)";
 
-                SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+                    SqlCommand cmd = new SqlCommand(sql, sqlConnect);
 
-                cmd.Parameters.Add(new SqlParameter("@name", name));
-                cmd.Parameters.Add(new SqlParameter("@active", active));
+                    cmd.Parameters.Add(new SqlParameter("@name", name));
+                    cmd.Parameters.Add(new SqlParameter("@active", active));
 
-                cmd.ExecuteNonQuery();
+                    cmd.ExecuteNonQuery();
 
-                MessageBox.Show("Adicionado com sucesso!");
+                    MessageBox.Show("Adicionado com sucesso!");
 
 
+                }
+                catch (Exception ex)
+                {
+                    //Tratar exce��es
+                    MessageBox.Show("Erro ao adicionar categoria!" + ex.Message);
+                    CleanData();
+                }
+                finally
+                {
+                    //Fechar
+                    sqlConnect.Close();
+                }
             }
-            catch (Exception ex)
+            else
             {
-                //Tratar exce��es
-                MessageBox.Show("Erro ao adicionar categoria!" + ex.Message);
-                CleanData();
-            }
-            finally
-            {
-                //Fechar
-                sqlConnect.Close();
+
+                try
+                {
+                    sqlConnect.Open();
+                    string sql = "UPDATE USER_PROFILE SET NAME=@name, ACTIVE = @active";
+
+                    SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+
+                    cmd.Parameters.Add(new SqlParameter("@name", this.tbxName.Text));
+                    cmd.Parameters.Add(new SqlParameter("@active", this.ckbActive.Checked));
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Altere��es salvas com sucesso!");
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show("Erro ao editar esta categoria!" + "\n\n" + Ex.Message);
+                    throw;
+                }
+                finally
+                {
+                    sqlConnect.Close();
+
+                    MainForm mainForm = new MainForm();
+                    mainForm.Show();
+                    this.Hide();
+                }
             }
 
 

@@ -81,9 +81,12 @@ namespace StockControl.Forms
 
         private void pbxEdit_Click(object sender, EventArgs e)
         {
-            UserProfileDetails userProfileDetails = new UserProfileDetails();
+
+            int idUserProfile = Int32.Parse(dgvUserProfile.SelectedRows[0].Cells[0].Value.ToString());
+            UserProfileDetails userProfileDetails = new UserProfileDetails(idUserProfile);
             userProfileDetails.Show();
-            this.Hide();
+
+            this.Close();
         }
 
         private void pbxDelete_Click(object sender, EventArgs e)

@@ -35,6 +35,7 @@
             this.pbxBack = new System.Windows.Forms.PictureBox();
             this.pbxSave = new System.Windows.Forms.PictureBox();
             this.pbxDelete = new System.Windows.Forms.PictureBox();
+            this.lblId = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDelete)).BeginInit();
@@ -44,36 +45,40 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(57, 78);
+            this.lblName.Location = new System.Drawing.Point(38, 51);
+            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(75, 25);
+            this.lblName.Size = new System.Drawing.Size(53, 17);
             this.lblName.TabIndex = 3;
             this.lblName.Text = "Nome :";
             // 
             // tbxName
             // 
             this.tbxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxName.Location = new System.Drawing.Point(147, 78);
+            this.tbxName.Location = new System.Drawing.Point(98, 51);
+            this.tbxName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxName.Name = "tbxName";
-            this.tbxName.Size = new System.Drawing.Size(283, 30);
+            this.tbxName.Size = new System.Drawing.Size(190, 23);
             this.tbxName.TabIndex = 4;
             // 
             // lblActive
             // 
             this.lblActive.AutoSize = true;
             this.lblActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActive.Location = new System.Drawing.Point(66, 229);
+            this.lblActive.Location = new System.Drawing.Point(44, 149);
+            this.lblActive.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblActive.Name = "lblActive";
-            this.lblActive.Size = new System.Drawing.Size(67, 25);
+            this.lblActive.Size = new System.Drawing.Size(47, 17);
             this.lblActive.TabIndex = 5;
             this.lblActive.Text = "Ativo :";
             // 
             // ckbActive
             // 
             this.ckbActive.AutoSize = true;
-            this.ckbActive.Location = new System.Drawing.Point(147, 228);
+            this.ckbActive.Location = new System.Drawing.Point(98, 148);
+            this.ckbActive.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ckbActive.Name = "ckbActive";
-            this.ckbActive.Size = new System.Drawing.Size(22, 21);
+            this.ckbActive.Size = new System.Drawing.Size(15, 14);
             this.ckbActive.TabIndex = 6;
             this.ckbActive.UseVisualStyleBackColor = true;
             // 
@@ -81,10 +86,9 @@
             // 
             this.pbxBack.BackgroundImage = global::StockControl.Properties.Resources.BackIcon;
             this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxBack.Location = new System.Drawing.Point(46, 500);
-            this.pbxBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxBack.Location = new System.Drawing.Point(31, 325);
             this.pbxBack.Name = "pbxBack";
-            this.pbxBack.Size = new System.Drawing.Size(52, 54);
+            this.pbxBack.Size = new System.Drawing.Size(35, 35);
             this.pbxBack.TabIndex = 9;
             this.pbxBack.TabStop = false;
             this.pbxBack.Click += new System.EventHandler(this.pbxBack_Click);
@@ -93,10 +97,9 @@
             // 
             this.pbxSave.BackgroundImage = global::StockControl.Properties.Resources.SaveIcon;
             this.pbxSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxSave.Location = new System.Drawing.Point(639, 500);
-            this.pbxSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxSave.Location = new System.Drawing.Point(426, 325);
             this.pbxSave.Name = "pbxSave";
-            this.pbxSave.Size = new System.Drawing.Size(52, 54);
+            this.pbxSave.Size = new System.Drawing.Size(35, 35);
             this.pbxSave.TabIndex = 8;
             this.pbxSave.TabStop = false;
             this.pbxSave.Click += new System.EventHandler(this.pbxSave_Click);
@@ -105,18 +108,27 @@
             // 
             this.pbxDelete.BackgroundImage = global::StockControl.Properties.Resources.DeleteIcon;
             this.pbxDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbxDelete.Location = new System.Drawing.Point(700, 500);
-            this.pbxDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxDelete.Location = new System.Drawing.Point(467, 325);
             this.pbxDelete.Name = "pbxDelete";
-            this.pbxDelete.Size = new System.Drawing.Size(52, 54);
+            this.pbxDelete.Size = new System.Drawing.Size(35, 35);
             this.pbxDelete.TabIndex = 7;
             this.pbxDelete.TabStop = false;
             // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(242, 124);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(0, 13);
+            this.lblId.TabIndex = 10;
+            this.lblId.Visible = false;
+            // 
             // UserProfileDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(786, 572);
+            this.ClientSize = new System.Drawing.Size(524, 372);
+            this.Controls.Add(this.lblId);
             this.Controls.Add(this.pbxBack);
             this.Controls.Add(this.pbxSave);
             this.Controls.Add(this.pbxDelete);
@@ -124,6 +136,7 @@
             this.Controls.Add(this.lblActive);
             this.Controls.Add(this.tbxName);
             this.Controls.Add(this.lblName);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserProfileDetails";
             this.Text = "Perfil de Usuário";
             ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).EndInit();
@@ -142,5 +155,6 @@
         private System.Windows.Forms.PictureBox pbxDelete;
         private System.Windows.Forms.PictureBox pbxSave;
         private System.Windows.Forms.PictureBox pbxBack;
+        private System.Windows.Forms.Label lblId;
     }
 }
