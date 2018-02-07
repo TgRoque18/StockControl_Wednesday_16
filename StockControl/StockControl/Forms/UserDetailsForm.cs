@@ -22,12 +22,123 @@ namespace StockControl
         public string email;
         public bool active;
 
+
         public UserDetailsForm()
         {
             InitializeComponent();
             LoadComboBox();
+        }
+
+        public UserDetailsForm(int idUser)
+        {
+            InitializeComponent();
+            lblId.Text = idUser.ToString(); //-------
+
+            SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+            if (!string.IsNullOrEmpty(lblId.Text))
+            {
+                try
+                {
+                    //Conectar
+                    sqlConnect.Open();
+
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM [USER] WHERE ID = @id", sqlConnect);
+                    //SqlCommand cmd = new SqlCommand("SELECT * FROM CATEGORY WHERE ID = " + idCategory.ToString(), sqlConnect);
+
+                    cmd.Parameters.Add(new SqlParameter("@id", idUser));
+
+                    User user = new User(); //------
+
+                    using (SqlDataReader reader = cmd.ExecuteReader()) //-----
+                    {
+                        while (reader.Read())
+                        {
+                            user.Id = Int32.Parse(reader["ID"].ToString());
+                            user.Name = reader["NAME"].ToString();
+                            user.Active = bool.Parse(reader["ACTIVE"].ToString());
+                            user.Email = reader["EMAIL"].ToString();
+                            user.Password = reader["PASSWORD"].ToString();
+                            user.UserProfile = new UserProfile
+                            {
+                                Id = Int32.Parse(reader["FK_USER_PROFILE"].ToString())
+                            };
+
+                        }
+                    }
+
+                    tbxUserDName.Text = user.Name;
+                    cbxUserDActive.Checked = user.Active;
+                    tbxUserDEmail.Text = user.Email;
+                    tbxUserDPassword.Text = user.Password;                   
+
+                    //Busca o index baseado no Select
+                    int indexCombo = 0;
+                    if (user.UserProfile != null)
+                    {
+                        indexCombo = user.UserProfile.Id;
+                    }
+
+                    //Inicializa o dropDown com as informa��es do banco
+                    InitializeComboBox(cmbUserDProfile, indexCombo);
+
+                }
+                catch (Exception EX)
+                {
+                    //Tratar exce��es
+                    throw;
+                }
+                finally
+                {
+                    //Fechar
+                    sqlConnect.Close();
+                }
+            }
+
+            LoadComboBox();
             cmbUserDProfile.DisplayMember = "NAME";
         }
+
+        private void InitializeComboBox(ComboBox cbxProfile, int indexCombo)
+        {
+            cbxProfile.Items.Add("Selecione.. ");
+            SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+            try
+            {
+                //Conectar
+                sqlConnect.Open();
+
+                SqlCommand cmd = new SqlCommand("SELECT * FROM USER_PROFILE", sqlConnect);
+
+                using (SqlDataReader reader = cmd.ExecuteReader()) //-----
+                {
+                    while (reader.Read())
+                    {
+                        cbxProfile.Items.Add(reader["NAME"].ToString());
+                    }
+                }
+
+                cbxProfile.SelectedItem = cbxProfile.Items[indexCombo];
+            }
+            catch (Exception EX)
+            {
+                //Tratar exceções
+                //throw;
+
+                MessageBox.Show("Erro de acesso ao banco de dados");
+
+                //LogHelper logBD = new LogHelper();
+                //logBD.PrintLog(Convert.ToString(EX));
+            }
+            finally
+            {
+                //Fechar
+                sqlConnect.Close();
+            }
+        }
+
+
 
         private void pbxUserBackPages_Click(object sender, EventArgs e)
         {
@@ -38,70 +149,113 @@ namespace StockControl
 
         private void pbxUserSaveProfile_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlConnect = new SqlConnection(connectionString);
-            try
+            if (string.IsNullOrEmpty(lblId.Text)) //-----
             {
-                GetData();
+                //Salvar
 
-                //Conectar
-                sqlConnect.Open();
-                //COMENTARIOS THIAGO ROQUE
-                /*Quando a tabela do banco usa uma palavra reservada pelo SQL 
-                 * neste caso USER, devemos colocar ela entre []
-                 * EX:. [USER]
-                 */
-                string sql = "INSERT INTO [USER](NAME, PASSWORD, EMAIL, ACTIVE, FK_USER_PROFILE) VALUES (@name, @password, @email, @active, @userProfile)";
+                SqlConnection sqlConnect = new SqlConnection(connectionString);
+                try
+                {
+                    GetData();
 
-                SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+                    //Conectar
+                    sqlConnect.Open();
+                    //COMENTARIOS THIAGO ROQUE
+                    /*Quando a tabela do banco usa uma palavra reservada pelo SQL 
+                     * neste caso USER, devemos colocar ela entre []
+                     * EX:. [USER]
+                     */
+                    string sql = "INSERT INTO [USER](NAME, PASSWORD, EMAIL, ACTIVE, FK_USER_PROFILE) VALUES (@name, @password, @email, @active, @userProfile)";
 
-                cmd.Parameters.Add(new SqlParameter("@name", name));
-                cmd.Parameters.Add(new SqlParameter("@password", password));
-                cmd.Parameters.Add(new SqlParameter("@email", email));
-                cmd.Parameters.Add(new SqlParameter("@active", active));
-                //COMENTARIOS THIAGO ROQUE
-                /*Pegar sempre o item de outra tabela pelo ID,
-                 * O Index representa a posição dele no banco
-                 * EX:. quarto item, setimo item
-                 * Fiz uma conversao implicita, ou seja coloco o tipo do item pra qual 
-                 * eu quero converter antes do item
-                 * EX:. (Int32)idade -> converte a variavel idade no tipo Int32
-                 */
-                cmd.Parameters.Add(new SqlParameter("@userProfile", ((UserProfile)cmbUserDProfile.SelectedItem).Id));
+                    SqlCommand cmd = new SqlCommand(sql, sqlConnect);
 
-                cmd.ExecuteNonQuery();
+                    cmd.Parameters.Add(new SqlParameter("@name", name));
+                    cmd.Parameters.Add(new SqlParameter("@password", password));
+                    cmd.Parameters.Add(new SqlParameter("@email", email));
+                    cmd.Parameters.Add(new SqlParameter("@active", active));
+                    //COMENTARIOS THIAGO ROQUE
+                    /*Pegar sempre o item de outra tabela pelo ID,
+                     * O Index representa a posição dele no banco
+                     * EX:. quarto item, setimo item
+                     * Fiz uma conversao implicita, ou seja coloco o tipo do item pra qual 
+                     * eu quero converter antes do item
+                     * EX:. (Int32)idade -> converte a variavel idade no tipo Int32
+                     */
+                    cmd.Parameters.Add(new SqlParameter("@userProfile", ((UserProfile)cmbUserDProfile.SelectedItem).Id));
 
-                MessageBox.Show("Usuário adicionado com sucesso!");
-                
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Usuário adicionado com sucesso!");
+                    CleanData();
+                }
+
+                catch (Exception ex)
+                {
+                    //Tratar exceções
+                    MessageBox.Show("Erro ao adicionar o usuário!" + ex.Message);
+                    CleanData();
+                }
+                finally
+                {
+                    //Fechar
+                    sqlConnect.Close();
+                }
             }
-            catch (Exception ex)
+
+
+            else
             {
-                //Tratar exceções
-                MessageBox.Show("Erro ao adicionar o usuário!" + ex.Message);
-                CleanData();
-            }
-            finally
-            {
-                //Fechar
-                sqlConnect.Close();
+                SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+                try
+                {
+                    sqlConnect.Open();
+                    string sql = "UPDATE [USER] SET NAME = @name,PASSWORD = @password,EMAIL = @email,ACTIVE = @active WHERE ID = @id";
+
+                    SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+
+                    cmd.Parameters.Add(new SqlParameter("@name", this.tbxUserDName.Text));
+                    cmd.Parameters.Add(new SqlParameter("@password", this.tbxUserDPassword.Text));
+                    cmd.Parameters.Add(new SqlParameter("@email", this.tbxUserDEmail.Text));
+                    cmd.Parameters.Add(new SqlParameter("@active", this.cbxUserDActive.Checked));
+                    cmd.Parameters.Add(new SqlParameter("@id", this.lblId.Text));
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Altereções salvas com sucesso!");
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show("Erro ao editar este usuário!" + "\n\n" + Ex.Message);
+                    throw;
+                }
+                finally
+                {
+                    sqlConnect.Close();                                      
+                }
             }
         }
+            
+
+
+
 
         private void CleanData()
         {
             tbxUserDName.Text = "";
-            txbUserDEmail.Text = "";
-            txbUserDPassword.Text = "";
-            txbUserDRepassword.Text = "";
-            ckbUserDActive.Checked = false;
+            tbxUserDEmail.Text = "";
+            tbxUserDPassword.Text = "";
+            tbxUserDRepassword.Text = "";
+            cbxUserDActive.Checked = false;
             cmbUserDProfile.Text = "";
         }
 
         private void GetData()
         {
             name = tbxUserDName.Text;
-            email = txbUserDEmail.Text;
-            password = txbUserDPassword.Text;
-            active = ckbUserDActive.Checked;
+            email = tbxUserDEmail.Text;
+            password = tbxUserDPassword.Text;
+            active = cbxUserDActive.Checked;
 
         }
 

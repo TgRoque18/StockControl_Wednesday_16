@@ -58,9 +58,9 @@ namespace StockControl
             dgvProduct.Columns["ID"].Visible = false;
             dgvProduct.Columns["NAME"].HeaderText = "Nome";
             dgvProduct.Columns["PRICE"].HeaderText = "Preço";
-           // dgvProduct.Columns["CATEGORY"].HeaderText = "Categoria";
+            // dgvProduct.Columns["CATEGORY"].HeaderText = "Categoria";
             dgvProduct.Columns["ACTIVE"].HeaderText = "Ativo";
-            
+
             dgvProduct.Columns["FK_CATEGORY"].Visible = false;
 
             foreach (DataGridViewColumn col in dgvProduct.Columns)
@@ -86,9 +86,13 @@ namespace StockControl
 
         private void pbxEdit_Click(object sender, EventArgs e)
         {
-            ProductDetailsForm productDetailsForm = new ProductDetailsForm();
-            productDetailsForm.Show();
-            this.Hide();
+            int idProduct = Int32.Parse(dgvProduct.SelectedRows[0].Cells[0].Value.ToString());
+
+            ProductDetailsForm productDetails= new ProductDetailsForm (idProduct);
+            productDetails.Show();
+
+            this.Close();
+
         }
 
         private void pbxDelete_Click(object sender, EventArgs e)

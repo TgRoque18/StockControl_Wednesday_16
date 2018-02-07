@@ -41,6 +41,7 @@
             this.pbxDelete = new System.Windows.Forms.PictureBox();
             this.pbxSaveImage = new System.Windows.Forms.PictureBox();
             this.pbxProductPicture = new System.Windows.Forms.PictureBox();
+            this.lblid = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDelete)).BeginInit();
@@ -182,11 +183,21 @@
             this.pbxProductPicture.TabIndex = 10;
             this.pbxProductPicture.TabStop = false;
             // 
+            // lblid
+            // 
+            this.lblid.AutoSize = true;
+            this.lblid.Location = new System.Drawing.Point(107, 216);
+            this.lblid.Name = "lblid";
+            this.lblid.Size = new System.Drawing.Size(0, 13);
+            this.lblid.TabIndex = 15;
+            this.lblid.Visible = false;
+            // 
             // ProductDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(524, 371);
+            this.Controls.Add(this.lblid);
             this.Controls.Add(this.pbxBack);
             this.Controls.Add(this.pbxSave);
             this.Controls.Add(this.pbxDelete);
@@ -228,5 +239,6 @@
         private System.Windows.Forms.PictureBox pbxBack;
         private System.Windows.Forms.PictureBox pbxSave;
         private System.Windows.Forms.PictureBox pbxDelete;
+        private System.Windows.Forms.Label lblid;
     }
 }

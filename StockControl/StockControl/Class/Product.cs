@@ -78,6 +78,8 @@ namespace StockControl.Class
             }
         }
 
+        public Product(){ }
+
         public Product(string name,float price, Category category,bool active)
         {
             this.Name = name;

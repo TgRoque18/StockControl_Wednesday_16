@@ -111,5 +111,10 @@ namespace StockControl.Class
             this.UserProfile = userProfile;
             this.Active = active;
         }
+
+        public User()
+        {        
+        }
+       
     }
 }
