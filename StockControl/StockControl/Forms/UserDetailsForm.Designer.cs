@@ -30,20 +30,21 @@
         {
             this.lblUserDName = new System.Windows.Forms.Label();
             this.tbxUserDName = new System.Windows.Forms.TextBox();
-            this.txbUserDEmail = new System.Windows.Forms.TextBox();
+            this.tbxUserDEmail = new System.Windows.Forms.TextBox();
             this.lblUserDEmail = new System.Windows.Forms.Label();
-            this.txbUserDRepassword = new System.Windows.Forms.TextBox();
+            this.tbxUserDRepassword = new System.Windows.Forms.TextBox();
             this.lblUserDRepassword = new System.Windows.Forms.Label();
-            this.txbUserDPassword = new System.Windows.Forms.TextBox();
+            this.tbxUserDPassword = new System.Windows.Forms.TextBox();
             this.lblUserDPassword = new System.Windows.Forms.Label();
             this.lblUserDActive = new System.Windows.Forms.Label();
             this.lblUserDProfile = new System.Windows.Forms.Label();
             this.cmbUserDProfile = new System.Windows.Forms.ComboBox();
-            this.ckbUserDActive = new System.Windows.Forms.CheckBox();
+            this.cbxUserDActive = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbxUserSaveProfile = new System.Windows.Forms.PictureBox();
             this.pbxUserDeleteProfile = new System.Windows.Forms.PictureBox();
             this.pbxUserBackPages = new System.Windows.Forms.PictureBox();
+            this.lblId = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxUserSaveProfile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxUserDeleteProfile)).BeginInit();
@@ -56,7 +57,7 @@
             this.lblUserDName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblUserDName.Location = new System.Drawing.Point(135, 10);
             this.lblUserDName.Name = "lblUserDName";
-            this.lblUserDName.Size = new System.Drawing.Size(53, 20);
+            this.lblUserDName.Size = new System.Drawing.Size(45, 17);
             this.lblUserDName.TabIndex = 0;
             this.lblUserDName.Text = "Nome";
             // 
@@ -66,17 +67,17 @@
             this.tbxUserDName.Location = new System.Drawing.Point(139, 43);
             this.tbxUserDName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxUserDName.Name = "tbxUserDName";
-            this.tbxUserDName.Size = new System.Drawing.Size(363, 26);
+            this.tbxUserDName.Size = new System.Drawing.Size(363, 23);
             this.tbxUserDName.TabIndex = 1;
             // 
-            // txbUserDEmail
+            // tbxUserDEmail
             // 
-            this.txbUserDEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txbUserDEmail.Location = new System.Drawing.Point(139, 123);
-            this.txbUserDEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txbUserDEmail.Name = "txbUserDEmail";
-            this.txbUserDEmail.Size = new System.Drawing.Size(363, 26);
-            this.txbUserDEmail.TabIndex = 3;
+            this.tbxUserDEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbxUserDEmail.Location = new System.Drawing.Point(139, 123);
+            this.tbxUserDEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxUserDEmail.Name = "tbxUserDEmail";
+            this.tbxUserDEmail.Size = new System.Drawing.Size(363, 23);
+            this.tbxUserDEmail.TabIndex = 3;
             // 
             // lblUserDEmail
             // 
@@ -84,18 +85,18 @@
             this.lblUserDEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblUserDEmail.Location = new System.Drawing.Point(135, 86);
             this.lblUserDEmail.Name = "lblUserDEmail";
-            this.lblUserDEmail.Size = new System.Drawing.Size(51, 20);
+            this.lblUserDEmail.Size = new System.Drawing.Size(42, 17);
             this.lblUserDEmail.TabIndex = 2;
             this.lblUserDEmail.Text = "Email";
             // 
-            // txbUserDRepassword
+            // tbxUserDRepassword
             // 
-            this.txbUserDRepassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txbUserDRepassword.Location = new System.Drawing.Point(334, 210);
-            this.txbUserDRepassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txbUserDRepassword.Name = "txbUserDRepassword";
-            this.txbUserDRepassword.Size = new System.Drawing.Size(168, 26);
-            this.txbUserDRepassword.TabIndex = 7;
+            this.tbxUserDRepassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbxUserDRepassword.Location = new System.Drawing.Point(334, 210);
+            this.tbxUserDRepassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxUserDRepassword.Name = "tbxUserDRepassword";
+            this.tbxUserDRepassword.Size = new System.Drawing.Size(168, 23);
+            this.tbxUserDRepassword.TabIndex = 7;
             // 
             // lblUserDRepassword
             // 
@@ -103,18 +104,18 @@
             this.lblUserDRepassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblUserDRepassword.Location = new System.Drawing.Point(330, 170);
             this.lblUserDRepassword.Name = "lblUserDRepassword";
-            this.lblUserDRepassword.Size = new System.Drawing.Size(159, 20);
+            this.lblUserDRepassword.Size = new System.Drawing.Size(134, 17);
             this.lblUserDRepassword.TabIndex = 6;
             this.lblUserDRepassword.Text = "Confirme sua senha";
             // 
-            // txbUserDPassword
+            // tbxUserDPassword
             // 
-            this.txbUserDPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txbUserDPassword.Location = new System.Drawing.Point(139, 210);
-            this.txbUserDPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txbUserDPassword.Name = "txbUserDPassword";
-            this.txbUserDPassword.Size = new System.Drawing.Size(168, 26);
-            this.txbUserDPassword.TabIndex = 5;
+            this.tbxUserDPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbxUserDPassword.Location = new System.Drawing.Point(139, 210);
+            this.tbxUserDPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxUserDPassword.Name = "tbxUserDPassword";
+            this.tbxUserDPassword.Size = new System.Drawing.Size(168, 23);
+            this.tbxUserDPassword.TabIndex = 5;
             // 
             // lblUserDPassword
             // 
@@ -122,7 +123,7 @@
             this.lblUserDPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblUserDPassword.Location = new System.Drawing.Point(135, 170);
             this.lblUserDPassword.Name = "lblUserDPassword";
-            this.lblUserDPassword.Size = new System.Drawing.Size(133, 20);
+            this.lblUserDPassword.Size = new System.Drawing.Size(112, 17);
             this.lblUserDPassword.TabIndex = 4;
             this.lblUserDPassword.Text = "Criar uma senha";
             // 
@@ -132,7 +133,7 @@
             this.lblUserDActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblUserDActive.Location = new System.Drawing.Point(12, 126);
             this.lblUserDActive.Name = "lblUserDActive";
-            this.lblUserDActive.Size = new System.Drawing.Size(69, 20);
+            this.lblUserDActive.Size = new System.Drawing.Size(59, 17);
             this.lblUserDActive.TabIndex = 9;
             this.lblUserDActive.Text = "É ativo?";
             // 
@@ -142,7 +143,7 @@
             this.lblUserDProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblUserDProfile.Location = new System.Drawing.Point(135, 254);
             this.lblUserDProfile.Name = "lblUserDProfile";
-            this.lblUserDProfile.Size = new System.Drawing.Size(143, 20);
+            this.lblUserDProfile.Size = new System.Drawing.Size(120, 17);
             this.lblUserDProfile.TabIndex = 8;
             this.lblUserDProfile.Text = "Escolha seu perfil";
             // 
@@ -153,19 +154,19 @@
             this.cmbUserDProfile.Location = new System.Drawing.Point(139, 282);
             this.cmbUserDProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbUserDProfile.Name = "cmbUserDProfile";
-            this.cmbUserDProfile.Size = new System.Drawing.Size(172, 28);
+            this.cmbUserDProfile.Size = new System.Drawing.Size(172, 24);
             this.cmbUserDProfile.TabIndex = 10;
             // 
-            // ckbUserDActive
+            // cbxUserDActive
             // 
-            this.ckbUserDActive.AutoSize = true;
-            this.ckbUserDActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ckbUserDActive.Location = new System.Drawing.Point(102, 129);
-            this.ckbUserDActive.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ckbUserDActive.Name = "ckbUserDActive";
-            this.ckbUserDActive.Size = new System.Drawing.Size(18, 17);
-            this.ckbUserDActive.TabIndex = 11;
-            this.ckbUserDActive.UseVisualStyleBackColor = true;
+            this.cbxUserDActive.AutoSize = true;
+            this.cbxUserDActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cbxUserDActive.Location = new System.Drawing.Point(102, 129);
+            this.cbxUserDActive.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbxUserDActive.Name = "cbxUserDActive";
+            this.cbxUserDActive.Size = new System.Drawing.Size(15, 14);
+            this.cbxUserDActive.TabIndex = 11;
+            this.cbxUserDActive.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -205,23 +206,33 @@
             this.pbxUserBackPages.TabStop = false;
             this.pbxUserBackPages.Click += new System.EventHandler(this.pbxUserBackPages_Click);
             // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(12, 170);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(0, 13);
+            this.lblId.TabIndex = 20;
+            this.lblId.Visible = false;
+            // 
             // UserDetailsForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(523, 364);
+            this.Controls.Add(this.lblId);
             this.Controls.Add(this.pbxUserBackPages);
             this.Controls.Add(this.pbxUserDeleteProfile);
             this.Controls.Add(this.pbxUserSaveProfile);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.ckbUserDActive);
+            this.Controls.Add(this.cbxUserDActive);
             this.Controls.Add(this.cmbUserDProfile);
             this.Controls.Add(this.lblUserDActive);
             this.Controls.Add(this.lblUserDProfile);
-            this.Controls.Add(this.txbUserDRepassword);
+            this.Controls.Add(this.tbxUserDRepassword);
             this.Controls.Add(this.lblUserDRepassword);
-            this.Controls.Add(this.txbUserDPassword);
+            this.Controls.Add(this.tbxUserDPassword);
             this.Controls.Add(this.lblUserDPassword);
-            this.Controls.Add(this.txbUserDEmail);
+            this.Controls.Add(this.tbxUserDEmail);
             this.Controls.Add(this.lblUserDEmail);
             this.Controls.Add(this.tbxUserDName);
             this.Controls.Add(this.lblUserDName);
@@ -241,19 +252,20 @@
 
         private System.Windows.Forms.Label lblUserDName;
         private System.Windows.Forms.TextBox tbxUserDName;
-        private System.Windows.Forms.TextBox txbUserDEmail;
+        private System.Windows.Forms.TextBox tbxUserDEmail;
         private System.Windows.Forms.Label lblUserDEmail;
-        private System.Windows.Forms.TextBox txbUserDRepassword;
+        private System.Windows.Forms.TextBox tbxUserDRepassword;
         private System.Windows.Forms.Label lblUserDRepassword;
-        private System.Windows.Forms.TextBox txbUserDPassword;
+        private System.Windows.Forms.TextBox tbxUserDPassword;
         private System.Windows.Forms.Label lblUserDPassword;
         private System.Windows.Forms.Label lblUserDActive;
         private System.Windows.Forms.Label lblUserDProfile;
         private System.Windows.Forms.ComboBox cmbUserDProfile;
-        private System.Windows.Forms.CheckBox ckbUserDActive;
+        private System.Windows.Forms.CheckBox cbxUserDActive;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pbxUserSaveProfile;
         private System.Windows.Forms.PictureBox pbxUserDeleteProfile;
         private System.Windows.Forms.PictureBox pbxUserBackPages;
+        private System.Windows.Forms.Label lblId;
     }
 }
