@@ -1,5 +1,6 @@
 ﻿using StockControl.Class;
 using StockControl.Forms;
+using StockControl.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -170,7 +171,7 @@ namespace StockControl
                     SqlCommand cmd = new SqlCommand(sql, sqlConnect);
 
                     cmd.Parameters.Add(new SqlParameter("@name", name));
-                    cmd.Parameters.Add(new SqlParameter("@password", password));
+                    cmd.Parameters.Add(new SqlParameter("@password", UserHelper.Hash(password)));
                     cmd.Parameters.Add(new SqlParameter("@email", email));
                     cmd.Parameters.Add(new SqlParameter("@active", active));
                     //COMENTARIOS THIAGO ROQUE
