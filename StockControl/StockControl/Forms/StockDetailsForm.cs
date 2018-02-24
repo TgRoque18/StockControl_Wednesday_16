@@ -1,4 +1,5 @@
-﻿using StockControl.Forms;
+﻿using StockControl.Class;
+using StockControl.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,6 +23,57 @@ namespace StockControl
         public FormStockEdition()
         {
             InitializeComponent();
+        }
+        public FormStockEdition(int idStock)
+        {
+            InitializeComponent();
+
+            lblId.Text = idStock.ToString(); //-------
+
+            SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+            if (!string.IsNullOrEmpty(lblId.Text))
+            {
+                try
+                {
+                    //Conectar
+                    sqlConnect.Open();
+
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM STOCK WHERE ID = @id", sqlConnect);
+                    //SqlCommand cmd = new SqlCommand("SELECT * FROM CATEGORY WHERE ID = " + idCategory.ToString(), sqlConnect);
+
+                    cmd.Parameters.Add(new SqlParameter("@id", idStock));
+
+                    Stock stock = new Stock(); //------
+
+                    using (SqlDataReader reader = cmd.ExecuteReader()) //-----
+                    {
+                        while (reader.Read())
+                        {
+                            stock.Id = Int32.Parse(reader["ID"].ToString());
+                            stock.Quantity = Int32.Parse(reader["QUANTITY"].ToString());
+                            stock.Active = bool.Parse(reader["ACTIVE"].ToString());
+                            stock.Name = reader["NAME"].ToString();
+
+                        }
+                    }
+
+                    tbxName.Text = stock.Name;
+                    ckbActive.Checked = stock.Active;
+                    tbxAmount.Text = stock.Quantity.ToString();
+
+                }
+                catch (Exception EX)
+                {
+                    //Tratar exce��es
+                    throw;
+                }
+                finally
+                {
+                    //Fechar
+                    sqlConnect.Close();
+                }
+            }
         }
 
         private void pbxBack_Click(object sender, EventArgs e)
@@ -47,38 +99,113 @@ namespace StockControl
 
         private void pbxSave_Click(object sender, EventArgs e)
         {
-
-            SqlConnection sqlConnect = new SqlConnection(connectionString);
-            try
+            if (string.IsNullOrEmpty(lblId.Text)) //-----
             {
-                GetData();
+                //Salvar
+                SqlConnection sqlConnect = new SqlConnection(connectionString);
+                try
+                {
+                    GetData();
 
-                //Conectar
-                sqlConnect.Open();
-                string sql = "INSERT INTO STOCK(NAME,QUANTITY, ACTIVE) VALUES (@name, @quantity, @active)";
+                    //Conectar
+                    sqlConnect.Open();
+                    string sql = "INSERT INTO STOCK(NAME,QUANTITY, ACTIVE) VALUES (@name, @quantity, @active)";
 
-                SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+                    SqlCommand cmd = new SqlCommand(sql, sqlConnect);
 
-                cmd.Parameters.Add(new SqlParameter("@name", name));
-                cmd.Parameters.Add(new SqlParameter("@quantity", amount));
-                cmd.Parameters.Add(new SqlParameter("@active", active));
+                    cmd.Parameters.Add(new SqlParameter("@name", name));
+                    cmd.Parameters.Add(new SqlParameter("@quantity", amount));
+                    cmd.Parameters.Add(new SqlParameter("@active", active));
 
-                cmd.ExecuteNonQuery();
+                    cmd.ExecuteNonQuery();
 
-                MessageBox.Show("Adicionado com sucesso!");
+                    MessageBox.Show("Adicionado com sucesso!");
 
 
+                }
+                catch (Exception ex)
+                {
+                    //Tratar exce��es
+                    MessageBox.Show("Erro ao adicionar no estoque!" + ex.Message);
+                    CleanData();
+                }
+                finally
+                {
+                    //Fechar
+                    sqlConnect.Close();
+                }
             }
-            catch (Exception ex)
+            else
             {
-                //Tratar exce��es
-                MessageBox.Show("Erro ao adicionar no estoque!" + ex.Message);
-                CleanData();
+                SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+                try
+                {
+                    sqlConnect.Open();
+                    string sql = "UPDATE INTO STOCK(QUANTITY, ACTIVE, NAME) VALUES (@quantity, @active, @name)";
+
+                    SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+
+                    cmd.Parameters.Add(new SqlParameter("@quantity", this.tbxName.Text));
+                    cmd.Parameters.Add(new SqlParameter("@active", this.ckbActive.Checked));
+                    cmd.Parameters.Add(new SqlParameter("@name", this.tbxName.Text));
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Alterações salvas com sucesso!");
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show("Erro ao editar esta estoque!" + "\n\n" + Ex.Message);
+                    throw;
+                }
+                finally
+                {
+                    sqlConnect.Close();
+
+                    MainForm mainForm = new MainForm();
+                    mainForm.Show();
+                    this.Hide();
+                }
             }
-            finally
+        }
+
+        private void pbxDelete_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(lblId.Text)) //-----
             {
-                //Fechar
-                sqlConnect.Close();
+                SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+                try
+                {
+                    //Conectar
+                    sqlConnect.Open();
+                    string sql = "DELETE FROM STOCK WHERE ID = @id";
+
+                    SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+
+                    cmd.Parameters.Add(new SqlParameter("@id", this.lblId.Text));
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Removido com sucesso!");
+
+                    //LogHelper log = new LogHelper();
+                    //log.Insert("User Remove");
+                }
+                catch (Exception ex)
+                {
+                    //Tratar exce��es
+                    MessageBox.Show("Erro ao remover estoque!" + ex.Message);
+                    //throw;
+
+                    //LogHelper logBD = new LogHelper();
+                    //logBD.PrintLog(Convert.ToString(ex));
+                }
+                finally
+                {
+                    //Fechar
+                    sqlConnect.Close();
+                }
             }
         }
     }
