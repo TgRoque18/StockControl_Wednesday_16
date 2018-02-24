@@ -139,7 +139,7 @@ namespace StockControl
 
                     cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Alterções salvas com sucesso!");
+                    MessageBox.Show("Alterações salvas com sucesso!");
                 }
                 catch (Exception Ex)
                 {
