@@ -104,14 +104,14 @@ namespace StockControl.Forms
 
                     cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Usuário adicionado com sucesso!");
+                    MessageBox.Show("Perfil adicionado com sucesso!");
 
 
                 }
                 catch (Exception ex)
                 {
                     //Tratar exce��es
-                    MessageBox.Show("Erro ao adicionar usuário!" + ex.Message);
+                    MessageBox.Show("Erro ao adicionar o perfil!" + ex.Message);
                     CleanData();
                 }
                 finally
@@ -139,7 +139,7 @@ namespace StockControl.Forms
                 }
                 catch (Exception Ex)
                 {
-                    MessageBox.Show("Erro ao editar esse usuário!" + "\n\n" + Ex.Message);
+                    MessageBox.Show("Erro ao editar esse perfil!" + "\n\n" + Ex.Message);
                     throw;
                 }
                 finally
@@ -179,7 +179,7 @@ namespace StockControl.Forms
 
                     cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Usuário removido com sucesso!");
+                    MessageBox.Show("Perfil removido com sucesso!");
 
                     //LogHelper log = new LogHelper();
                     //log.Insert("User Remove");
@@ -187,7 +187,7 @@ namespace StockControl.Forms
                 catch (Exception ex)
                 {
                     //Tratar exceções
-                    MessageBox.Show("Erro ao remover usuário!" + ex.Message);
+                    MessageBox.Show("Erro ao remover o perfil!" + ex.Message);
                     //throw;
 
                     //LogHelper logBD = new LogHelper();
