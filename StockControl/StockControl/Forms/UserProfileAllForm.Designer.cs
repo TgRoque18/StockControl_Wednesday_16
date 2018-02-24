@@ -58,7 +58,7 @@
             // tbxSearch
             // 
             this.tbxSearch.Location = new System.Drawing.Point(99, 37);
-            this.tbxSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxSearch.Margin = new System.Windows.Forms.Padding(2);
             this.tbxSearch.Name = "tbxSearch";
             this.tbxSearch.Size = new System.Drawing.Size(108, 20);
             this.tbxSearch.TabIndex = 1;
@@ -146,8 +146,9 @@
             this.Controls.Add(this.pbxBack);
             this.Controls.Add(this.tbxSearch);
             this.Controls.Add(this.lblSearch);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserProfileAllForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfil de Usuário";
             ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEdit)).EndInit();
