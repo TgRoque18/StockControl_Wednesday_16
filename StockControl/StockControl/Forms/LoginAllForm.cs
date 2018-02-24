@@ -30,18 +30,18 @@ namespace StockControl.Forms
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            //GetData();
-            //if (CheckLogin(password,login))
-            //{
+            GetData();
+            if (CheckLogin(password,login))
+            {
                 MainForm mainForm = new MainForm();
                 mainForm.Show();
                 this.Hide();
-            //}
-            //else
-            //{
-            //    CleanData();
-            //    MessageBox.Show("Usuário ou senha incorretos!");
-            //}
+            }
+            else
+            {
+                CleanData();
+                MessageBox.Show("Usuário ou senha incorretos!");
+            }
         }
 
         void GetData()
