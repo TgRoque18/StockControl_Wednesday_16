@@ -30,6 +30,8 @@ namespace StockControl.Forms
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            this.Cursor = Cursors.AppStarting;
+
             GetData();
             if (CheckLogin(password,login))
             {
@@ -42,6 +44,9 @@ namespace StockControl.Forms
                 CleanData();
                 MessageBox.Show("Usuário ou senha incorretos!");
             }
+
+           
+
         }
 
         void GetData()
