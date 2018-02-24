@@ -64,7 +64,6 @@ namespace StockControl.Class
         }
         public UserProfile() { }
 
-        public UserProfile() { }
 
     }
 }
