@@ -67,6 +67,7 @@ namespace StockControl.Forms
             this.Hide();
         }
 
+        #region        // Mouse enter e mouse leave na main
         private void pbxStock_MouseEnter(object sender, EventArgs e)
         {
             lblStock.Visible = true;
@@ -90,5 +91,69 @@ namespace StockControl.Forms
             lblProfile.Visible = false;
             pbxUserProfile.BackColor = Color.Transparent;
         }
+
+        private void pbxProduct_MouseEnter(object sender, EventArgs e)
+        {
+            lblProduct.Visible = true;
+            pbxProduct.BackColor = Color.Blue;
+        }
+
+        private void pbxProduct_MouseLeave(object sender, EventArgs e)
+        {
+            lblProduct.Visible = false;
+            pbxProduct.BackColor = Color.Transparent;
+        }
+
+        private void pbxCategory_MouseEnter(object sender, EventArgs e)
+        {
+            lblCategory.Visible = true;
+            pbxCategory.BackColor = Color.Blue;
+        }       
+
+        private void pbxCategory_MouseLeave(object sender, EventArgs e)
+        {
+            lblCategory.Visible = false;
+            pbxCategory.BackColor = Color.Transparent;
+        }
+
+        private void pbxLog_MouseEnter(object sender, EventArgs e)
+        {
+            lblLog.Visible = true;
+            pbxLog.BackColor = Color.Blue;                    
+        }
+
+        private void pbxLog_MouseLeave(object sender, EventArgs e)
+        {
+            lblLog.Visible = false;
+            pbxLog.BackColor = Color.Transparent;
+        }
+
+        private void pbxUser_MouseEnter(object sender, EventArgs e)
+        {
+            lblUser.Visible = true;
+            pbxUser.BackColor = Color.Blue;
+        }
+
+        private void pbxUser_MouseLeave(object sender, EventArgs e)
+        {
+            lblUser.Visible = false;
+            pbxUser.BackColor = Color.Transparent;
+        }
+
+        private void pbxHomeLogin_MouseEnter(object sender, EventArgs e)
+        {
+            lblLeave.Visible = true;
+            pbxHomeLogin.BackColor = Color.DarkRed;
+        }
+
+        private void pbxHomeLogin_MouseLeave(object sender, EventArgs e)
+        {
+            lblLeave.Visible = false;
+            pbxHomeLogin.BackColor = Color.Transparent;
+        }
+
+        #endregion
+
+
     }
 }
