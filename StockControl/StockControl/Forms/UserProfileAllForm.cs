@@ -13,6 +13,7 @@ namespace StockControl.Forms
 {
     public partial class UserProfileAllForm : Form
     {
+       
         string connectionString = "workstation id=StockControl.mssql.somee.com;packet size = 4096; user id = luacademy_SQLLogin_1; pwd=msctq6gvt3;data source = StockControl.mssql.somee.com; persist security info=False;initial catalog = StockControl";
 
         public UserProfileAllForm()

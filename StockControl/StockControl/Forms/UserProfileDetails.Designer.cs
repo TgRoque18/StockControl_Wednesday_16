@@ -56,7 +56,7 @@
             // 
             this.tbxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxName.Location = new System.Drawing.Point(98, 51);
-            this.tbxName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxName.Margin = new System.Windows.Forms.Padding(2);
             this.tbxName.Name = "tbxName";
             this.tbxName.Size = new System.Drawing.Size(190, 23);
             this.tbxName.TabIndex = 4;
@@ -76,7 +76,7 @@
             // 
             this.ckbActive.AutoSize = true;
             this.ckbActive.Location = new System.Drawing.Point(98, 148);
-            this.ckbActive.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ckbActive.Margin = new System.Windows.Forms.Padding(2);
             this.ckbActive.Name = "ckbActive";
             this.ckbActive.Size = new System.Drawing.Size(15, 14);
             this.ckbActive.TabIndex = 6;
@@ -113,6 +113,7 @@
             this.pbxDelete.Size = new System.Drawing.Size(35, 35);
             this.pbxDelete.TabIndex = 7;
             this.pbxDelete.TabStop = false;
+            this.pbxDelete.Click += new System.EventHandler(this.pbxDelete_Click);
             // 
             // lblId
             // 
@@ -136,7 +137,7 @@
             this.Controls.Add(this.lblActive);
             this.Controls.Add(this.tbxName);
             this.Controls.Add(this.lblName);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserProfileDetails";
             this.Text = "Perfil de Usuário";
             ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).EndInit();

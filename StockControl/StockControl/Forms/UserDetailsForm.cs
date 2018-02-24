@@ -1,5 +1,6 @@
 ﻿using StockControl.Class;
 using StockControl.Forms;
+using StockControl.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -170,7 +171,7 @@ namespace StockControl
                     SqlCommand cmd = new SqlCommand(sql, sqlConnect);
 
                     cmd.Parameters.Add(new SqlParameter("@name", name));
-                    cmd.Parameters.Add(new SqlParameter("@password", password));
+                    cmd.Parameters.Add(new SqlParameter("@password", UserHelper.Hash(password)));
                     cmd.Parameters.Add(new SqlParameter("@email", email));
                     cmd.Parameters.Add(new SqlParameter("@active", active));
                     //COMENTARIOS THIAGO ROQUE
@@ -289,6 +290,47 @@ namespace StockControl
             foreach (UserProfile p in userProfiles)
             {
                 cmbUserDProfile.Items.Add(p);
+            }
+
+        }
+
+        private void pbxUserDeleteProfile_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(lblId.Text)) //-----
+            {
+                SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+                try
+                {
+                    //Conectar
+                    sqlConnect.Open();
+                    string sql = "DELETE FROM USER_PROFILE WHERE ID = @id";
+
+                    SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+
+                    cmd.Parameters.Add(new SqlParameter("@id", this.lblId.Text));
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Usuário removido com sucesso!");
+
+                    //LogHelper log = new LogHelper();
+                    //log.Insert("User Remove");
+                }
+                catch (Exception ex)
+                {
+                    //Tratar exceções
+                    MessageBox.Show("Erro ao remover usuário!" + "\n\n" + ex.Message);
+                    //throw;
+
+                    //LogHelper logBD = new LogHelper();
+                    //logBD.PrintLog(Convert.ToString(ex));
+                }
+                finally
+                {
+                    //Fechar
+                    sqlConnect.Close();
+                }
             }
 
         }
