@@ -180,7 +180,7 @@
             // pbxUserSaveProfile
             // 
             this.pbxUserSaveProfile.Image = global::StockControl.Properties.Resources.SaveIcon;
-            this.pbxUserSaveProfile.Location = new System.Drawing.Point(476, 317);
+            this.pbxUserSaveProfile.Location = new System.Drawing.Point(429, 317);
             this.pbxUserSaveProfile.Name = "pbxUserSaveProfile";
             this.pbxUserSaveProfile.Size = new System.Drawing.Size(35, 35);
             this.pbxUserSaveProfile.TabIndex = 17;
@@ -190,11 +190,12 @@
             // pbxUserDeleteProfile
             // 
             this.pbxUserDeleteProfile.Image = global::StockControl.Properties.Resources.DeleteIcon;
-            this.pbxUserDeleteProfile.Location = new System.Drawing.Point(424, 317);
+            this.pbxUserDeleteProfile.Location = new System.Drawing.Point(476, 317);
             this.pbxUserDeleteProfile.Name = "pbxUserDeleteProfile";
             this.pbxUserDeleteProfile.Size = new System.Drawing.Size(35, 35);
             this.pbxUserDeleteProfile.TabIndex = 18;
             this.pbxUserDeleteProfile.TabStop = false;
+            this.pbxUserDeleteProfile.Click += new System.EventHandler(this.pbxUserDeleteProfile_Click);
             // 
             // pbxUserBackPages
             // 
