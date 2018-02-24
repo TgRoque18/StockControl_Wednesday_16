@@ -19,6 +19,7 @@ namespace StockControl
         string name = "";
         float amount = 0;
         bool active = false;
+        int act = 0;
 
         public FormStockEdition()
         {
@@ -52,7 +53,14 @@ namespace StockControl
                         {
                             stock.Id = Int32.Parse(reader["ID"].ToString());
                             stock.Quantity = Int32.Parse(reader["QUANTITY"].ToString());
-                            stock.Active = bool.Parse(reader["ACTIVE"].ToString());
+                            if(Int32.Parse(reader["ACTIVE"].ToString()) == 0)
+                            {
+                                stock.Active = false;
+                            }
+                            else
+                            {
+                                stock.Active = true;
+                            }
                             stock.Name = reader["NAME"].ToString();
 
                         }
@@ -66,7 +74,7 @@ namespace StockControl
                 catch (Exception EX)
                 {
                     //Tratar exce��es
-                    throw;
+                    MessageBox.Show(EX.Message);
                 }
                 finally
                 {
@@ -142,12 +150,21 @@ namespace StockControl
                 try
                 {
                     sqlConnect.Open();
-                    string sql = "UPDATE INTO STOCK(QUANTITY, ACTIVE, NAME) VALUES (@quantity, @active, @name)";
+                    string sql = "UPDATE STOCK SET QUANTITY=@quantity, ACTIVE = @active, NAME = @name";
 
                     SqlCommand cmd = new SqlCommand(sql, sqlConnect);
 
-                    cmd.Parameters.Add(new SqlParameter("@quantity", this.tbxName.Text));
-                    cmd.Parameters.Add(new SqlParameter("@active", this.ckbActive.Checked));
+                    if(this.ckbActive.Checked)
+                    {
+                        act = 1;
+                    }
+                    else
+                    {
+                        act = 0;
+                    }
+
+                    cmd.Parameters.Add(new SqlParameter("@quantity", this.tbxAmount.Text));
+                    cmd.Parameters.Add(new SqlParameter("@active", act));
                     cmd.Parameters.Add(new SqlParameter("@name", this.tbxName.Text));
                     cmd.ExecuteNonQuery();
 
