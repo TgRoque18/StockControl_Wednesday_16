@@ -104,14 +104,14 @@ namespace StockControl.Forms
 
                     cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Adicionado com sucesso!");
+                    MessageBox.Show("Usuário adicionado com sucesso!");
 
 
                 }
                 catch (Exception ex)
                 {
                     //Tratar exce��es
-                    MessageBox.Show("Erro ao adicionar categoria!" + ex.Message);
+                    MessageBox.Show("Erro ao adicionar usuário!" + ex.Message);
                     CleanData();
                 }
                 finally
@@ -135,11 +135,11 @@ namespace StockControl.Forms
 
                     cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Altere��es salvas com sucesso!");
+                    MessageBox.Show("Alterações salvas com sucesso!");
                 }
                 catch (Exception Ex)
                 {
-                    MessageBox.Show("Erro ao editar esta categoria!" + "\n\n" + Ex.Message);
+                    MessageBox.Show("Erro ao editar esse usuário!" + "\n\n" + Ex.Message);
                     throw;
                 }
                 finally
@@ -179,15 +179,15 @@ namespace StockControl.Forms
 
                     cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Removido com sucesso!");
+                    MessageBox.Show("Usuário removido com sucesso!");
 
                     //LogHelper log = new LogHelper();
                     //log.Insert("User Remove");
                 }
                 catch (Exception ex)
                 {
-                    //Tratar exce��es
-                    MessageBox.Show("Erro ao remover categoria!" + ex.Message);
+                    //Tratar exceções
+                    MessageBox.Show("Erro ao remover usuário!" + ex.Message);
                     //throw;
 
                     //LogHelper logBD = new LogHelper();

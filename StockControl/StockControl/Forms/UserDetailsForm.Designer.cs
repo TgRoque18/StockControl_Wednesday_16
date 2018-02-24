@@ -95,8 +95,10 @@
             this.tbxUserDRepassword.Location = new System.Drawing.Point(334, 210);
             this.tbxUserDRepassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxUserDRepassword.Name = "tbxUserDRepassword";
+            this.tbxUserDRepassword.PasswordChar = '*';
             this.tbxUserDRepassword.Size = new System.Drawing.Size(168, 23);
             this.tbxUserDRepassword.TabIndex = 7;
+            this.tbxUserDRepassword.UseSystemPasswordChar = true;
             // 
             // lblUserDRepassword
             // 
@@ -114,8 +116,10 @@
             this.tbxUserDPassword.Location = new System.Drawing.Point(139, 210);
             this.tbxUserDPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxUserDPassword.Name = "tbxUserDPassword";
+            this.tbxUserDPassword.PasswordChar = '*';
             this.tbxUserDPassword.Size = new System.Drawing.Size(168, 23);
             this.tbxUserDPassword.TabIndex = 5;
+            this.tbxUserDPassword.UseSystemPasswordChar = true;
             // 
             // lblUserDPassword
             // 

@@ -30,7 +30,7 @@ namespace StockControl.Forms
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Cursor = Cursors.AppStarting;
+            this.Cursor = Cursors.AppStarting;  //Mudar o cursor para cursor de carregamento
 
             GetData();
             if (CheckLogin(password,login))

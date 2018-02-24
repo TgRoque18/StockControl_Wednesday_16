@@ -28,6 +28,7 @@ namespace StockControl
         {
             InitializeComponent();
             LoadComboBox();
+            cmbUserDProfile.DisplayMember = "Name";
         }
 
         public UserDetailsForm(int idUser)
