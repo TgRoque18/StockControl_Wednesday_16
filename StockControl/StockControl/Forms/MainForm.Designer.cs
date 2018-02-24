@@ -164,6 +164,7 @@
             // pbxHomeLogin
             // 
             this.pbxHomeLogin.BackgroundImage = global::StockControl.Properties.Resources.BackIcon;
+            this.pbxHomeLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxHomeLogin.Location = new System.Drawing.Point(12, 248);
             this.pbxHomeLogin.Name = "pbxHomeLogin";
             this.pbxHomeLogin.Size = new System.Drawing.Size(35, 35);
