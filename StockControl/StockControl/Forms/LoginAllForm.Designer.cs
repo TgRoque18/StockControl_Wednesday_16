@@ -30,8 +30,8 @@
         {
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblLogin = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbxLogin = new System.Windows.Forms.TextBox();
+            this.tbxPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnRecoverPassword = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -58,21 +58,21 @@
             this.lblLogin.TabIndex = 1;
             this.lblLogin.Text = "Login :";
             // 
-            // textBox1
+            // tbxLogin
             // 
-            this.textBox1.Location = new System.Drawing.Point(167, 60);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 20);
-            this.textBox1.TabIndex = 4;
+            this.tbxLogin.Location = new System.Drawing.Point(167, 60);
+            this.tbxLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxLogin.Name = "tbxLogin";
+            this.tbxLogin.Size = new System.Drawing.Size(158, 20);
+            this.tbxLogin.TabIndex = 4;
             // 
-            // textBox2
+            // tbxPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(167, 84);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(158, 20);
-            this.textBox2.TabIndex = 5;
+            this.tbxPassword.Location = new System.Drawing.Point(167, 84);
+            this.tbxPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxPassword.Name = "tbxPassword";
+            this.tbxPassword.Size = new System.Drawing.Size(158, 20);
+            this.tbxPassword.TabIndex = 5;
             // 
             // btnLogin
             // 
@@ -101,8 +101,8 @@
             this.ClientSize = new System.Drawing.Size(412, 263);
             this.Controls.Add(this.btnRecoverPassword);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbxPassword);
+            this.Controls.Add(this.tbxLogin);
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.lblPassword);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -118,8 +118,8 @@
 
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblLogin;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbxLogin;
+        private System.Windows.Forms.TextBox tbxPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnRecoverPassword;
     }
