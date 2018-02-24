@@ -78,6 +78,8 @@ namespace StockControl.Class
                 name = value;
             }
         }
+
+        public Stock() { }
     
         public Stock (int quantity, bool active, Product product, string name)
         {

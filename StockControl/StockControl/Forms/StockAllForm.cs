@@ -77,9 +77,12 @@ namespace StockControl
 
         private void pbxEdit_Click(object sender, EventArgs e)
         {
-            FormStockEdition formStockEdition = new FormStockEdition();
+
+            int idStock = Int32.Parse(dgvStock.SelectedRows[0].Cells[0].Value.ToString());
+            FormStockEdition formStockEdition = new FormStockEdition(idStock);
             formStockEdition.Show();
-            this.Hide();
+
+            this.Close();
         }
 
         private void FormStockExibition_Load(object sender, EventArgs e)
