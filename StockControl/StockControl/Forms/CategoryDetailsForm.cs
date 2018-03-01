@@ -127,19 +127,23 @@ namespace StockControl
             {
                 SqlConnection sqlConnect = new SqlConnection(connectionString);
 
+
                 try
                 {
                     sqlConnect.Open();
-                    string sql = "UPDATE CATEGORY SET NAME=@name, ACTIVE= @active";
+                    sqlConnect.Open();
+                    string sql = "UPDATE CATEGORY SET NAME=@name, ACTIVE= @active WHERE ID = @id";
 
                     SqlCommand cmd = new SqlCommand(sql, sqlConnect);
 
                     cmd.Parameters.Add(new SqlParameter("@name", this.tbxName.Text));
                     cmd.Parameters.Add(new SqlParameter("@active", this.ckbActive.Checked));
+                    cmd.Parameters.Add(new SqlParameter("@id", this.lblId.Text));
 
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Alterações salvas com sucesso!");
+                    
                 }
                 catch (Exception Ex)
                 {
