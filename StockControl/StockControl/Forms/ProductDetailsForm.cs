@@ -193,7 +193,7 @@ namespace StockControl.Forms
 
                     MessageBox.Show("Adicionado com sucesso!");
                     CleanData();
-
+                 
                 }
                 catch (Exception ex)
                 {
@@ -205,6 +205,7 @@ namespace StockControl.Forms
                 {
                     //Fechar
                     sqlConnect.Close();
+                   
                 }
             }
             else
@@ -226,6 +227,9 @@ namespace StockControl.Forms
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Alterações salvas com sucesso!");
+                    ProductAllForm productAllForm = new ProductAllForm();
+                    productAllForm.Show();
+                    this.Hide();
                 }
                 catch (Exception Ex)
                 {
