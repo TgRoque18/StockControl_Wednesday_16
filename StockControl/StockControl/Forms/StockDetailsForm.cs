@@ -128,7 +128,8 @@ namespace StockControl
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Adicionado com sucesso!");
-
+                    CleanData();
+                   
 
                 }
                 catch (Exception ex)
@@ -178,7 +179,7 @@ namespace StockControl
                 finally
                 {
                     sqlConnect.Close();
-
+                    //volta pro main form talvez melhor editar para voltar somente para o stock all
                     MainForm mainForm = new MainForm();
                     mainForm.Show();
                     this.Hide();
