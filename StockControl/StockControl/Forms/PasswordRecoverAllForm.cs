@@ -18,7 +18,8 @@ namespace StockControl.Forms
         }
 
         private void btnRecoverPassword_Click(object sender, EventArgs e)
-        {
+        { 
+
             LoginAllForm login = new LoginAllForm();
             login.Show();
             this.Hide();
