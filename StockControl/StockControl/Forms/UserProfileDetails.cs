@@ -36,10 +36,11 @@ namespace StockControl.Forms
 
             lblId.Text = IdUserProfile.ToString(); //-------
 
-            SqlConnection sqlConnect = new SqlConnection(connectionString);
 
             if (!string.IsNullOrEmpty(lblId.Text))
             {
+                SqlConnection sqlConnect = new SqlConnection(connectionString);
+
                 try
                 {
                     //Conectar
@@ -84,11 +85,12 @@ namespace StockControl.Forms
         }
         private void pbxSave_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlConnect = new SqlConnection(connectionString);
 
             
             if (string.IsNullOrEmpty(lblId.Text)) //-----
             {
+                SqlConnection sqlConnect = new SqlConnection(connectionString);
+
                 try
                 {
                     GetData();
@@ -122,6 +124,7 @@ namespace StockControl.Forms
             }
             else
             {
+                SqlConnection sqlConnect = new SqlConnection(connectionString);
 
                 try
                 {

@@ -151,7 +151,7 @@ namespace StockControl
                 try
                 {
                     sqlConnect.Open();
-                    string sql = "UPDATE STOCK SET QUANTITY=@quantity, ACTIVE = @active, NAME = @name";
+                    string sql = "UPDATE STOCK SET QUANTITY=@quantity, ACTIVE = @active, NAME = @name WHERE ID = @id";
 
                     SqlCommand cmd = new SqlCommand(sql, sqlConnect);
 
@@ -167,6 +167,8 @@ namespace StockControl
                     cmd.Parameters.Add(new SqlParameter("@quantity", this.tbxAmount.Text));
                     cmd.Parameters.Add(new SqlParameter("@active", act));
                     cmd.Parameters.Add(new SqlParameter("@name", this.tbxName.Text));
+                    cmd.Parameters.Add(new SqlParameter("@id", this.lblId.Text));
+
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Alterações salvas com sucesso!");
