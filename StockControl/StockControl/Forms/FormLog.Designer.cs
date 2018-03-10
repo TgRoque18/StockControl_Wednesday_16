@@ -79,7 +79,7 @@
             // 
             // pbxBack
             // 
-            this.pbxBack.BackgroundImage = global::StockControl.Properties.Resources.BackIcon;
+            this.pbxBack.BackgroundImage = global::StockControl.Properties.Resources.back;
             this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxBack.Location = new System.Drawing.Point(35, 317);
             this.pbxBack.Name = "pbxBack";

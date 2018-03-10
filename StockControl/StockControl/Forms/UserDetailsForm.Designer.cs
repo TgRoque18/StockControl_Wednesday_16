@@ -183,7 +183,8 @@
             // 
             // pbxUserSaveProfile
             // 
-            this.pbxUserSaveProfile.Image = global::StockControl.Properties.Resources.SaveIcon;
+            this.pbxUserSaveProfile.BackgroundImage = global::StockControl.Properties.Resources.save;
+            this.pbxUserSaveProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxUserSaveProfile.Location = new System.Drawing.Point(429, 317);
             this.pbxUserSaveProfile.Name = "pbxUserSaveProfile";
             this.pbxUserSaveProfile.Size = new System.Drawing.Size(35, 35);
@@ -193,7 +194,8 @@
             // 
             // pbxUserDeleteProfile
             // 
-            this.pbxUserDeleteProfile.Image = global::StockControl.Properties.Resources.DeleteIcon;
+            this.pbxUserDeleteProfile.BackgroundImage = global::StockControl.Properties.Resources.delete;
+            this.pbxUserDeleteProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxUserDeleteProfile.Location = new System.Drawing.Point(476, 317);
             this.pbxUserDeleteProfile.Name = "pbxUserDeleteProfile";
             this.pbxUserDeleteProfile.Size = new System.Drawing.Size(35, 35);
@@ -203,7 +205,8 @@
             // 
             // pbxUserBackPages
             // 
-            this.pbxUserBackPages.Image = global::StockControl.Properties.Resources.BackIcon;
+            this.pbxUserBackPages.BackgroundImage = global::StockControl.Properties.Resources.back;
+            this.pbxUserBackPages.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxUserBackPages.Location = new System.Drawing.Point(11, 317);
             this.pbxUserBackPages.Name = "pbxUserBackPages";
             this.pbxUserBackPages.Size = new System.Drawing.Size(35, 35);

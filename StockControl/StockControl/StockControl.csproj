@@ -202,6 +202,17 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Icons\edit icon.png" />
+    <None Include="Resources\add.bmp" />
+    <None Include="Resources\add.PNG" />
+    <None Include="Resources\logo2.png" />
+    <None Include="Resources\edit.PNG" />
+    <None Include="Resources\save.PNG" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\logo.PNG" />
+    <None Include="Resources\category.PNG" />
+    <None Include="Resources\product.png" />
+    <None Include="Resources\profile.PNG" />
     <Content Include="Search_icon_old _.jpeg" />
     <None Include="Resources\BackIcon.png" />
     <None Include="Resources\SaveIcon2.png" />

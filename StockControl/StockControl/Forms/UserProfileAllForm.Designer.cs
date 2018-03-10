@@ -65,7 +65,8 @@
             // 
             // pbxBack
             // 
-            this.pbxBack.BackgroundImage = global::StockControl.Properties.Resources.BackIcon;
+            this.pbxBack.BackgroundImage = global::StockControl.Properties.Resources.back;
+            this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxBack.Location = new System.Drawing.Point(16, 258);
             this.pbxBack.Name = "pbxBack";
@@ -76,7 +77,7 @@
             // 
             // pbxEdit
             // 
-            this.pbxEdit.BackgroundImage = global::StockControl.Properties.Resources.Edit_icon_old_;
+            this.pbxEdit.BackgroundImage = global::StockControl.Properties.Resources.edit;
             this.pbxEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxEdit.Location = new System.Drawing.Point(302, 258);
@@ -88,7 +89,7 @@
             // 
             // pbxDelete
             // 
-            this.pbxDelete.BackgroundImage = global::StockControl.Properties.Resources.DeleteIcon;
+            this.pbxDelete.BackgroundImage = global::StockControl.Properties.Resources.delete;
             this.pbxDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxDelete.Location = new System.Drawing.Point(344, 258);
@@ -100,7 +101,8 @@
             // 
             // pbxSave
             // 
-            this.pbxSave.BackgroundImage = global::StockControl.Properties.Resources.SaveIcon;
+            this.pbxSave.BackgroundImage = global::StockControl.Properties.Resources.save;
+            this.pbxSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxSave.Location = new System.Drawing.Point(262, 258);
             this.pbxSave.Name = "pbxSave";

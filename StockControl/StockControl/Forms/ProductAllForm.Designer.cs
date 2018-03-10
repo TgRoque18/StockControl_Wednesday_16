@@ -47,8 +47,8 @@
             // 
             // pbxEdit
             // 
-            this.pbxEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxEdit.BackgroundImage")));
-            this.pbxEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbxEdit.BackgroundImage = global::StockControl.Properties.Resources.edit;
+            this.pbxEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxEdit.Location = new System.Drawing.Point(390, 324);
             this.pbxEdit.Name = "pbxEdit";
             this.pbxEdit.Size = new System.Drawing.Size(35, 35);
@@ -58,8 +58,8 @@
             // 
             // pbxDelete
             // 
-            this.pbxDelete.BackgroundImage = global::StockControl.Properties.Resources.DeleteIcon;
-            this.pbxDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbxDelete.BackgroundImage = global::StockControl.Properties.Resources.delete;
+            this.pbxDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxDelete.Location = new System.Drawing.Point(440, 324);
             this.pbxDelete.Name = "pbxDelete";
             this.pbxDelete.Size = new System.Drawing.Size(35, 35);
@@ -69,7 +69,7 @@
             // 
             // pbxSave
             // 
-            this.pbxSave.BackgroundImage = global::StockControl.Properties.Resources.Add_icon_old_;
+            this.pbxSave.BackgroundImage = global::StockControl.Properties.Resources.add;
             this.pbxSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxSave.Location = new System.Drawing.Point(340, 324);
             this.pbxSave.Name = "pbxSave";
@@ -80,7 +80,7 @@
             // 
             // pbxBack
             // 
-            this.pbxBack.BackgroundImage = global::StockControl.Properties.Resources.BackIcon;
+            this.pbxBack.BackgroundImage = global::StockControl.Properties.Resources.back;
             this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxBack.Location = new System.Drawing.Point(22, 324);
             this.pbxBack.Name = "pbxBack";
