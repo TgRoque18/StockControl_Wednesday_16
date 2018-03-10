@@ -73,12 +73,6 @@
     <Compile Include="Forms\LoginAllForm.Designer.cs">
       <DependentUpon>LoginAllForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\PasswordRecoverAllForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\PasswordRecoverAllForm.Designer.cs">
-      <DependentUpon>PasswordRecoverAllForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\ProductDetailsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,9 +148,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginAllForm.resx">
       <DependentUpon>LoginAllForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\PasswordRecoverAllForm.resx">
-      <DependentUpon>PasswordRecoverAllForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ProductDetailsForm.resx">
       <DependentUpon>ProductDetailsForm.cs</DependentUpon>
